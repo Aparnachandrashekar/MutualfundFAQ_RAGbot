@@ -1,0 +1,307 @@
+name: Automated Corpus Ingestion and Validation
+
+on:
+  schedule:
+    # Daily at 10:00 AM IST (04:30 UTC)
+    - cron: '30 4 * * *'
+  workflow_dispatch:
+    inputs:
+      force_run:
+        description: 'Force ingest even if a validated run already exists for today (UTC)'
+        required: false
+        type: boolean
+        default: false
+      skip_phase2:
+        description: 'Skip Phase 2 index rebuild'
+        required: false
+        type: boolean
+        default: false
+
+concurrency:
+  group: corpus-ingestion
+  cancel-in-progress: false
+
+jobs:
+  ingest-and-validate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    outputs:
+      run_directory: ${{ steps.latest_run.outputs.run_directory }}
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: pip
+        cache-dependency-path: requirements.txt
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Create data directory
+      run: mkdir -p data/corpus_runs
+
+    - name: Decide whether to ingest
+      id: should_ingest
+      env:
+        FORCE_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.force_run }}
+        GITHUB_EVENT_NAME: ${{ github.event_name }}
+      run: |
+        python3 <<'PY'
+        import json
+        import os
+        from datetime import datetime, timezone
+        from pathlib import Path
+
+        from phase1.ingestion.common.paths import latest_corpus_run_dir
+
+        out_path = os.environ["GITHUB_OUTPUT"]
+        event_name = os.environ.get("GITHUB_EVENT_NAME", "")
+        force = os.environ.get("FORCE_RUN", "").lower() == "true"
+
+        def set_output(key: str, value: str) -> None:
+            with open(out_path, "a", encoding="utf-8") as out:
+                out.write(f"{key}={value}\n")
+
+        if event_name == "schedule" or force:
+            set_output("ingest", "true")
+            raise SystemExit(0)
+
+        run = latest_corpus_run_dir()
+        if run is None:
+            set_output("ingest", "true")
+            raise SystemExit(0)
+
+        report_path = run / "validation_report.json"
+        if not report_path.is_file():
+            set_output("ingest", "true")
+            raise SystemExit(0)
+
+        report = json.loads(report_path.read_text(encoding="utf-8"))
+        validated_at = report.get("validated_at_utc", "")
+        today = datetime.now(timezone.utc).date().isoformat()
+        run_day = validated_at.split("T")[0] if validated_at else ""
+
+        if report.get("validation_ok") and run_day == today:
+            print(f"Validated run already exists for today: {run}")
+            set_output("ingest", "false")
+            set_output("run_directory", str(run))
+        else:
+            set_output("ingest", "true")
+        PY
+
+    - name: Run Phase 1.1–1.5 ingestion pipeline
+      if: steps.should_ingest.outputs.ingest == 'true'
+      run: |
+        python3 -m phase1.ingestion.ingest_through_1_5 --min-text-chars 2048
+
+    - name: Find latest run directory
+      id: latest_run
+      run: |
+        if [ -n "${{ steps.should_ingest.outputs.run_directory }}" ]; then
+          latest_dir="${{ steps.should_ingest.outputs.run_directory }}"
+        else
+          latest_dir=$(python3 - <<'PY'
+        from phase1.ingestion.common.paths import latest_corpus_run_dir
+        run = latest_corpus_run_dir()
+        if run is None:
+            raise SystemExit("No corpus run directory found")
+        print(run)
+        PY
+          )
+        fi
+        echo "run_directory=$latest_dir" >> "$GITHUB_OUTPUT"
+        echo "Latest run: $latest_dir"
+
+    - name: Validate ingestion success
+      run: |
+        run_dir="${{ steps.latest_run.outputs.run_directory }}"
+
+        python3 <<PY
+        import json
+        import sys
+        from pathlib import Path
+
+        run_dir = Path("${run_dir}")
+        report_path = run_dir / "validation_report.json"
+        if not report_path.is_file():
+            print("❌ validation_report.json not found", file=sys.stderr)
+            sys.exit(1)
+
+        report = json.loads(report_path.read_text(encoding="utf-8"))
+        if not report.get("validation_ok"):
+            print("❌ Validation failed", file=sys.stderr)
+            sys.exit(1)
+
+        source_count = len(list(run_dir.glob("*/clean.txt")))
+        if source_count != 5:
+            print(f"❌ Only {source_count} sources found (expected 5)", file=sys.stderr)
+            sys.exit(1)
+
+        manifest = json.loads((run_dir / "ingest_manifest.json").read_text(encoding="utf-8"))
+        summary = {
+            "run_id": manifest.get("run_id"),
+            "created_at": manifest.get("created_at_utc"),
+            "validation_ok": True,
+            "total_sources": report["summary"]["total_sources"],
+            "passed_sources": report["summary"]["passed_sources"],
+            "total_characters": report["summary"]["total_characters"],
+            "avg_content_quality": round(report["summary"]["avg_content_quality"], 3),
+            "model_used": report["summary"]["model_used"],
+        }
+        (run_dir / "run_summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
+        print("✅ Validation passed — 5/5 sources")
+        print(json.dumps(summary, indent=2))
+        PY
+
+    - name: Rebuild Phase 2 index
+      if: github.event_name == 'schedule' || github.event.inputs.skip_phase2 != 'true'
+      run: |
+        python3 -m phase2.rag.run_pipeline \
+          --corpus-run "${{ steps.latest_run.outputs.run_directory }}" \
+          --output-dir data/phase2_results
+
+    - name: Commit ingestion and index results
+      if: steps.should_ingest.outputs.ingest == 'true'
+      run: |
+        run_dir="${{ steps.latest_run.outputs.run_directory }}"
+        run_id=$(basename "$run_dir")
+
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+
+        git add \
+          "$run_dir"/*/clean.txt \
+          "$run_dir"/*/snapshot_meta.json \
+          "$run_dir/validation_report.json" \
+          "$run_dir/embedding_quality.json" \
+          "$run_dir/handoff_checklist.json" \
+          "$run_dir/run_summary.json" \
+          "$run_dir/ingest_manifest.json" \
+          "$run_dir/corpus.json" \
+          config/corpus_manifest.json
+
+        if [ "${{ github.event_name }}" = "schedule" ] || [ "${{ github.event.inputs.skip_phase2 }}" != "true" ]; then
+          git add \
+            data/phase2_results/chunks/ \
+            data/phase2_results/funds/ \
+            data/phase2_results/indexes/ \
+            data/phase2_results/retrieval/ \
+            data/phase2_results/phase2_pipeline_report.json \
+            phase4/ui/data/corpus-meta.json
+        fi
+
+        git commit -m "Automated ingestion: ${run_id}" || echo "No changes to commit"
+        git push
+
+    - name: Cleanup old runs (keep last 7 days)
+      if: success()
+      run: |
+        python3 <<'PY'
+        import shutil
+        from datetime import datetime, timedelta, timezone
+        from pathlib import Path
+
+        root = Path("data/corpus_runs")
+        if not root.is_dir():
+            raise SystemExit(0)
+
+        cutoff = datetime.now(timezone.utc) - timedelta(days=7)
+        for run_dir in sorted(root.iterdir()):
+            if not run_dir.is_dir() or not run_dir.name[:1].isdigit():
+                continue
+            mtime = datetime.fromtimestamp(run_dir.stat().st_mtime, tz=timezone.utc)
+            if mtime < cutoff:
+                shutil.rmtree(run_dir)
+                print(f"Removed old run: {run_dir.name}")
+        PY
+
+    - name: Notification on failure
+      if: failure()
+      run: |
+        echo "❌ Ingestion pipeline failed!"
+        echo "Check the logs above for details."
+
+  detailed-validation:
+    runs-on: ubuntu-latest
+    needs: ingest-and-validate
+    if: success()
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+        cache: pip
+        cache-dependency-path: requirements.txt
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Generate detailed validation report
+      env:
+        RUN_DIR: ${{ needs.ingest-and-validate.outputs.run_directory }}
+      run: |
+        python3 <<'EOF'
+        import json
+        import os
+        from pathlib import Path
+
+        run_dir = Path(os.environ["RUN_DIR"])
+        if not run_dir.is_dir():
+            raise SystemExit(f"Run directory not found: {run_dir}")
+
+        validation = json.loads((run_dir / "validation_report.json").read_text(encoding="utf-8"))
+        manifest = json.loads((run_dir / "ingest_manifest.json").read_text(encoding="utf-8"))
+
+        lines = [
+            "# Detailed Validation Report",
+            "",
+            f"**Run ID:** {manifest['run_id']}",
+            f"**Timestamp:** {manifest['created_at_utc']}",
+            "",
+            "## Source-by-Source Analysis",
+            "",
+            "| Source | Status | Text Length | Quality | Financial | Navigation |",
+            "|--------|--------|-------------|---------|-----------|------------|",
+        ]
+
+        for source_id, result in validation["sources"].items():
+            metrics = result.get("metrics", {})
+            status = "PASS" if result.get("validation_ok") else "FAIL"
+            lines.append(
+                f"| {source_id} | {status} | {metrics.get('text_length', 0):,} | "
+                f"{metrics.get('content_quality', 0):.3f} | "
+                f"{metrics.get('financial_relevance', 0):.3f} | "
+                f"{metrics.get('navigation_contamination', 0):.3f} |"
+            )
+
+        summary = validation["summary"]
+        lines.extend([
+            "",
+            "## Overall Metrics",
+            f"- Total sources: {summary['total_sources']}",
+            f"- Passed sources: {summary['passed_sources']}",
+            f"- Total characters: {summary['total_characters']:,}",
+            f"- Average quality: {summary['avg_content_quality']:.3f}",
+            f"- Model: {summary['model_used']}",
+            "",
+        ])
+
+        report_path = run_dir / "detailed_validation_report.md"
+        report_path.write_text("\n".join(lines), encoding="utf-8")
+        print(report_path.read_text(encoding="utf-8"))
+        EOF

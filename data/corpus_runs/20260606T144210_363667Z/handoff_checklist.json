@@ -1,0 +1,37 @@
+{
+  "phase_1_complete": true,
+  "validated_at_utc": "2026-06-06T14:42:33.307815+00:00",
+  "checks": [
+    {
+      "name": "five_sources_present",
+      "passed": true
+    },
+    {
+      "name": "corpus_assembly_ok",
+      "passed": true
+    },
+    {
+      "name": "no_off_allowlist_dirs",
+      "passed": true
+    },
+    {
+      "name": "all_artifacts_present",
+      "passed": true
+    },
+    {
+      "name": "min_text_length_ok",
+      "passed": true
+    },
+    {
+      "name": "semantic_validation_passed",
+      "passed": true
+    }
+  ],
+  "handoff_to_phase_2": {
+    "corpus_run_dir": "/Users/aparna/RAGCHATBOT_NL/data/corpus_runs/20260606T144210_363667Z",
+    "corpus_json": "/Users/aparna/RAGCHATBOT_NL/data/corpus_runs/20260606T144210_363667Z/corpus.json",
+    "ingest_manifest": "/Users/aparna/RAGCHATBOT_NL/data/corpus_runs/20260606T144210_363667Z/ingest_manifest.json",
+    "validation_report": "/Users/aparna/RAGCHATBOT_NL/data/corpus_runs/20260606T144210_363667Z/validation_report.json",
+    "embedding_quality": "/Users/aparna/RAGCHATBOT_NL/data/corpus_runs/20260606T144210_363667Z/embedding_quality.json"
+  }
+}

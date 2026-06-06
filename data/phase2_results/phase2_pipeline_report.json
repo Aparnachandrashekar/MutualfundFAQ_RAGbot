@@ -1,0 +1,106 @@
+{
+  "pipeline_version": "2.1",
+  "timestamp": "2026-06-06 20:12:51 UTC",
+  "input_corpus": "/Users/aparna/RAGCHATBOT_NL/data/corpus_runs/20260606T144210_363667Z",
+  "output_directory": "data/phase2_results",
+  "strategy": {
+    "bm25_weight": 0.75,
+    "vector_weight": 0.25,
+    "use_rrf": true,
+    "embedding_model": "BAAI/bge-small-en-v1.5",
+    "index_type": "Flat"
+  },
+  "chunking": {
+    "total_before_filtering": 53,
+    "total_after_filtering": 53,
+    "filter_ratio": 1.0,
+    "processing_time_seconds": 0.01424717903137207,
+    "summary": {
+      "total_chunks": 53,
+      "average_chunk_size": 348.188679245283,
+      "content_types": {
+        "fund_info": 44,
+        "mixed": 9
+      },
+      "amc_distribution": {
+        "Choice Mutual Fund": 3,
+        "Unifi Mutual Fund": 4,
+        "Union Mutual Fund": 16,
+        "ICICI Prudential Mutual Fund": 14,
+        "LIC Mutual Fund": 16
+      },
+      "average_financial_density": 0.12434904467073703
+    }
+  },
+  "indexing": {
+    "processing_time_seconds": 7.550170183181763,
+    "stats": {
+      "status": "Index loaded",
+      "ntotal": 53,
+      "dimension": 384,
+      "is_trained": true,
+      "type": "Flat",
+      "index_type": "flat",
+      "n_vectors": 53,
+      "nlist": null,
+      "nprobe": null,
+      "add_time_seconds": 0.0006809234619140625,
+      "memory_usage_mb": 0.07763671875
+    }
+  },
+  "validation": {
+    "amc_routing_rate": 1.0,
+    "queries": [
+      {
+        "query": "What is the NAV of Choice Mutual Fund?",
+        "expected_amc": "Choice Mutual Fund",
+        "top_amc": "Choice Mutual Fund",
+        "amc_routing_ok": true,
+        "results_count": 3,
+        "top_score": 0.06499351887152116,
+        "search_time_ms": 62.22891807556152
+      },
+      {
+        "query": "What are the expense ratios for Union Mutual Fund schemes?",
+        "expected_amc": "Union Mutual Fund",
+        "top_amc": "Union Mutual Fund",
+        "amc_routing_ok": true,
+        "results_count": 5,
+        "top_score": 0.06449604103936657,
+        "search_time_ms": 40.23885726928711
+      },
+      {
+        "query": "Tell me about SIP minimum for Unifi Liquid Fund",
+        "expected_amc": "Unifi Mutual Fund",
+        "top_amc": "Unifi Mutual Fund",
+        "amc_routing_ok": true,
+        "results_count": 1,
+        "top_score": 0.09737704918032787,
+        "search_time_ms": 11.774301528930664
+      },
+      {
+        "query": "ICICI Prudential mutual fund schemes",
+        "expected_amc": "ICICI Prudential Mutual Fund",
+        "top_amc": "ICICI Prudential Mutual Fund",
+        "amc_routing_ok": true,
+        "results_count": 5,
+        "top_score": 0.04598360655737706,
+        "search_time_ms": 39.94607925415039
+      },
+      {
+        "query": "LIC Mutual Fund exit load",
+        "expected_amc": "LIC Mutual Fund",
+        "top_amc": "LIC Mutual Fund",
+        "amc_routing_ok": true,
+        "results_count": 5,
+        "top_score": 0.06344050766790059,
+        "search_time_ms": 36.427974700927734
+      }
+    ]
+  },
+  "files": {
+    "chunks_file": "data/phase2_results/chunks/chunks.json",
+    "retrieval_dir": "data/phase2_results/retrieval",
+    "indexes_dir": "data/phase2_results/indexes"
+  }
+}

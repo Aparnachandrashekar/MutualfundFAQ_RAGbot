@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "description": "Refusal categories for facts-only assistant. Educational links are for refusal responses only—not RAG corpus sources.",
+  "categories": [
+    {
+      "id": "investment_advice",
+      "label": "Investment advice",
+      "description": "Recommendations, suitability, timing, or whether to buy/sell/hold.",
+      "example_user_queries": [
+        "Should I invest in this fund?",
+        "Is now a good time to buy?",
+        "How much should I allocate to ELSS?"
+      ],
+      "response_style": "polite_refusal_facts_only"
+    },
+    {
+      "id": "fund_comparison",
+      "label": "Fund comparison or ranking",
+      "description": "Which fund is better, best fund, or side-by-side preference.",
+      "example_user_queries": [
+        "Which is better, Fund A or Fund B?",
+        "Best mutual fund for 2026?",
+        "Top ELSS funds?"
+      ],
+      "response_style": "polite_refusal_facts_only"
+    },
+    {
+      "id": "performance_opinion",
+      "label": "Performance framing as opinion or recommendation",
+      "description": "Chasing returns, predicting performance, or subjective quality judgments.",
+      "example_user_queries": [
+        "Will this fund beat the index?",
+        "Is this fund good for long term?"
+      ],
+      "response_style": "polite_refusal_or_redirect_to_facts_on_page"
+    },
+    {
+      "id": "tax_legal_advice",
+      "label": "Personal tax or legal advice",
+      "description": "Individual tax position, legal interpretation beyond generic facts.",
+      "example_user_queries": [
+        "How much tax will I save if I invest 1.5L in ELSS?",
+        "Should I declare this in ITR-1 or ITR-2?"
+      ],
+      "response_style": "polite_refusal_general_information_only"
+    }
+  ],
+  "educational_links_allowlist": [
+    {
+      "id": "amfi_investor_corner",
+      "title": "AMFI investor corner",
+      "url": "https://www.amfiindia.com/investor-corner/knowledge-center"
+    },
+    {
+      "id": "sebi_investor_home",
+      "title": "SEBI investor website",
+      "url": "https://investor.sebi.gov.in/"
+    }
+  ],
+  "notes": "Use exactly one educational link per refusal response per product rules in PhaseWiseArchitecture.md / Problemstatement.md."
+}

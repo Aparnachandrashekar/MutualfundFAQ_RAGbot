@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mutual Fund FAQ Assistant</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css?v=5">
+</head>
+<body>
+  <div class="app">
+    <header class="header" role="banner">
+      <div class="header-inner">
+        <h1>Mutual Fund FAQ Assistant</h1>
+        <p class="header-disclaimer" role="note" aria-label="Disclaimer">
+          Facts-only. No investment advice.
+        </p>
+        <p class="tagline">Factual answers from five official AMC overview pages.</p>
+      </div>
+    </header>
+
+    <main class="main" role="main">
+      <section class="welcome" id="welcome" aria-labelledby="welcome-heading">
+        <h2 id="welcome-heading">Welcome</h2>
+        <p class="welcome-body">
+          I am a focused assistant designed to provide direct, factual data about mutual fund schemes.
+          Ask me about expense ratios, exit loads, AUM, or minimum investment requirements based on
+          official AMC disclosures.
+        </p>
+
+        <div class="citations-help">
+          <span class="citations-help-icon" aria-hidden="true">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 12l2 2 4-4"/>
+              <circle cx="12" cy="12" r="10"/>
+            </svg>
+          </span>
+          <div>
+            <strong>How citations work</strong>
+            <p>
+              Every answer includes a direct source link and a synchronization date from our indexed
+              AMC pages, ensuring you can verify the data yourself.
+            </p>
+          </div>
+        </div>
+
+        <div class="examples" aria-label="Example questions">
+          <p class="examples-label">Try an example:</p>
+          <div class="example-buttons">
+            <button type="button" class="example-btn" data-query="What is the AUM of Unifi Mutual Fund?">
+              What is the AUM of Unifi Mutual Fund?
+            </button>
+            <button type="button" class="example-btn" data-query="What is the minimum SIP for Unifi Liquid Fund?">
+              What is the minimum SIP for Unifi Liquid Fund?
+            </button>
+            <button type="button" class="example-btn" data-query="What is the expense ratio for Union Small Cap Fund?">
+              What is the expense ratio for Union Small Cap Fund?
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="chat" id="chat" aria-live="polite" aria-relevant="additions" aria-label="Conversation">
+      </section>
+    </main>
+
+    <footer class="composer-wrap" role="contentinfo">
+      <form class="composer" id="composer" aria-label="Ask a question">
+        <label class="sr-only" for="query-input">Your question</label>
+        <div class="composer-field">
+          <textarea
+            id="query-input"
+            name="query"
+            rows="1"
+            maxlength="2000"
+            placeholder="Ask a factual question…"
+            autocomplete="off"
+            spellcheck="true"
+          ></textarea>
+          <button type="submit" id="send-btn" aria-label="Send question">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+            </svg>
+          </button>
+        </div>
+      </form>
+      <p class="privacy-note">
+        <svg class="privacy-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+          <rect x="3" y="11" width="18" height="11" rx="2"/>
+          <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+        </svg>
+        Do not enter sensitive personal data like PAN, Aadhaar, or account numbers.
+      </p>
+      <p class="coverage-note" role="note" aria-label="Available information">
+        Covers 48 schemes from Choice, ICICI Prudential, LIC, Unifi, and Union Mutual Fund.
+        Available data: NAV, AUM (fund size), expense ratio, returns (1Y–10Y), risk, rating,
+        exit load, and minimum lump sum/SIP. Fund manager names are not in the indexed sources.
+        <span class="coverage-updated" id="corpus-updated-note"></span>
+      </p>
+    </footer>
+  </div>
+
+  <script src="/js/app.js?v=3"></script>
+</body>
+</html>

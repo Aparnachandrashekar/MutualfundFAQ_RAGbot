@@ -1,0 +1,56 @@
+{
+  "pipeline_version": "3.1",
+  "timestamp": "2026-06-06 16:00:50 UTC",
+  "configuration": {
+    "use_llm": true,
+    "llm_provider": "groq",
+    "groq_model": "llama-3.3-70b-versatile",
+    "phase2_available": true,
+    "phase2_directory": "data/phase2_results",
+    "top_k": 5
+  },
+  "statistics": {
+    "total_queries": 2,
+    "intent_distribution": {
+      "factual": 2
+    },
+    "response_types": {
+      "answer_with_citation": 1,
+      "no_information": 1
+    },
+    "citations_provided": 1,
+    "refusals_generated": 0,
+    "no_info_responses": 1,
+    "no_url_responses": 1,
+    "average_confidence": 0.5,
+    "processing_time": 1.288640022277832
+  },
+  "results": [
+    {
+      "response": "I don't have that information. The provided context mentions AUM as NACr, but it does not provide the NAV. The context only provides information about the minimum investment amount and fund performance.",
+      "citation": "https://groww.in/mutual-funds/amc/choice-mutual-funds",
+      "footer": "Last updated from sources: 2026-05-03",
+      "educational_link": "",
+      "response_type": "answer_with_citation",
+      "intent": "factual",
+      "confidence": 0.5,
+      "chunks_used": 3,
+      "has_citation": true,
+      "has_grounded_answer": true,
+      "generation_time": "2026-06-06 16:00:50 UTC"
+    },
+    {
+      "response": "I don't have information about that in my current data. My knowledge is limited to the five AMC websites in my corpus.",
+      "citation": "",
+      "footer": "",
+      "educational_link": "",
+      "response_type": "no_information",
+      "intent": "factual",
+      "confidence": 0.5,
+      "chunks_used": 4,
+      "has_citation": false,
+      "has_grounded_answer": true,
+      "generation_time": "2026-06-06 16:00:50 UTC"
+    }
+  ]
+}

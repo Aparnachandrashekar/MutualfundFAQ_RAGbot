@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Corpus manifest",
+  "type": "object",
+  "required": ["version", "sources"],
+  "properties": {
+    "version": { "type": "integer" },
+    "description": { "type": "string" },
+    "sources": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "required": ["id", "amc_name", "url"],
+        "properties": {
+          "id": { "type": "string" },
+          "amc_name": { "type": "string" },
+          "url": { "type": "string", "format": "uri" },
+          "scheme_names_observed": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "last_fetch_at": { "type": ["string", "null"] },
+          "notes": { "type": "string" }
+        }
+      }
+    }
+  }
+}

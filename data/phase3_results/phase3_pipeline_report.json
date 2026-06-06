@@ -1,0 +1,166 @@
+{
+  "pipeline_version": "3.1",
+  "timestamp": "2026-06-06 16:34:53 UTC",
+  "configuration": {
+    "use_llm": false,
+    "llm_provider": "groq",
+    "groq_model": "llama-3.3-70b-versatile",
+    "phase2_available": true,
+    "phase2_directory": "data/phase2_results",
+    "top_k": 5
+  },
+  "statistics": {
+    "total_queries": 10,
+    "intent_distribution": {
+      "factual": 6,
+      "advisory": 2,
+      "comparison": 1,
+      "personal_info": 1
+    },
+    "response_types": {
+      "answer_with_citation": 4,
+      "refusal_advisory": 2,
+      "refusal_comparison": 1,
+      "refusal_personal_info": 1,
+      "no_information": 2
+    },
+    "citations_provided": 4,
+    "refusals_generated": 4,
+    "no_info_responses": 2,
+    "no_url_responses": 3,
+    "average_confidence": 0.66,
+    "processing_time": 0.6133279800415039
+  },
+  "results": [
+    {
+      "response": "Choice Nifty 50 Index Fund has NAV 10.33. Choice Nifty Next 50 Index Fund has NAV 10.83.",
+      "citation": "https://groww.in/mutual-funds/amc/choice-mutual-funds",
+      "footer": "Last updated from sources: 2026-05-03",
+      "educational_link": "",
+      "response_type": "answer_with_citation",
+      "intent": "factual",
+      "confidence": 0.5,
+      "chunks_used": 5,
+      "has_citation": true,
+      "has_grounded_answer": true,
+      "generation_time": "2026-06-06 16:34:52 UTC"
+    },
+    {
+      "response": "I can only provide factual information about mutual funds and cannot give investment advice. For investment guidance, please consult a qualified financial advisor.",
+      "citation": "",
+      "footer": "",
+      "educational_link": "https://www.amfiindia.com/investor-corner/knowledge-center",
+      "response_type": "refusal_advisory",
+      "intent": "advisory",
+      "confidence": 0.8,
+      "chunks_used": 0,
+      "has_citation": false,
+      "has_grounded_answer": false,
+      "generation_time": "2026-06-06 16:34:52 UTC"
+    },
+    {
+      "response": "I can provide individual fund information but cannot make comparisons or recommendations between different mutual funds.",
+      "citation": "",
+      "footer": "",
+      "educational_link": "https://investor.sebi.gov.in/",
+      "response_type": "refusal_comparison",
+      "intent": "comparison",
+      "confidence": 0.8,
+      "chunks_used": 0,
+      "has_citation": false,
+      "has_grounded_answer": false,
+      "generation_time": "2026-06-06 16:34:53 UTC"
+    },
+    {
+      "response": "I cannot access personal accounts or provide individual portfolio information. For account-specific queries, please contact your mutual fund company or advisor directly.",
+      "citation": "",
+      "footer": "",
+      "educational_link": "",
+      "response_type": "refusal_personal_info",
+      "intent": "personal_info",
+      "confidence": 0.95,
+      "chunks_used": 0,
+      "has_citation": false,
+      "has_grounded_answer": false,
+      "generation_time": "2026-06-06 16:34:53 UTC"
+    },
+    {
+      "response": "The minimum SIP for LIC MF Infrastructure Fund is \u20b9200.",
+      "citation": "https://groww.in/mutual-funds/amc/lic-mutual-funds",
+      "footer": "Last updated from sources: 2026-05-03",
+      "educational_link": "",
+      "response_type": "answer_with_citation",
+      "intent": "factual",
+      "confidence": 0.5,
+      "chunks_used": 5,
+      "has_citation": true,
+      "has_grounded_answer": true,
+      "generation_time": "2026-06-06 16:34:53 UTC"
+    },
+    {
+      "response": "I don't have information about that in my current data.",
+      "citation": "",
+      "footer": "",
+      "educational_link": "",
+      "response_type": "no_information",
+      "intent": "factual",
+      "confidence": 0.6,
+      "chunks_used": 5,
+      "has_citation": false,
+      "has_grounded_answer": false,
+      "generation_time": "2026-06-06 16:34:53 UTC"
+    },
+    {
+      "response": "The expense ratio of Union Retirement Fund is 1.15.",
+      "citation": "https://groww.in/mutual-funds/amc/union-mutual-funds",
+      "footer": "Last updated from sources: 2026-05-03",
+      "educational_link": "",
+      "response_type": "answer_with_citation",
+      "intent": "factual",
+      "confidence": 0.6000000000000001,
+      "chunks_used": 5,
+      "has_citation": true,
+      "has_grounded_answer": true,
+      "generation_time": "2026-06-06 16:34:53 UTC"
+    },
+    {
+      "response": "I can only provide factual information about mutual funds and cannot give investment advice. For investment guidance, please consult a qualified financial advisor.",
+      "citation": "",
+      "footer": "",
+      "educational_link": "https://www.amfiindia.com/investor-corner/knowledge-center",
+      "response_type": "refusal_advisory",
+      "intent": "advisory",
+      "confidence": 0.95,
+      "chunks_used": 0,
+      "has_citation": false,
+      "has_grounded_answer": false,
+      "generation_time": "2026-06-06 16:34:53 UTC"
+    },
+    {
+      "response": "The total AUM of Unifi Mutual Fund is \u20b91,362.49Cr.",
+      "citation": "https://groww.in/mutual-funds/amc/unifi-mutual-funds",
+      "footer": "Last updated from sources: 2026-05-03",
+      "educational_link": "",
+      "response_type": "answer_with_citation",
+      "intent": "factual",
+      "confidence": 0.5,
+      "chunks_used": 4,
+      "has_citation": true,
+      "has_grounded_answer": true,
+      "generation_time": "2026-06-06 16:34:53 UTC"
+    },
+    {
+      "response": "I don't have information about that in my current data.",
+      "citation": "",
+      "footer": "",
+      "educational_link": "",
+      "response_type": "no_information",
+      "intent": "factual",
+      "confidence": 0.4,
+      "chunks_used": 0,
+      "has_citation": false,
+      "has_grounded_answer": false,
+      "generation_time": "2026-06-06 16:34:53 UTC"
+    }
+  ]
+}

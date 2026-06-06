@@ -1,0 +1,5 @@
+# Secrets
+.env
+
+# Corpus runs: track validated artifacts in git; exclude bulky raw HTML only
+data/corpus_runs/**/raw.html

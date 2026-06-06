@@ -1,0 +1,871 @@
+{
+  "run_id": "20260503T064957_082350Z",
+  "validated_at_utc": "2026-06-02T18:19:08.383076+00:00",
+  "model": "BAAI/bge-small-en-v1.5",
+  "validation_chunk_size": 512,
+  "sources": {
+    "groww_amc_choice": {
+      "content_quality": 0.0628,
+      "semantic_coherence": 0.8462,
+      "embedding_quality": 0.0628,
+      "chunk_scores": [
+        {
+          "chunk_index": 0,
+          "financial_relevance": 0.726,
+          "navigation_contamination": 0.7818,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 1,
+          "financial_relevance": 0.6342,
+          "navigation_contamination": 0.7061,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 2,
+          "financial_relevance": 0.7129,
+          "navigation_contamination": 0.7081,
+          "embedding_quality": 0.0048
+        },
+        {
+          "chunk_index": 3,
+          "financial_relevance": 0.7922,
+          "navigation_contamination": 0.6551,
+          "embedding_quality": 0.1371
+        },
+        {
+          "chunk_index": 4,
+          "financial_relevance": 0.7087,
+          "navigation_contamination": 0.5988,
+          "embedding_quality": 0.11
+        },
+        {
+          "chunk_index": 5,
+          "financial_relevance": 0.7362,
+          "navigation_contamination": 0.6335,
+          "embedding_quality": 0.1027
+        },
+        {
+          "chunk_index": 6,
+          "financial_relevance": 0.7158,
+          "navigation_contamination": 0.687,
+          "embedding_quality": 0.0288
+        },
+        {
+          "chunk_index": 7,
+          "financial_relevance": 0.6987,
+          "navigation_contamination": 0.5869,
+          "embedding_quality": 0.1119
+        },
+        {
+          "chunk_index": 8,
+          "financial_relevance": 0.6804,
+          "navigation_contamination": 0.6117,
+          "embedding_quality": 0.0686
+        },
+        {
+          "chunk_index": 9,
+          "financial_relevance": 0.7826,
+          "navigation_contamination": 0.6132,
+          "embedding_quality": 0.1694
+        },
+        {
+          "chunk_index": 10,
+          "financial_relevance": 0.7177,
+          "navigation_contamination": 0.6435,
+          "embedding_quality": 0.0742
+        },
+        {
+          "chunk_index": 11,
+          "financial_relevance": 0.631,
+          "navigation_contamination": 0.6563,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 12,
+          "financial_relevance": 0.7101,
+          "navigation_contamination": 0.7011,
+          "embedding_quality": 0.009
+        }
+      ]
+    },
+    "groww_amc_unifi": {
+      "content_quality": 0.0844,
+      "semantic_coherence": 0.8234,
+      "embedding_quality": 0.0844,
+      "chunk_scores": [
+        {
+          "chunk_index": 0,
+          "financial_relevance": 0.7462,
+          "navigation_contamination": 0.7676,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 1,
+          "financial_relevance": 0.6342,
+          "navigation_contamination": 0.7061,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 2,
+          "financial_relevance": 0.7129,
+          "navigation_contamination": 0.7081,
+          "embedding_quality": 0.0048
+        },
+        {
+          "chunk_index": 3,
+          "financial_relevance": 0.7939,
+          "navigation_contamination": 0.6541,
+          "embedding_quality": 0.1398
+        },
+        {
+          "chunk_index": 4,
+          "financial_relevance": 0.7318,
+          "navigation_contamination": 0.5807,
+          "embedding_quality": 0.1511
+        },
+        {
+          "chunk_index": 5,
+          "financial_relevance": 0.7381,
+          "navigation_contamination": 0.5912,
+          "embedding_quality": 0.1469
+        },
+        {
+          "chunk_index": 6,
+          "financial_relevance": 0.6927,
+          "navigation_contamination": 0.5921,
+          "embedding_quality": 0.1006
+        },
+        {
+          "chunk_index": 7,
+          "financial_relevance": 0.5952,
+          "navigation_contamination": 0.5702,
+          "embedding_quality": 0.025
+        },
+        {
+          "chunk_index": 8,
+          "financial_relevance": 0.6953,
+          "navigation_contamination": 0.5524,
+          "embedding_quality": 0.1429
+        },
+        {
+          "chunk_index": 9,
+          "financial_relevance": 0.6325,
+          "navigation_contamination": 0.5948,
+          "embedding_quality": 0.0378
+        },
+        {
+          "chunk_index": 10,
+          "financial_relevance": 0.6847,
+          "navigation_contamination": 0.5722,
+          "embedding_quality": 0.1125
+        },
+        {
+          "chunk_index": 11,
+          "financial_relevance": 0.7707,
+          "navigation_contamination": 0.5746,
+          "embedding_quality": 0.1961
+        },
+        {
+          "chunk_index": 12,
+          "financial_relevance": 0.743,
+          "navigation_contamination": 0.5662,
+          "embedding_quality": 0.1768
+        },
+        {
+          "chunk_index": 13,
+          "financial_relevance": 0.7352,
+          "navigation_contamination": 0.6288,
+          "embedding_quality": 0.1064
+        },
+        {
+          "chunk_index": 14,
+          "financial_relevance": 0.631,
+          "navigation_contamination": 0.6563,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 15,
+          "financial_relevance": 0.7101,
+          "navigation_contamination": 0.7011,
+          "embedding_quality": 0.009
+        }
+      ]
+    },
+    "groww_amc_union": {
+      "content_quality": 0.0903,
+      "semantic_coherence": 0.8402,
+      "embedding_quality": 0.0903,
+      "chunk_scores": [
+        {
+          "chunk_index": 0,
+          "financial_relevance": 0.7329,
+          "navigation_contamination": 0.7642,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 1,
+          "financial_relevance": 0.6342,
+          "navigation_contamination": 0.7061,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 2,
+          "financial_relevance": 0.7129,
+          "navigation_contamination": 0.7081,
+          "embedding_quality": 0.0048
+        },
+        {
+          "chunk_index": 3,
+          "financial_relevance": 0.7992,
+          "navigation_contamination": 0.6479,
+          "embedding_quality": 0.1513
+        },
+        {
+          "chunk_index": 4,
+          "financial_relevance": 0.7338,
+          "navigation_contamination": 0.6199,
+          "embedding_quality": 0.1139
+        },
+        {
+          "chunk_index": 5,
+          "financial_relevance": 0.6448,
+          "navigation_contamination": 0.5843,
+          "embedding_quality": 0.0605
+        },
+        {
+          "chunk_index": 6,
+          "financial_relevance": 0.6428,
+          "navigation_contamination": 0.6109,
+          "embedding_quality": 0.0319
+        },
+        {
+          "chunk_index": 7,
+          "financial_relevance": 0.5571,
+          "navigation_contamination": 0.5968,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 8,
+          "financial_relevance": 0.5465,
+          "navigation_contamination": 0.5981,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 9,
+          "financial_relevance": 0.5945,
+          "navigation_contamination": 0.5646,
+          "embedding_quality": 0.0299
+        },
+        {
+          "chunk_index": 10,
+          "financial_relevance": 0.7045,
+          "navigation_contamination": 0.5804,
+          "embedding_quality": 0.1241
+        },
+        {
+          "chunk_index": 11,
+          "financial_relevance": 0.7014,
+          "navigation_contamination": 0.6078,
+          "embedding_quality": 0.0936
+        },
+        {
+          "chunk_index": 12,
+          "financial_relevance": 0.6879,
+          "navigation_contamination": 0.6367,
+          "embedding_quality": 0.0511
+        },
+        {
+          "chunk_index": 13,
+          "financial_relevance": 0.6854,
+          "navigation_contamination": 0.6294,
+          "embedding_quality": 0.056
+        },
+        {
+          "chunk_index": 14,
+          "financial_relevance": 0.6988,
+          "navigation_contamination": 0.6169,
+          "embedding_quality": 0.0819
+        },
+        {
+          "chunk_index": 15,
+          "financial_relevance": 0.6973,
+          "navigation_contamination": 0.5705,
+          "embedding_quality": 0.1268
+        },
+        {
+          "chunk_index": 16,
+          "financial_relevance": 0.6347,
+          "navigation_contamination": 0.5876,
+          "embedding_quality": 0.0471
+        },
+        {
+          "chunk_index": 17,
+          "financial_relevance": 0.6885,
+          "navigation_contamination": 0.6328,
+          "embedding_quality": 0.0556
+        },
+        {
+          "chunk_index": 18,
+          "financial_relevance": 0.6553,
+          "navigation_contamination": 0.6024,
+          "embedding_quality": 0.0529
+        },
+        {
+          "chunk_index": 19,
+          "financial_relevance": 0.6964,
+          "navigation_contamination": 0.6956,
+          "embedding_quality": 0.0008
+        },
+        {
+          "chunk_index": 20,
+          "financial_relevance": 0.6805,
+          "navigation_contamination": 0.681,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 21,
+          "financial_relevance": 0.7472,
+          "navigation_contamination": 0.5811,
+          "embedding_quality": 0.1662
+        },
+        {
+          "chunk_index": 22,
+          "financial_relevance": 0.7483,
+          "navigation_contamination": 0.5814,
+          "embedding_quality": 0.1669
+        },
+        {
+          "chunk_index": 23,
+          "financial_relevance": 0.7459,
+          "navigation_contamination": 0.5719,
+          "embedding_quality": 0.174
+        },
+        {
+          "chunk_index": 24,
+          "financial_relevance": 0.7539,
+          "navigation_contamination": 0.5728,
+          "embedding_quality": 0.1812
+        },
+        {
+          "chunk_index": 25,
+          "financial_relevance": 0.7677,
+          "navigation_contamination": 0.589,
+          "embedding_quality": 0.1787
+        },
+        {
+          "chunk_index": 26,
+          "financial_relevance": 0.7772,
+          "navigation_contamination": 0.5802,
+          "embedding_quality": 0.1969
+        },
+        {
+          "chunk_index": 27,
+          "financial_relevance": 0.7562,
+          "navigation_contamination": 0.6125,
+          "embedding_quality": 0.1438
+        },
+        {
+          "chunk_index": 28,
+          "financial_relevance": 0.7779,
+          "navigation_contamination": 0.6182,
+          "embedding_quality": 0.1597
+        },
+        {
+          "chunk_index": 29,
+          "financial_relevance": 0.7591,
+          "navigation_contamination": 0.6098,
+          "embedding_quality": 0.1492
+        },
+        {
+          "chunk_index": 30,
+          "financial_relevance": 0.7621,
+          "navigation_contamination": 0.5828,
+          "embedding_quality": 0.1793
+        },
+        {
+          "chunk_index": 31,
+          "financial_relevance": 0.7908,
+          "navigation_contamination": 0.6006,
+          "embedding_quality": 0.1902
+        },
+        {
+          "chunk_index": 32,
+          "financial_relevance": 0.772,
+          "navigation_contamination": 0.6104,
+          "embedding_quality": 0.1616
+        },
+        {
+          "chunk_index": 33,
+          "financial_relevance": 0.7309,
+          "navigation_contamination": 0.6186,
+          "embedding_quality": 0.1123
+        },
+        {
+          "chunk_index": 34,
+          "financial_relevance": 0.631,
+          "navigation_contamination": 0.6563,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 35,
+          "financial_relevance": 0.7101,
+          "navigation_contamination": 0.7011,
+          "embedding_quality": 0.009
+        }
+      ]
+    },
+    "groww_amc_icici_prudential": {
+      "content_quality": 0.0813,
+      "semantic_coherence": 0.853,
+      "embedding_quality": 0.0813,
+      "chunk_scores": [
+        {
+          "chunk_index": 0,
+          "financial_relevance": 0.7271,
+          "navigation_contamination": 0.7676,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 1,
+          "financial_relevance": 0.6342,
+          "navigation_contamination": 0.7061,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 2,
+          "financial_relevance": 0.7129,
+          "navigation_contamination": 0.7081,
+          "embedding_quality": 0.0048
+        },
+        {
+          "chunk_index": 3,
+          "financial_relevance": 0.7899,
+          "navigation_contamination": 0.6515,
+          "embedding_quality": 0.1384
+        },
+        {
+          "chunk_index": 4,
+          "financial_relevance": 0.6876,
+          "navigation_contamination": 0.6188,
+          "embedding_quality": 0.0688
+        },
+        {
+          "chunk_index": 5,
+          "financial_relevance": 0.6346,
+          "navigation_contamination": 0.6288,
+          "embedding_quality": 0.0058
+        },
+        {
+          "chunk_index": 6,
+          "financial_relevance": 0.5912,
+          "navigation_contamination": 0.6056,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 7,
+          "financial_relevance": 0.6025,
+          "navigation_contamination": 0.6264,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 8,
+          "financial_relevance": 0.6763,
+          "navigation_contamination": 0.6647,
+          "embedding_quality": 0.0116
+        },
+        {
+          "chunk_index": 9,
+          "financial_relevance": 0.7213,
+          "navigation_contamination": 0.606,
+          "embedding_quality": 0.1153
+        },
+        {
+          "chunk_index": 10,
+          "financial_relevance": 0.6689,
+          "navigation_contamination": 0.6011,
+          "embedding_quality": 0.0678
+        },
+        {
+          "chunk_index": 11,
+          "financial_relevance": 0.6929,
+          "navigation_contamination": 0.6479,
+          "embedding_quality": 0.0451
+        },
+        {
+          "chunk_index": 12,
+          "financial_relevance": 0.6426,
+          "navigation_contamination": 0.607,
+          "embedding_quality": 0.0355
+        },
+        {
+          "chunk_index": 13,
+          "financial_relevance": 0.6822,
+          "navigation_contamination": 0.6446,
+          "embedding_quality": 0.0376
+        },
+        {
+          "chunk_index": 14,
+          "financial_relevance": 0.6984,
+          "navigation_contamination": 0.6327,
+          "embedding_quality": 0.0658
+        },
+        {
+          "chunk_index": 15,
+          "financial_relevance": 0.7564,
+          "navigation_contamination": 0.6154,
+          "embedding_quality": 0.141
+        },
+        {
+          "chunk_index": 16,
+          "financial_relevance": 0.67,
+          "navigation_contamination": 0.5667,
+          "embedding_quality": 0.1033
+        },
+        {
+          "chunk_index": 17,
+          "financial_relevance": 0.6401,
+          "navigation_contamination": 0.6039,
+          "embedding_quality": 0.0362
+        },
+        {
+          "chunk_index": 18,
+          "financial_relevance": 0.6583,
+          "navigation_contamination": 0.6309,
+          "embedding_quality": 0.0274
+        },
+        {
+          "chunk_index": 19,
+          "financial_relevance": 0.5988,
+          "navigation_contamination": 0.6359,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 20,
+          "financial_relevance": 0.7364,
+          "navigation_contamination": 0.6694,
+          "embedding_quality": 0.0671
+        },
+        {
+          "chunk_index": 21,
+          "financial_relevance": 0.6962,
+          "navigation_contamination": 0.6314,
+          "embedding_quality": 0.0648
+        },
+        {
+          "chunk_index": 22,
+          "financial_relevance": 0.7451,
+          "navigation_contamination": 0.6073,
+          "embedding_quality": 0.1379
+        },
+        {
+          "chunk_index": 23,
+          "financial_relevance": 0.7557,
+          "navigation_contamination": 0.5775,
+          "embedding_quality": 0.1782
+        },
+        {
+          "chunk_index": 24,
+          "financial_relevance": 0.7281,
+          "navigation_contamination": 0.5841,
+          "embedding_quality": 0.144
+        },
+        {
+          "chunk_index": 25,
+          "financial_relevance": 0.7361,
+          "navigation_contamination": 0.577,
+          "embedding_quality": 0.1591
+        },
+        {
+          "chunk_index": 26,
+          "financial_relevance": 0.7304,
+          "navigation_contamination": 0.5876,
+          "embedding_quality": 0.1429
+        },
+        {
+          "chunk_index": 27,
+          "financial_relevance": 0.756,
+          "navigation_contamination": 0.5905,
+          "embedding_quality": 0.1655
+        },
+        {
+          "chunk_index": 28,
+          "financial_relevance": 0.7296,
+          "navigation_contamination": 0.6001,
+          "embedding_quality": 0.1295
+        },
+        {
+          "chunk_index": 29,
+          "financial_relevance": 0.7374,
+          "navigation_contamination": 0.6149,
+          "embedding_quality": 0.1225
+        },
+        {
+          "chunk_index": 30,
+          "financial_relevance": 0.7132,
+          "navigation_contamination": 0.602,
+          "embedding_quality": 0.1112
+        },
+        {
+          "chunk_index": 31,
+          "financial_relevance": 0.7574,
+          "navigation_contamination": 0.5906,
+          "embedding_quality": 0.1668
+        },
+        {
+          "chunk_index": 32,
+          "financial_relevance": 0.7487,
+          "navigation_contamination": 0.5986,
+          "embedding_quality": 0.1502
+        },
+        {
+          "chunk_index": 33,
+          "financial_relevance": 0.7378,
+          "navigation_contamination": 0.6741,
+          "embedding_quality": 0.0636
+        },
+        {
+          "chunk_index": 34,
+          "financial_relevance": 0.731,
+          "navigation_contamination": 0.5973,
+          "embedding_quality": 0.1337
+        },
+        {
+          "chunk_index": 35,
+          "financial_relevance": 0.7396,
+          "navigation_contamination": 0.5756,
+          "embedding_quality": 0.164
+        },
+        {
+          "chunk_index": 36,
+          "financial_relevance": 0.7445,
+          "navigation_contamination": 0.5969,
+          "embedding_quality": 0.1476
+        },
+        {
+          "chunk_index": 37,
+          "financial_relevance": 0.738,
+          "navigation_contamination": 0.6469,
+          "embedding_quality": 0.0911
+        },
+        {
+          "chunk_index": 38,
+          "financial_relevance": 0.631,
+          "navigation_contamination": 0.6563,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 39,
+          "financial_relevance": 0.7101,
+          "navigation_contamination": 0.7011,
+          "embedding_quality": 0.009
+        }
+      ]
+    },
+    "groww_amc_lic": {
+      "content_quality": 0.1049,
+      "semantic_coherence": 0.8621,
+      "embedding_quality": 0.1049,
+      "chunk_scores": [
+        {
+          "chunk_index": 0,
+          "financial_relevance": 0.7279,
+          "navigation_contamination": 0.7685,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 1,
+          "financial_relevance": 0.6342,
+          "navigation_contamination": 0.7061,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 2,
+          "financial_relevance": 0.7129,
+          "navigation_contamination": 0.7081,
+          "embedding_quality": 0.0048
+        },
+        {
+          "chunk_index": 3,
+          "financial_relevance": 0.7938,
+          "navigation_contamination": 0.652,
+          "embedding_quality": 0.1418
+        },
+        {
+          "chunk_index": 4,
+          "financial_relevance": 0.69,
+          "navigation_contamination": 0.5945,
+          "embedding_quality": 0.0955
+        },
+        {
+          "chunk_index": 5,
+          "financial_relevance": 0.7105,
+          "navigation_contamination": 0.6051,
+          "embedding_quality": 0.1054
+        },
+        {
+          "chunk_index": 6,
+          "financial_relevance": 0.6701,
+          "navigation_contamination": 0.5962,
+          "embedding_quality": 0.074
+        },
+        {
+          "chunk_index": 7,
+          "financial_relevance": 0.7144,
+          "navigation_contamination": 0.6102,
+          "embedding_quality": 0.1042
+        },
+        {
+          "chunk_index": 8,
+          "financial_relevance": 0.6952,
+          "navigation_contamination": 0.611,
+          "embedding_quality": 0.0842
+        },
+        {
+          "chunk_index": 9,
+          "financial_relevance": 0.6753,
+          "navigation_contamination": 0.6043,
+          "embedding_quality": 0.0709
+        },
+        {
+          "chunk_index": 10,
+          "financial_relevance": 0.6993,
+          "navigation_contamination": 0.6254,
+          "embedding_quality": 0.0739
+        },
+        {
+          "chunk_index": 11,
+          "financial_relevance": 0.6888,
+          "navigation_contamination": 0.6124,
+          "embedding_quality": 0.0763
+        },
+        {
+          "chunk_index": 12,
+          "financial_relevance": 0.7021,
+          "navigation_contamination": 0.5839,
+          "embedding_quality": 0.1182
+        },
+        {
+          "chunk_index": 13,
+          "financial_relevance": 0.612,
+          "navigation_contamination": 0.5695,
+          "embedding_quality": 0.0425
+        },
+        {
+          "chunk_index": 14,
+          "financial_relevance": 0.6698,
+          "navigation_contamination": 0.6429,
+          "embedding_quality": 0.0269
+        },
+        {
+          "chunk_index": 15,
+          "financial_relevance": 0.6724,
+          "navigation_contamination": 0.6481,
+          "embedding_quality": 0.0243
+        },
+        {
+          "chunk_index": 16,
+          "financial_relevance": 0.7123,
+          "navigation_contamination": 0.6322,
+          "embedding_quality": 0.0801
+        },
+        {
+          "chunk_index": 17,
+          "financial_relevance": 0.7365,
+          "navigation_contamination": 0.5645,
+          "embedding_quality": 0.172
+        },
+        {
+          "chunk_index": 18,
+          "financial_relevance": 0.7467,
+          "navigation_contamination": 0.6291,
+          "embedding_quality": 0.1176
+        },
+        {
+          "chunk_index": 19,
+          "financial_relevance": 0.7405,
+          "navigation_contamination": 0.5689,
+          "embedding_quality": 0.1716
+        },
+        {
+          "chunk_index": 20,
+          "financial_relevance": 0.7526,
+          "navigation_contamination": 0.569,
+          "embedding_quality": 0.1836
+        },
+        {
+          "chunk_index": 21,
+          "financial_relevance": 0.7445,
+          "navigation_contamination": 0.5626,
+          "embedding_quality": 0.1818
+        },
+        {
+          "chunk_index": 22,
+          "financial_relevance": 0.7422,
+          "navigation_contamination": 0.5856,
+          "embedding_quality": 0.1565
+        },
+        {
+          "chunk_index": 23,
+          "financial_relevance": 0.741,
+          "navigation_contamination": 0.5651,
+          "embedding_quality": 0.1759
+        },
+        {
+          "chunk_index": 24,
+          "financial_relevance": 0.7716,
+          "navigation_contamination": 0.5813,
+          "embedding_quality": 0.1903
+        },
+        {
+          "chunk_index": 25,
+          "financial_relevance": 0.7843,
+          "navigation_contamination": 0.589,
+          "embedding_quality": 0.1954
+        },
+        {
+          "chunk_index": 26,
+          "financial_relevance": 0.7409,
+          "navigation_contamination": 0.562,
+          "embedding_quality": 0.1789
+        },
+        {
+          "chunk_index": 27,
+          "financial_relevance": 0.7316,
+          "navigation_contamination": 0.5813,
+          "embedding_quality": 0.1503
+        },
+        {
+          "chunk_index": 28,
+          "financial_relevance": 0.7652,
+          "navigation_contamination": 0.5911,
+          "embedding_quality": 0.174
+        },
+        {
+          "chunk_index": 29,
+          "financial_relevance": 0.7794,
+          "navigation_contamination": 0.5947,
+          "embedding_quality": 0.1847
+        },
+        {
+          "chunk_index": 30,
+          "financial_relevance": 0.7312,
+          "navigation_contamination": 0.6357,
+          "embedding_quality": 0.0955
+        },
+        {
+          "chunk_index": 31,
+          "financial_relevance": 0.631,
+          "navigation_contamination": 0.6563,
+          "embedding_quality": 0.0
+        },
+        {
+          "chunk_index": 32,
+          "financial_relevance": 0.7101,
+          "navigation_contamination": 0.7011,
+          "embedding_quality": 0.009
+        }
+      ]
+    }
+  }
+}
