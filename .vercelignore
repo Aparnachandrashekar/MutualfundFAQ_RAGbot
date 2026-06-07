@@ -1,0 +1,21 @@
+# Backend + ingestion — deployed on Render / GitHub Actions, not Vercel
+phase1/
+phase2/
+phase3/
+scripts/
+data/
+config/
+docs/
+.github/
+
+# Python deps trigger Vercel FastAPI auto-detection — exclude entirely
+requirements.txt
+pyproject.toml
+Pipfile
+Pipfile.lock
+uv.lock
+*.py
+**/__pycache__/
+
+.env
+.env.*

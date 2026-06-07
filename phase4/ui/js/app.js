@@ -4,7 +4,13 @@
  */
 
 const MAX_QUERY_LENGTH = 2000;
-const API_QUERY_URL = "/query";
+
+function apiUrl(path) {
+  const base = (window.API_BASE || "").replace(/\/$/, "");
+  return base ? `${base}${path}` : path;
+}
+
+const API_QUERY_URL = apiUrl("/query");
 
 const REFUSAL_TYPES = new Set([
   "refusal_advisory",
@@ -40,6 +46,7 @@ const DOC_ICON_SVG = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none
 </svg>`;
 
 const chatEl = document.getElementById("chat");
+const mainEl = document.querySelector(".main");
 const welcomeEl = document.getElementById("welcome");
 const formEl = document.getElementById("composer");
 const inputEl = document.getElementById("query-input");
@@ -61,11 +68,12 @@ function escapeHtml(text) {
 function citationDisplayName(url) {
   const slug = url.split("/").filter(Boolean).pop() || "";
   const names = {
-    "choice-mutual-funds": "Choice Mutual Fund AMC Overview",
-    "unifi-mutual-funds": "Unifi Mutual Fund AMC Overview",
-    "union-mutual-funds": "Union Mutual Fund AMC Overview",
-    "icici-prudential-mutual-funds": "ICICI Prudential AMC Overview",
-    "lic-mutual-funds": "LIC Mutual Fund AMC Overview",
+    "hdfc-silver-etf-fof-direct-growth": "HDFC Silver ETF FoF Direct Growth",
+    "hdfc-mid-cap-fund-direct-growth": "HDFC Mid Cap Fund Direct Growth",
+    "parag-parikh-long-term-value-fund-direct-growth": "Parag Parikh Long Term Value Fund Direct Growth",
+    "bandhan-small-cap-fund-direct-growth": "Bandhan Small Cap Fund Direct Growth",
+    "quant-small-cap-fund-direct-plan-growth": "Quant Small Cap Fund Direct Plan Growth",
+    "sbi-gold-fund-direct-growth": "SBI Gold Direct Plan Growth",
   };
   if (names[slug]) return names[slug];
   return slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
@@ -112,7 +120,7 @@ async function loadCorpusUpdatedNote() {
 
   if (!isoDate) {
     try {
-      const healthResponse = await fetch("/health");
+      const healthResponse = await fetch(apiUrl("/health"));
       if (healthResponse.ok) {
         const data = await healthResponse.json();
         isoDate = data.corpus_last_updated || null;
@@ -146,8 +154,13 @@ function createMessageRow(role, innerHtml, extraClass = "") {
   row.appendChild(article);
 
   chatEl.appendChild(row);
-  row.scrollIntoView({ behavior: "smooth", block: "end" });
+  scrollChatToBottom();
   return row;
+}
+
+function scrollChatToBottom() {
+  if (!mainEl) return;
+  mainEl.scrollTo({ top: mainEl.scrollHeight, behavior: "smooth" });
 }
 
 function renderBotResponse(data) {
@@ -228,7 +241,7 @@ async function submitQuery(query) {
     const data = await response.json();
     typingRow.querySelector(".message").outerHTML =
       `<article class="message bot">${renderBotResponse(data)}</article>`;
-    chatEl.lastElementChild.scrollIntoView({ behavior: "smooth", block: "end" });
+    scrollChatToBottom();
   } catch {
     typingRow.querySelector(".message").outerHTML =
       `<article class="message bot error"><p class="message-text">Something went wrong while fetching an answer. Please try again in a moment.</p></article>`;
