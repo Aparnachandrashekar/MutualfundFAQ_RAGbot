@@ -1,5 +1,8 @@
 # Secrets
 .env
 
+# Vercel build output
+phase4/ui/dist/
+
 # Corpus runs: track validated artifacts in git; exclude bulky raw HTML only
 data/corpus_runs/**/raw.html
