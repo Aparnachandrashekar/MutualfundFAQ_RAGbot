@@ -1,6 +1,6 @@
 {
   "total_chunks": 53,
-  "average_chunk_size": 348.188679245283,
+  "average_chunk_size": 348.1698113207547,
   "content_types": {
     "fund_info": 44,
     "mixed": 9
@@ -12,5 +12,5 @@
     "ICICI Prudential Mutual Fund": 14,
     "LIC Mutual Fund": 16
   },
-  "average_financial_density": 0.12434904467073703
+  "average_financial_density": 0.124349044670737
 }
