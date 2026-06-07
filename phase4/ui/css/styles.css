@@ -39,6 +39,7 @@ html,
 body {
   height: 100%;
   margin: 0;
+  overflow: hidden;
 }
 
 body {
@@ -52,9 +53,9 @@ body {
 }
 
 .app {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  height: 100dvh;
   max-width: var(--container-max);
   margin: 0 auto;
   width: 100%;
@@ -95,9 +96,11 @@ body {
 }
 
 .main {
-  flex: 1;
-  padding: 0 1rem 9rem;
+  min-height: 0;
   overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0 1rem 1.25rem;
+  -webkit-overflow-scrolling: touch;
 }
 
 .welcome h2 {
@@ -335,10 +338,8 @@ body {
 }
 
 .composer-wrap {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  position: relative;
+  z-index: 1;
   background: var(--background);
   padding-bottom: env(safe-area-inset-bottom, 0);
 }
