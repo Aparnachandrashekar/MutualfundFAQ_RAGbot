@@ -1,0 +1,3 @@
+# Render default build uses: pip install -r requirements.txt
+# Full ingestion/CI deps: deploy/requirements.txt
+-r deploy/requirements-api.txt

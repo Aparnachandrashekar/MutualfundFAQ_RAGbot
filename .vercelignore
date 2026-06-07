@@ -8,8 +8,9 @@ config/
 docs/
 .github/
 
-# Python deps (Render/CI only — keep out of repo root so Vercel does not detect FastAPI)
-deploy/requirements.txt
+# Python deps (Render/CI only — keep out of Vercel static deploy)
+requirements.txt
+deploy/
 pyproject.toml
 Pipfile
 Pipfile.lock
