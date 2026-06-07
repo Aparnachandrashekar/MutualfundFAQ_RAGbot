@@ -7,6 +7,7 @@ Exposes POST /query for the Phase 4 UI and GET /health for readiness checks.
 
 from __future__ import annotations
 
+import os
 from contextlib import asynccontextmanager
 from pathlib import Path
 
@@ -81,7 +82,11 @@ def create_app(
             has_grounded_answer=result.get("has_grounded_answer", False),
         )
 
-    if UI_DIR.is_dir():
+    if UI_DIR.is_dir() and os.environ.get("SERVE_UI", "true").strip().lower() not in (
+        "0",
+        "false",
+        "no",
+    ):
         app.mount("/", StaticFiles(directory=UI_DIR, html=True), name="ui")
 
     return app
