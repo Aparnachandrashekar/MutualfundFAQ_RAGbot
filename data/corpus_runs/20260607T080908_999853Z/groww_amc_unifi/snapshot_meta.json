@@ -1,0 +1,11 @@
+{
+  "source_id": "groww_amc_unifi",
+  "amc_name": "Unifi Mutual Fund",
+  "canonical_url": "https://groww.in/mutual-funds/amc/unifi-mutual-funds",
+  "fetched_at_utc": "2026-06-07T08:09:08.999947+00:00",
+  "status_code": 200,
+  "final_url": "https://groww.in/mutual-funds/amc/unifi-mutual-funds",
+  "content_type": "text/html",
+  "content_type_header": "text/html; charset=utf-8",
+  "body_bytes": 194840
+}
