@@ -2,6 +2,9 @@
   "name": "mutualfund-faq-ui",
   "private": true,
   "version": "1.0.0",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build": "bash build.sh"
   }

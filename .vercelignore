@@ -8,8 +8,8 @@ config/
 docs/
 .github/
 
-# Python deps trigger Vercel FastAPI auto-detection — exclude entirely
-requirements.txt
+# Python deps (Render/CI only — keep out of repo root so Vercel does not detect FastAPI)
+deploy/requirements.txt
 pyproject.toml
 Pipfile
 Pipfile.lock

@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: mutualfund-faq-api
+    runtime: python
+    plan: starter
+    buildCommand: pip install -r deploy/requirements.txt
+    startCommand: uvicorn phase3.api.server:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false
+      - key: USE_LLM
+        value: "true"
+      - key: PHASE2_DIR
+        value: data/phase2_results
