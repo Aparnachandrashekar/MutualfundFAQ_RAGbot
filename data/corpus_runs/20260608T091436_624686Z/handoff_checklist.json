@@ -1,0 +1,37 @@
+{
+  "phase_1_complete": true,
+  "validated_at_utc": "2026-06-08T09:15:08.428405+00:00",
+  "checks": [
+    {
+      "name": "five_sources_present",
+      "passed": true
+    },
+    {
+      "name": "corpus_assembly_ok",
+      "passed": true
+    },
+    {
+      "name": "no_off_allowlist_dirs",
+      "passed": true
+    },
+    {
+      "name": "all_artifacts_present",
+      "passed": true
+    },
+    {
+      "name": "min_text_length_ok",
+      "passed": true
+    },
+    {
+      "name": "semantic_validation_passed",
+      "passed": true
+    }
+  ],
+  "handoff_to_phase_2": {
+    "corpus_run_dir": "/home/runner/work/MutualfundFAQ_RAGbot/MutualfundFAQ_RAGbot/data/corpus_runs/20260608T091436_624686Z",
+    "corpus_json": "/home/runner/work/MutualfundFAQ_RAGbot/MutualfundFAQ_RAGbot/data/corpus_runs/20260608T091436_624686Z/corpus.json",
+    "ingest_manifest": "/home/runner/work/MutualfundFAQ_RAGbot/MutualfundFAQ_RAGbot/data/corpus_runs/20260608T091436_624686Z/ingest_manifest.json",
+    "validation_report": "/home/runner/work/MutualfundFAQ_RAGbot/MutualfundFAQ_RAGbot/data/corpus_runs/20260608T091436_624686Z/validation_report.json",
+    "embedding_quality": "/home/runner/work/MutualfundFAQ_RAGbot/MutualfundFAQ_RAGbot/data/corpus_runs/20260608T091436_624686Z/embedding_quality.json"
+  }
+}

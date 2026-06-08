@@ -1,25 +1,35 @@
 {
-  "$schema": "./corpus_manifest.schema.json",
-  "version": 1,
-  "description": "Complete corpus allowlist for this project. Ingestion and RAG citations MUST use only these five URLs unless the allowlist is formally revised.",
-  "sources": [
+  "run_id": "20260608T091436_624686Z",
+  "created_at_utc": "2026-06-08T09:14:36.624797+00:00",
+  "assembled_at_utc": "2026-06-08T09:14:43.398468+00:00",
+  "assembly_ok": true,
+  "source_count": 5,
+  "manifest_path": "/home/runner/work/MutualfundFAQ_RAGbot/MutualfundFAQ_RAGbot/config/corpus_manifest.json",
+  "documents": [
     {
       "id": "groww_amc_choice",
       "amc_name": "Choice Mutual Fund",
-      "url": "https://groww.in/mutual-funds/amc/choice-mutual-funds",
+      "source_url": "https://groww.in/mutual-funds/amc/choice-mutual-funds",
+      "canonical_url": "https://groww.in/mutual-funds/amc/choice-mutual-funds",
+      "fetched_at_utc": "2026-06-08T09:14:36.624797+00:00",
+      "clean_text_path": "groww_amc_choice/clean.txt",
+      "clean_text_chars": 13172,
       "scheme_names_observed": [
         "Choice Nifty 50 Index Fund",
         "Choice Nifty 50 Index Fund Direct Growth",
         "Choice Nifty Next 50 Index Fund",
         "Choice Nifty Next 50 Index Fund Direct Growth"
       ],
-      "last_fetch_at": "2026-06-08T09:14:36.624797+00:00",
-      "notes": "Populate scheme_names_observed after manual review or post-ingestion (Phase 1)."
+      "assembly_ok": true
     },
     {
       "id": "groww_amc_unifi",
       "amc_name": "Unifi Mutual Fund",
-      "url": "https://groww.in/mutual-funds/amc/unifi-mutual-funds",
+      "source_url": "https://groww.in/mutual-funds/amc/unifi-mutual-funds",
+      "canonical_url": "https://groww.in/mutual-funds/amc/unifi-mutual-funds",
+      "fetched_at_utc": "2026-06-08T09:14:36.624797+00:00",
+      "clean_text_path": "groww_amc_unifi/clean.txt",
+      "clean_text_chars": 14347,
       "scheme_names_observed": [
         "Unifi Dynamic Asset Allocation Fund",
         "Unifi Dynamic Asset Allocation Fund Direct Growth",
@@ -28,13 +38,16 @@
         "Unifi Liquid Fund",
         "Unifi Liquid Fund Direct Growth"
       ],
-      "last_fetch_at": "2026-06-08T09:14:36.624797+00:00",
-      "notes": ""
+      "assembly_ok": true
     },
     {
       "id": "groww_amc_union",
       "amc_name": "Union Mutual Fund",
-      "url": "https://groww.in/mutual-funds/amc/union-mutual-funds",
+      "source_url": "https://groww.in/mutual-funds/amc/union-mutual-funds",
+      "canonical_url": "https://groww.in/mutual-funds/amc/union-mutual-funds",
+      "fetched_at_utc": "2026-06-08T09:14:36.624797+00:00",
+      "clean_text_path": "groww_amc_union/clean.txt",
+      "clean_text_chars": 23873,
       "scheme_names_observed": [
         "Union Active Momentum Fund",
         "Union Active Momentum Fund Direct Growth",
@@ -59,13 +72,16 @@
         "Union Small Cap Fund",
         "Union Small Cap Fund Direct Growth"
       ],
-      "last_fetch_at": "2026-06-08T09:14:36.624797+00:00",
-      "notes": ""
+      "assembly_ok": true
     },
     {
       "id": "groww_amc_icici_prudential",
       "amc_name": "ICICI Prudential Mutual Fund",
-      "url": "https://groww.in/mutual-funds/amc/icici-prudential-mutual-funds",
+      "source_url": "https://groww.in/mutual-funds/amc/icici-prudential-mutual-funds",
+      "canonical_url": "https://groww.in/mutual-funds/amc/icici-prudential-mutual-funds",
+      "fetched_at_utc": "2026-06-08T09:14:36.624797+00:00",
+      "clean_text_path": "groww_amc_icici_prudential/clean.txt",
+      "clean_text_chars": 25043,
       "scheme_names_observed": [
         "ICICI Prudential Commodities Fund",
         "ICICI Prudential Commodities Fund Direct Growth",
@@ -81,13 +97,16 @@
         "ICICI Prudential Multi Asset Fund Direct Growth",
         "ICICI Prudential Short Term Fund"
       ],
-      "last_fetch_at": "2026-06-08T09:14:36.624797+00:00",
-      "notes": ""
+      "assembly_ok": true
     },
     {
       "id": "groww_amc_lic",
       "amc_name": "LIC Mutual Fund",
-      "url": "https://groww.in/mutual-funds/amc/lic-mutual-funds",
+      "source_url": "https://groww.in/mutual-funds/amc/lic-mutual-funds",
+      "canonical_url": "https://groww.in/mutual-funds/amc/lic-mutual-funds",
+      "fetched_at_utc": "2026-06-08T09:14:36.624797+00:00",
+      "clean_text_path": "groww_amc_lic/clean.txt",
+      "clean_text_chars": 22282,
       "scheme_names_observed": [
         "LIC MF BSE Sensex Index Fund",
         "LIC MF BSE Sensex Index Fund Direct Growth",
@@ -117,8 +136,7 @@
         "LIC MF Technology Fund Direct Growth",
         "LIC of India Mutual Fund"
       ],
-      "last_fetch_at": "2026-06-08T09:14:36.624797+00:00",
-      "notes": ""
+      "assembly_ok": true
     }
   ]
 }
