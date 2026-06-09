@@ -23,6 +23,7 @@ from sentence_transformers import SentenceTransformer
 from phase2.rag.chunking import ChunkMetadata
 from phase2.rag.config import (
     AMC_ALIASES,
+    BM25_ONLY_MODE,
     BM25_WEIGHT,
     DEFAULT_TOP_K,
     EMBEDDING_MODEL,
@@ -112,14 +113,17 @@ class HybridRetriever:
         vector_weight: float = VECTOR_WEIGHT,
         use_rrf: bool = USE_RRF,
         rrf_k: int = RRF_K,
+        *,
+        bm25_only: bool | None = None,
     ) -> None:
         self.model_name = model_name
         self.bm25_weight = bm25_weight
         self.vector_weight = vector_weight
         self.use_rrf = use_rrf
         self.rrf_k = rrf_k
+        self.bm25_only = BM25_ONLY_MODE if bm25_only is None else bm25_only
 
-        self.embedding_model = SentenceTransformer(model_name)
+        self._embedding_model: SentenceTransformer | None = None
         self.entity_extractor = EntityExtractor()
 
         self.chunks: list[str] = []
@@ -128,6 +132,12 @@ class HybridRetriever:
         self.vector_index: faiss.Index | None = None
         self.chunk_embeddings: np.ndarray | None = None
         self.tokenized_corpus: list[list[str]] = []
+
+    @property
+    def embedding_model(self) -> SentenceTransformer:
+        if self._embedding_model is None:
+            self._embedding_model = SentenceTransformer(self.model_name)
+        return self._embedding_model
 
     def load_chunks(self, chunks_file: Path) -> None:
         with open(chunks_file, encoding="utf-8") as f:
@@ -365,9 +375,11 @@ class HybridRetriever:
         print(f"Retrieval filter: {filter_mode} ({len(self.chunks)} → {len(candidates)} chunks)")
 
         bm25_results = self.search_bm25(query, candidates)
-        vector_results = self.search_vector(query, candidates, top_k=max(top_k * 4, 20))
-
-        combined = self._combine_scores(bm25_results, vector_results)
+        if self.bm25_only:
+            combined = {idx: score for idx, score in bm25_results}
+        else:
+            vector_results = self.search_vector(query, candidates, top_k=max(top_k * 4, 20))
+            combined = self._combine_scores(bm25_results, vector_results)
         combined = self._apply_rerank_boosts(combined, entities, query)
 
         sorted_results = sorted(combined.items(), key=lambda x: x[1], reverse=True)
@@ -436,10 +448,12 @@ class HybridRetriever:
         retriever.metadata = [ChunkMetadata(**meta) for meta in bm25_data["metadata"]]
         retriever.tokenized_corpus = bm25_data["tokenized_corpus"]
         retriever.bm25 = BM25Okapi(retriever.tokenized_corpus)
-        retriever.vector_index = faiss.read_index(str(index_dir / "vector_index.faiss"))
-        retriever.chunk_embeddings = np.load(index_dir / "chunk_embeddings.npy")
+        if not retriever.bm25_only:
+            retriever.vector_index = faiss.read_index(str(index_dir / "vector_index.faiss"))
+            retriever.chunk_embeddings = np.load(index_dir / "chunk_embeddings.npy")
 
-        print(f"Loaded {len(retriever.chunks)} chunks from {index_dir}")
+        mode = "BM25-only" if retriever.bm25_only else "hybrid"
+        print(f"Loaded {len(retriever.chunks)} chunks from {index_dir} ({mode})")
         return retriever
 
 

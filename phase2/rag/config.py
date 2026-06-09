@@ -2,6 +2,8 @@
 
 from __future__ import annotations
 
+import os
+
 # Embedding model — same family as Phase 1.5 validation
 EMBEDDING_MODEL = "BAAI/bge-small-en-v1.5"
 
@@ -21,6 +23,10 @@ MIN_SOURCE_VALIDATION_QUALITY = 0.05
 # Retrieval
 DEFAULT_TOP_K = 5
 FAISS_INDEX_TYPE = "flat"
+
+# Render Starter (512MB): set RETRIEVAL_MODE=bm25_only to skip torch/sentence-transformers.
+RETRIEVAL_MODE = os.environ.get("RETRIEVAL_MODE", "hybrid").strip().lower()
+BM25_ONLY_MODE = RETRIEVAL_MODE in ("bm25", "bm25_only")
 
 # AMC aliases → canonical amc_name (for hard routing)
 AMC_ALIASES: dict[str, str] = {

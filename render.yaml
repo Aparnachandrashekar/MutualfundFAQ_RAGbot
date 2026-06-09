@@ -21,3 +21,7 @@ services:
         value: data/phase2_results
       - key: SERVE_UI
         value: "false"
+      - key: RETRIEVAL_MODE
+        value: "bm25_only"
+      - key: OMP_NUM_THREADS
+        value: "1"

@@ -24,6 +24,7 @@ class QueryResponse(BaseModel):
 class HealthResponse(BaseModel):
     status: str
     retriever_loaded: bool
+    index_present: bool = False
     use_llm: bool
     groq_model: str
     phase2_dir: str

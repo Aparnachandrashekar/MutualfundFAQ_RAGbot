@@ -68,11 +68,16 @@ class QueryService:
     def load_error(self) -> str | None:
         return self._load_error
 
-    def initialize(self) -> None:
-        """Eagerly load retriever and generator (call at API startup)."""
-        self._ensure_generator()
-        self._ensure_retriever()
+    def initialize(self, *, eager_retriever: bool = False) -> None:
+        """Prepare the service. Retriever loads lazily unless eager_retriever=True."""
         sync_ui_corpus_meta(self.phase2_dir)
+        if eager_retriever:
+            self._ensure_generator()
+            self._ensure_retriever()
+
+    def _index_present(self) -> bool:
+        index_dir = self.phase2_dir / "retrieval"
+        return (index_dir / "retrieval_config.json").is_file()
 
     def _ensure_generator(self) -> AnswerGenerator:
         if self._generator is None:
@@ -116,11 +121,17 @@ class QueryService:
 
     def health_status(self) -> dict[str, Any]:
         """Return service health metadata for the /health endpoint."""
-        self._ensure_generator()
-        self._ensure_retriever()
+        index_present = self._index_present()
+        if self._load_error:
+            status = "degraded"
+        elif not index_present:
+            status = "degraded"
+        else:
+            status = "ok"
         return {
-            "status": "ok" if self._retriever is not None else "degraded",
+            "status": status,
             "retriever_loaded": self.retriever_loaded,
+            "index_present": index_present,
             "use_llm": self.use_llm,
             "groq_model": self.groq_model,
             "phase2_dir": str(self.phase2_dir),

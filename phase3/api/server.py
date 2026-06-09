@@ -36,7 +36,8 @@ def create_app(
             use_llm=use_llm,
             groq_model=groq_model,
         )
-        service.initialize()
+        # Light startup: index check only; SentenceTransformer loads on first /query.
+        service.initialize(eager_retriever=False)
         app.state.query_service = service
         yield
 
