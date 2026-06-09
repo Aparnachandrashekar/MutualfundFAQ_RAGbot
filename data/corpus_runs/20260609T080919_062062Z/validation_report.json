@@ -1,0 +1,99 @@
+{
+  "validation_ok": true,
+  "validated_at_utc": "2026-06-09T08:09:28.971824+00:00",
+  "error": null,
+  "structural_checks": {
+    "ingest_manifest_present": true,
+    "five_sources_present": true,
+    "corpus_json_present": true,
+    "assembly_ok": true,
+    "no_off_allowlist_dirs": true,
+    "all_artifacts_present": true,
+    "min_text_length_ok": true
+  },
+  "sources": {
+    "groww_amc_choice": {
+      "validation_ok": true,
+      "error": null,
+      "metrics": {
+        "financial_relevance": 0.7144,
+        "navigation_contamination": 0.6614,
+        "content_quality": 0.0646,
+        "semantic_coherence": 0.8477,
+        "embedding_quality": 0.0646,
+        "chunk_count": 13,
+        "text_length": 13171
+      }
+    },
+    "groww_amc_unifi": {
+      "validation_ok": true,
+      "error": null,
+      "metrics": {
+        "financial_relevance": 0.706,
+        "navigation_contamination": 0.6316,
+        "content_quality": 0.0816,
+        "semantic_coherence": 0.8243,
+        "embedding_quality": 0.0816,
+        "chunk_count": 16,
+        "text_length": 14347
+      }
+    },
+    "groww_amc_union": {
+      "validation_ok": true,
+      "error": null,
+      "metrics": {
+        "financial_relevance": 0.7004,
+        "navigation_contamination": 0.6203,
+        "content_quality": 0.0862,
+        "semantic_coherence": 0.8379,
+        "embedding_quality": 0.0862,
+        "chunk_count": 35,
+        "text_length": 23880
+      }
+    },
+    "groww_amc_icici_prudential": {
+      "validation_ok": true,
+      "error": null,
+      "metrics": {
+        "financial_relevance": 0.6993,
+        "navigation_contamination": 0.6236,
+        "content_quality": 0.081,
+        "semantic_coherence": 0.8531,
+        "embedding_quality": 0.081,
+        "chunk_count": 40,
+        "text_length": 25048
+      }
+    },
+    "groww_amc_lic": {
+      "validation_ok": true,
+      "error": null,
+      "metrics": {
+        "financial_relevance": 0.7153,
+        "navigation_contamination": 0.6162,
+        "content_quality": 0.1032,
+        "semantic_coherence": 0.8605,
+        "embedding_quality": 0.1032,
+        "chunk_count": 33,
+        "text_length": 22281
+      }
+    }
+  },
+  "summary": {
+    "total_sources": 5,
+    "passed_sources": 5,
+    "total_characters": 98727,
+    "avg_content_quality": 0.08332,
+    "avg_semantic_coherence": 0.8446999999999999,
+    "avg_embedding_quality": 0.08332,
+    "model_used": "BAAI/bge-small-en-v1.5",
+    "validation_chunk_size": 512,
+    "thresholds": {
+      "min_content_quality": 0.05,
+      "min_financial_relevance": 0.55,
+      "max_navigation_contamination": 0.72,
+      "min_semantic_coherence": 0.75,
+      "min_embedding_quality": 0.05,
+      "min_text_chars": 2048
+    }
+  }
+}
