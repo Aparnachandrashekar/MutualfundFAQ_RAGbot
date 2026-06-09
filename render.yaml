@@ -9,6 +9,8 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.9
+      - key: MISE_PYTHON_GITHUB_ATTESTATIONS
+        value: "false"
       - key: HF_HOME
         value: /opt/render/project/src/.cache/huggingface
       - key: TRANSFORMERS_OFFLINE

@@ -18,6 +18,7 @@ Use this when the dashboard was created manually (not from Blueprint). Settings 
 | Variable | Value |
 |----------|--------|
 | `PYTHON_VERSION` | `3.11.9` |
+| `MISE_PYTHON_GITHUB_ATTESTATIONS` | `false` |
 | `GROQ_API_KEY` | *(your Groq key)* |
 | `USE_LLM` | `true` |
 | `PHASE2_DIR` | `data/phase2_results` |

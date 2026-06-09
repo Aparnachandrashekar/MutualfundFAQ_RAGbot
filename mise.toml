@@ -1,0 +1,7 @@
+# Render uses mise to install Python from PYTHON_VERSION / runtime.txt.
+# Attestation verification fails for some cpython builds on Render's builder.
+[settings]
+python.github_attestations = false
+
+[tools]
+python = "3.11.9"
