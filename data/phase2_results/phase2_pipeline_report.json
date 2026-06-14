@@ -1,7 +1,7 @@
 {
   "pipeline_version": "2.1",
-  "timestamp": "2026-06-13 08:05:07 UTC",
-  "input_corpus": "/home/runner/work/MutualfundFAQ_RAGbot/MutualfundFAQ_RAGbot/data/corpus_runs/20260613T080416_581919Z",
+  "timestamp": "2026-06-14 08:34:12 UTC",
+  "input_corpus": "/home/runner/work/MutualfundFAQ_RAGbot/MutualfundFAQ_RAGbot/data/corpus_runs/20260614T083324_603130Z",
   "output_directory": "data/phase2_results",
   "strategy": {
     "bm25_weight": 0.75,
@@ -14,10 +14,10 @@
     "total_before_filtering": 53,
     "total_after_filtering": 53,
     "filter_ratio": 1.0,
-    "processing_time_seconds": 0.679572343826294,
+    "processing_time_seconds": 0.6280157566070557,
     "summary": {
       "total_chunks": 53,
-      "average_chunk_size": 349.6792452830189,
+      "average_chunk_size": 349.7169811320755,
       "content_types": {
         "fund_info": 44,
         "mixed": 9
@@ -33,7 +33,7 @@
     }
   },
   "indexing": {
-    "processing_time_seconds": 5.27823805809021,
+    "processing_time_seconds": 4.422194957733154,
     "stats": {
       "status": "Index loaded",
       "ntotal": 53,
@@ -44,7 +44,7 @@
       "n_vectors": 53,
       "nlist": null,
       "nprobe": null,
-      "add_time_seconds": 5.984306335449219e-05,
+      "add_time_seconds": 4.553794860839844e-05,
       "memory_usage_mb": 0.07763671875
     }
   },
@@ -58,7 +58,7 @@
         "amc_routing_ok": true,
         "results_count": 3,
         "top_score": 0.06499351887152116,
-        "search_time_ms": 20.916461944580078
+        "search_time_ms": 19.84548568725586
       },
       {
         "query": "What are the expense ratios for Union Mutual Fund schemes?",
@@ -67,7 +67,7 @@
         "amc_routing_ok": true,
         "results_count": 5,
         "top_score": 0.06449604103936657,
-        "search_time_ms": 19.724130630493164
+        "search_time_ms": 19.284725189208984
       },
       {
         "query": "Tell me about SIP minimum for Unifi Liquid Fund",
@@ -76,7 +76,7 @@
         "amc_routing_ok": true,
         "results_count": 1,
         "top_score": 0.09737704918032787,
-        "search_time_ms": 19.710540771484375
+        "search_time_ms": 18.99552345275879
       },
       {
         "query": "ICICI Prudential mutual fund schemes",
@@ -85,7 +85,7 @@
         "amc_routing_ok": true,
         "results_count": 5,
         "top_score": 0.04598360655737706,
-        "search_time_ms": 19.83475685119629
+        "search_time_ms": 18.897294998168945
       },
       {
         "query": "LIC Mutual Fund exit load",
@@ -94,7 +94,7 @@
         "amc_routing_ok": true,
         "results_count": 5,
         "top_score": 0.06344050766790059,
-        "search_time_ms": 17.663240432739258
+        "search_time_ms": 17.032146453857422
       }
     ]
   },
