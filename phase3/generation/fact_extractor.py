@@ -128,7 +128,7 @@ def extract_fund_names_from_query(query: str) -> list[str]:
 
 
 def _is_valid_nav(value: str) -> bool:
-    value = value.strip()
+    value = value.strip().lstrip("₹").replace(",", "")
     if not value or value in ("--", "NA", "-", "N/A"):
         return False
     return bool(re.match(r"^[\d.]+$", value))
@@ -219,7 +219,7 @@ def _extracted_value_in_chunk(fields: dict[str, str], metric: str, chunk_text: s
 def _parse_table_fields(text: str) -> dict[str, str]:
     fields: dict[str, str] = {}
     patterns = {
-        "nav": r"NAV:\s*([\d.]+)",
+        "nav": r"NAV:\s*₹?([\d.,]+)",
         "aum": r"Fund Size \(AUM\):\s*(₹[\d.,]+\s*Cr?)",
         "detail_aum": r"Detail AUM:\s*(₹[^\s\n]+|NA[^\s\n]*)",
         "expense_ratio": r"Expense Ratio:\s*([\d.]+%?)",
@@ -275,9 +275,10 @@ def extract_fact_from_chunk(
     fund_label = _resolve_fund_label(chunk, fund_names)
 
     if metric == "nav":
-        nav = fields.get("nav", "")
+        nav = fields.get("nav", "").lstrip("₹").strip()
         if _is_valid_nav(nav) and fund_label and _extracted_value_in_chunk(fields, "nav", text):
-            return f"The NAV of {fund_label} is {nav}."
+            display = nav if fields.get("nav", "").startswith("₹") else f"₹{nav}"
+            return f"The NAV of {fund_label} is {display}."
         return None
 
     if metric == "aum":
