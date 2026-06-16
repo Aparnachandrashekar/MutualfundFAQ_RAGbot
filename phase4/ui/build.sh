@@ -16,6 +16,11 @@ cp "$ROOT/data/"*.json "$DIST/data/" 2>/dev/null || true
 
 if [[ -n "$BASE" ]]; then
   BASE="${BASE%/}"
+  if [[ ! "$BASE" =~ ^https?://[a-zA-Z0-9.-]+ ]]; then
+    echo "ERROR: API_BASE_URL must be a URL like https://your-api.onrender.com"
+    echo "Got: ${BASE:0:80}..."
+    exit 1
+  fi
   printf 'window.API_BASE = %s;\n' "$(node -pe "JSON.stringify(process.env.API_BASE_URL.replace(/\\/$/, ''))")" > "$DIST/config.js"
   echo "Wrote dist/config.js with API_BASE_URL=${BASE}"
 else
