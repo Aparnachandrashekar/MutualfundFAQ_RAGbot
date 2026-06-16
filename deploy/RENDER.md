@@ -36,11 +36,13 @@ Use this when the dashboard was created manually (not from Blueprint). Settings 
 3. Service should go **Live** within ~2 min (lazy retriever — model loads on first query)
 4. Verify:
    ```bash
-   curl https://YOUR-SERVICE.onrender.com/health
-   curl -X POST https://YOUR-SERVICE.onrender.com/query \
+   curl https://mutualfundfaq-ragbot-1.onrender.com/health
+   curl -X POST https://mutualfundfaq-ragbot-1.onrender.com/query \
      -H "Content-Type: application/json" \
      -d '{"query":"What is the AUM of SBI Gold Fund?"}'
    ```
+
+**Production URLs:** API `https://mutualfundfaq-ragbot-1.onrender.com` · UI `https://mutualfund-faq-ra-gbot.vercel.app`
 
 ## If build fails
 

@@ -3,5 +3,8 @@
   "framework": null,
   "installCommand": "echo 'Static UI only'",
   "buildCommand": "npm run build",
-  "outputDirectory": "dist"
+  "outputDirectory": "dist",
+  "env": {
+    "API_BASE_URL": "https://mutualfundfaq-ragbot-1.onrender.com"
+  }
 }
