@@ -27,7 +27,10 @@ def load_phase2_retriever(phase2_dir: Path):
         if not retrieval_dir.exists():
             return None
         return HybridRetriever.load_index(retrieval_dir)
-    except Exception:
+    except Exception as exc:
+        import logging
+
+        logging.getLogger(__name__).warning("Failed to load retriever: %s", exc)
         return None
 
 
@@ -70,7 +73,10 @@ class QueryService:
 
     def initialize(self, *, eager_retriever: bool = False) -> None:
         """Prepare the service. Retriever loads lazily unless eager_retriever=True."""
-        sync_ui_corpus_meta(self.phase2_dir)
+        try:
+            sync_ui_corpus_meta(self.phase2_dir)
+        except OSError:
+            pass
         if eager_retriever:
             self._ensure_generator()
             self._ensure_retriever()
@@ -95,6 +101,7 @@ class QueryService:
                     self._load_error = f"Retrieval index not found at {self.phase2_dir / 'retrieval'}"
             except Exception as exc:
                 self._load_error = str(exc)
+                self._retriever = None
 
     def handle_query(self, query: str) -> dict[str, Any]:
         """Process a user query and return a guardrails-compliant response dict."""

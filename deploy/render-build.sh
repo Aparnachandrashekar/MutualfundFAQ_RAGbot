@@ -14,6 +14,8 @@ python -m pip install --upgrade pip
 if [[ "${MODE}" == "bm25" || "${MODE}" == "bm25_only" ]]; then
   echo "==> Lite build (BM25-only, no PyTorch)..."
   python -m pip install -r deploy/requirements-api-lite.txt
+  echo "==> Removing heavy ML packages if present from prior builds..."
+  python -m pip uninstall -y torch torchvision torchaudio sentence-transformers transformers 2>/dev/null || true
 else
   echo "==> Full hybrid build (CPU PyTorch + sentence-transformers)..."
   python -m pip install "torch==2.2.2+cpu" \

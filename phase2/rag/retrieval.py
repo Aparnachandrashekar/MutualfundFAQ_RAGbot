@@ -18,7 +18,6 @@ from typing import Any
 import faiss
 import numpy as np
 from rank_bm25 import BM25Okapi
-from sentence_transformers import SentenceTransformer
 
 from phase2.rag.chunking import ChunkMetadata
 from phase2.rag.config import (
@@ -32,6 +31,13 @@ from phase2.rag.config import (
     VECTOR_WEIGHT,
 )
 from phase2.rag.fund_records import detect_query_metric, fund_name_matches, is_valid_scheme_name, mentions_out_of_corpus_amc
+
+
+def _load_sentence_transformer(model_name: str):
+    """Import lazily so BM25-only deployments avoid torch/sentence-transformers."""
+    from sentence_transformers import SentenceTransformer
+
+    return SentenceTransformer(model_name)
 
 
 class EntityExtractor:
@@ -123,7 +129,7 @@ class HybridRetriever:
         self.rrf_k = rrf_k
         self.bm25_only = BM25_ONLY_MODE if bm25_only is None else bm25_only
 
-        self._embedding_model: SentenceTransformer | None = None
+        self._embedding_model = None
         self.entity_extractor = EntityExtractor()
 
         self.chunks: list[str] = []
@@ -134,9 +140,11 @@ class HybridRetriever:
         self.tokenized_corpus: list[list[str]] = []
 
     @property
-    def embedding_model(self) -> SentenceTransformer:
+    def embedding_model(self):
+        if self.bm25_only:
+            raise RuntimeError("Embedding model is disabled in BM25-only mode")
         if self._embedding_model is None:
-            self._embedding_model = SentenceTransformer(self.model_name)
+            self._embedding_model = _load_sentence_transformer(self.model_name)
         return self._embedding_model
 
     def load_chunks(self, chunks_file: Path) -> None:
@@ -263,6 +271,8 @@ class HybridRetriever:
         filtered_indices: list[int] | None = None,
         top_k: int = 100,
     ) -> list[tuple[int, float]]:
+        if self.bm25_only:
+            return []
         if self.vector_index is None or self.chunk_embeddings is None:
             raise ValueError("Vector index not built.")
 
@@ -404,8 +414,10 @@ class HybridRetriever:
     def save_index(self, output_dir: Path) -> None:
         output_dir.mkdir(parents=True, exist_ok=True)
 
-        faiss.write_index(self.vector_index, str(output_dir / "vector_index.faiss"))
-        np.save(output_dir / "chunk_embeddings.npy", self.chunk_embeddings)
+        if not self.bm25_only and self.vector_index is not None:
+            faiss.write_index(self.vector_index, str(output_dir / "vector_index.faiss"))
+        if not self.bm25_only and self.chunk_embeddings is not None:
+            np.save(output_dir / "chunk_embeddings.npy", self.chunk_embeddings)
 
         bm25_data = {
             "tokenized_corpus": self.tokenized_corpus,
@@ -422,6 +434,7 @@ class HybridRetriever:
             "use_rrf": self.use_rrf,
             "rrf_k": self.rrf_k,
             "total_chunks": len(self.chunks),
+            "bm25_only": self.bm25_only,
         }
         with open(output_dir / "retrieval_config.json", "w", encoding="utf-8") as f:
             json.dump(config, f, indent=2)
@@ -439,6 +452,7 @@ class HybridRetriever:
             vector_weight=config.get("vector_weight", VECTOR_WEIGHT),
             use_rrf=config.get("use_rrf", USE_RRF),
             rrf_k=config.get("rrf_k", RRF_K),
+            bm25_only=config.get("bm25_only", BM25_ONLY_MODE),
         )
 
         with open(index_dir / "bm25_data.json", encoding="utf-8") as f:

@@ -4,5 +4,6 @@
   "vector_weight": 0.25,
   "use_rrf": true,
   "rrf_k": 60,
-  "total_chunks": 6
+  "total_chunks": 6,
+  "bm25_only": true
 }

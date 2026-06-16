@@ -277,7 +277,7 @@ Context: {context}"""
     def _call_groq_api(self, query: str, context: str) -> str:
         from groq import Groq
 
-        client = Groq()
+        client = Groq(timeout=25.0, max_retries=1)
         prompt = self.system_prompt.format(context=context)
 
         response = client.chat.completions.create(

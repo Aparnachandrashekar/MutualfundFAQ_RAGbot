@@ -11,6 +11,7 @@ function apiUrl(path) {
 }
 
 const API_QUERY_URL = apiUrl("/query");
+const API_TIMEOUT_MS = 120000;
 
 const REFUSAL_TYPES = new Set([
   "refusal_advisory",
@@ -228,11 +229,16 @@ async function submitQuery(query) {
   const typingRow = createMessageRow("bot", typingHtml());
 
   try {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), API_TIMEOUT_MS);
+
     const response = await fetch(API_QUERY_URL, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ query: trimmed }),
+      signal: controller.signal,
     });
+    clearTimeout(timeoutId);
 
     if (!response.ok) {
       throw new Error(`Request failed (${response.status})`);
@@ -242,9 +248,13 @@ async function submitQuery(query) {
     typingRow.querySelector(".message").outerHTML =
       `<article class="message bot">${renderBotResponse(data)}</article>`;
     scrollChatToBottom();
-  } catch {
+  } catch (err) {
+    const isTimeout = err && err.name === "AbortError";
+    const message = isTimeout
+      ? "The server is taking too long to respond. If this is the first question after a while, the API may be waking up — wait a minute and try again."
+      : "Something went wrong while fetching an answer. Please try again in a moment.";
     typingRow.querySelector(".message").outerHTML =
-      `<article class="message bot error"><p class="message-text">Something went wrong while fetching an answer. Please try again in a moment.</p></article>`;
+      `<article class="message bot error"><p class="message-text">${escapeHtml(message)}</p></article>`;
   } finally {
     sendBtn.disabled = false;
     inputEl.focus();

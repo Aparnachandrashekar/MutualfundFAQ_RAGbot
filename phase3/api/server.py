@@ -15,6 +15,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 
+from phase2.rag.config import BM25_ONLY_MODE
 from phase3.api.schemas import HealthResponse, QueryRequest, QueryResponse
 from phase3.generation.config import API_HOST, API_PORT, GROQ_MODEL, PHASE2_DIR
 from phase3.generation.query_service import QueryService
@@ -36,8 +37,8 @@ def create_app(
             use_llm=use_llm,
             groq_model=groq_model,
         )
-        # Light startup: index check only; SentenceTransformer loads on first /query.
-        service.initialize(eager_retriever=False)
+        # Warm BM25 index at startup on small Render instances; avoids first-query stalls.
+        service.initialize(eager_retriever=BM25_ONLY_MODE)
         app.state.query_service = service
         yield
 
@@ -62,10 +63,12 @@ def create_app(
         return HealthResponse(**service.health_status())
 
     @app.post("/query", response_model=QueryResponse)
-    def query_endpoint(body: QueryRequest) -> QueryResponse:
+    async def query_endpoint(body: QueryRequest) -> QueryResponse:
+        import asyncio
+
         service: QueryService = app.state.query_service
         try:
-            result = service.handle_query(body.query)
+            result = await asyncio.to_thread(service.handle_query, body.query)
         except ValueError as exc:
             raise HTTPException(status_code=400, detail=str(exc)) from exc
         except Exception as exc:
