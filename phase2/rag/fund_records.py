@@ -51,7 +51,10 @@ def is_valid_scheme_name(name: str) -> bool:
     words = set(re.findall(r"[a-z]+", name.lower()))
     if words & _INVALID_SCHEME_WORDS:
         return False
-    return bool(re.search(r"\b(?:fund|fof|etf)\b", name, re.IGNORECASE))
+    return bool(
+        re.search(r"\b(?:fund|fof|etf)\b", name, re.IGNORECASE)
+        or re.search(r"\bdirect\s+(?:plan\s+)?growth\b", name, re.IGNORECASE)
+    )
 
 
 def fund_name_matches(query_fund: str, record_fund: str) -> bool:
@@ -654,6 +657,30 @@ def is_known_corpus_scheme(name: str) -> bool:
     return any(fund_name_matches(name, candidate) for candidate in known)
 
 
+def schemes_for_corpus_amc_query(query: str) -> list[str]:
+    """Return indexed scheme names for corpus AMCs named in the query."""
+    q = query.lower()
+    matched_aliases = [
+        alias for alias in CORPUS_AMC_ALIASES if _query_contains_alias(q, alias)
+    ]
+    if not matched_aliases:
+        return []
+
+    registry_path = _default_chunks_path().parents[1] / "funds" / "fund_records.json"
+    if not registry_path.is_file():
+        return []
+
+    schemes: list[str] = []
+    data = json.loads(registry_path.read_text(encoding="utf-8"))
+    for fund in data.get("funds", []):
+        fund_name = str(fund.get("fund_name", ""))
+        amc_name = str(fund.get("amc_name", "")).lower()
+        fund_l = fund_name.lower()
+        if any(alias in fund_l or alias in amc_name for alias in matched_aliases):
+            schemes.append(fund_name)
+    return list(dict.fromkeys(schemes))
+
+
 def _query_contains_alias(query_lower: str, alias: str) -> bool:
     if " " in alias:
         return alias in query_lower
@@ -717,14 +744,15 @@ def requires_named_scheme(query: str, metric: str | None, fund_names: list[str])
     """
     Return True when the query asks for a per-scheme metric but does not name a scheme.
 
-    Exceptions: AMC total AUM (overview) and AMC-level NAV listing.
+    For scheme-page corpus: AMC + AUM/NAV needs a scheme name when multiple schemes
+    exist for that AMC. A single-scheme AMC (e.g. Parag Parikh) may omit it.
     """
     if not metric or fund_names:
         return False
     if not mentions_corpus_amc(query):
         return True
     if metric in ("aum", "nav"):
-        return False
+        return len(schemes_for_corpus_amc_query(query)) != 1
     if metric in SCHEME_SPECIFIC_METRICS:
         return True
     return False

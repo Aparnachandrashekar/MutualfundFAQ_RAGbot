@@ -23,9 +23,9 @@
       "id": "groww_scheme_parag_parikh_ltv",
       "amc_name": "PPFAS Mutual Fund",
       "url": "https://groww.in/mutual-funds/parag-parikh-long-term-value-fund-direct-growth",
-      "scheme_names_observed": ["Parag Parikh Long Term Value Fund Direct Growth"],
+      "scheme_names_observed": ["Parag Parikh Flexi Cap Fund Direct Growth"],
       "last_fetch_at": null,
-      "notes": "Groww page title; indexed content may show Flexi Cap naming"
+      "notes": "Groww URL uses LTV slug; live page title shows Flexi Cap"
     },
     {
       "id": "groww_scheme_bandhan_small_cap",

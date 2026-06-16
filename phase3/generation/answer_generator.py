@@ -31,6 +31,7 @@ from .fact_extractor import (
     chunk_supports_query,
     detect_query_metric,
     extract_fund_names_from_query,
+    resolve_query_fund_names,
     is_out_of_domain_query,
 )
 from phase2.rag.fund_records import (
@@ -172,7 +173,7 @@ Context: {context}"""
         """True when the query should not retrieve or answer from the five-AMC corpus."""
         if is_out_of_domain_query(query):
             return True
-        fund_names = extract_fund_names_from_query(query)
+        fund_names = resolve_query_fund_names(query)
         if not is_query_in_corpus_scope(query, fund_names=fund_names):
             return True
         metric = detect_query_metric(query)
@@ -209,7 +210,7 @@ Context: {context}"""
             return False, None
 
         metric = detect_query_metric(query)
-        fund_names = extract_fund_names_from_query(query)
+        fund_names = resolve_query_fund_names(query)
 
         ranked = sorted(chunks, key=lambda x: x.get("score", 0), reverse=True)
         for candidate in ranked:
@@ -349,7 +350,7 @@ Context: {context}"""
         if is_out_of_domain_query(query):
             return self._out_of_scope_response(intent.value, confidence)
 
-        fund_names = extract_fund_names_from_query(query)
+        fund_names = resolve_query_fund_names(query)
         metric = detect_query_metric(query)
         if not is_query_in_corpus_scope(query, fund_names=fund_names):
             return self._out_of_scope_response(intent.value, confidence)

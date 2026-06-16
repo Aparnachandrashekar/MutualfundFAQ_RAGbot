@@ -11,8 +11,10 @@ from phase2.rag.fund_records import (
     is_out_of_domain_query,
     is_query_in_corpus_scope,
     is_valid_scheme_name,
+    is_known_corpus_scheme,
     mentions_corpus_amc,
     requires_named_scheme,
+    schemes_for_corpus_amc_query,
 )
 
 _SCHEME_NAMES_CACHE: list[str] | None = None
@@ -47,12 +49,42 @@ def _match_known_scheme(text: str) -> str | None:
     text_l = text.lower().strip().rstrip("?.!")
     for name in _load_scheme_names():
         name_l = name.lower()
-        if name_l == text_l or name_l in text_l:
+        if name_l == text_l or name_l in text_l or text_l in name_l:
             return name
         core = name_l.removesuffix(" index fund").removesuffix(" fund")
-        if core and core in text_l:
+        if core and (core in text_l or text_l in core):
             return name
     return None
+
+
+def resolve_query_fund_names(query: str) -> list[str]:
+    """Resolve scheme names, including unambiguous AMC-only queries."""
+    names = extract_fund_names_from_query(query)
+    if names:
+        if all(is_known_corpus_scheme(name) for name in names):
+            return names
+        amc_schemes = schemes_for_corpus_amc_query(query)
+        if len(amc_schemes) == 1:
+            return [amc_schemes[0]]
+        return names
+
+    focus = query.strip().rstrip("?.!")
+    for marker in (" about ", " for ", " of "):
+        idx = focus.lower().rfind(marker)
+        if idx >= 0:
+            focus = focus[idx + len(marker):].strip()
+            break
+
+    known = _match_known_scheme(focus)
+    if known:
+        amc_schemes = schemes_for_corpus_amc_query(query)
+        if len(amc_schemes) <= 1:
+            return [known]
+
+    amc_schemes = schemes_for_corpus_amc_query(query)
+    if len(amc_schemes) == 1:
+        return [amc_schemes[0]]
+    return []
 
 
 def extract_fund_names_from_query(query: str) -> list[str]:
@@ -60,6 +92,8 @@ def extract_fund_names_from_query(query: str) -> list[str]:
     amc_names = {
         "choice mutual fund", "unifi mutual fund", "union mutual fund",
         "icici prudential mutual fund", "lic mutual fund",
+        "hdfc mutual fund", "sbi mutual fund", "bandhan mutual fund",
+        "quant mutual fund", "parag parikh mutual fund", "ppfas mutual fund",
     }
 
     focus = query.strip().rstrip("?.!")
@@ -87,9 +121,6 @@ def extract_fund_names_from_query(query: str) -> list[str]:
                 candidates.append(name)
 
     if not candidates:
-        known = _match_known_scheme(focus)
-        if known:
-            return [known]
         return []
 
     candidates.sort(key=len, reverse=True)
@@ -230,7 +261,7 @@ def extract_fact_from_chunk(
     if not metric:
         return None
 
-    fund_names = fund_names if fund_names is not None else extract_fund_names_from_query(query)
+    fund_names = fund_names if fund_names is not None else resolve_query_fund_names(query)
     if requires_named_scheme(query, metric, fund_names):
         return None
 
@@ -333,7 +364,7 @@ def chunk_supports_query(
         return False
 
     metric = metric or detect_query_metric(query)
-    fund_names = fund_names if fund_names is not None else extract_fund_names_from_query(query)
+    fund_names = fund_names if fund_names is not None else resolve_query_fund_names(query)
 
     if metric and fund_names:
         return extract_fact_from_chunk(chunk, query, metric=metric, fund_names=fund_names) is not None
@@ -371,7 +402,7 @@ def build_answer_from_chunks(
 ) -> tuple[str | None, dict[str, Any] | None]:
     """Pick the best chunk and extract a structured factual answer."""
     metric = detect_query_metric(query)
-    fund_names = extract_fund_names_from_query(query)
+    fund_names = resolve_query_fund_names(query)
 
     if requires_named_scheme(query, metric, fund_names):
         return None, None
