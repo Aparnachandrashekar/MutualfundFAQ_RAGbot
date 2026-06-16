@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate config/corpus_manifest.json against Phase 0 rules (stdlib only)."""
+"""Validate config/corpus_manifest.json against the six-scheme allowlist."""
 
 from __future__ import annotations
 
@@ -10,16 +10,18 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 MANIFEST_PATH = REPO_ROOT / "config" / "corpus_manifest.json"
 
-# Canonical allowlist from PhaseWiseArchitecture.md — order-independent at validation time.
 EXPECTED_URLS = frozenset(
     {
-        "https://groww.in/mutual-funds/amc/choice-mutual-funds",
-        "https://groww.in/mutual-funds/amc/unifi-mutual-funds",
-        "https://groww.in/mutual-funds/amc/union-mutual-funds",
-        "https://groww.in/mutual-funds/amc/icici-prudential-mutual-funds",
-        "https://groww.in/mutual-funds/amc/lic-mutual-funds",
+        "https://groww.in/mutual-funds/hdfc-silver-etf-fof-direct-growth",
+        "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+        "https://groww.in/mutual-funds/parag-parikh-long-term-value-fund-direct-growth",
+        "https://groww.in/mutual-funds/bandhan-small-cap-fund-direct-growth",
+        "https://groww.in/mutual-funds/quant-small-cap-fund-direct-plan-growth",
+        "https://groww.in/mutual-funds/sbi-gold-fund-direct-growth",
     }
 )
+
+EXPECTED_COUNT = 6
 
 
 def main() -> int:
@@ -33,8 +35,8 @@ def main() -> int:
         print("ERROR: 'sources' must be a list", file=sys.stderr)
         return 1
 
-    if len(sources) != 5:
-        print(f"ERROR: expected exactly 5 sources, got {len(sources)}", file=sys.stderr)
+    if len(sources) != EXPECTED_COUNT:
+        print(f"ERROR: expected exactly {EXPECTED_COUNT} sources, got {len(sources)}", file=sys.stderr)
         return 1
 
     ids: list[str] = []
@@ -61,14 +63,14 @@ def main() -> int:
     missing = EXPECTED_URLS - set(urls)
     extra = set(urls) - EXPECTED_URLS
     if missing or extra:
-        print("ERROR: URL set must match Phase 0 allowlist exactly.", file=sys.stderr)
+        print("ERROR: URL set must match the six-scheme allowlist exactly.", file=sys.stderr)
         if missing:
             print(f"  Missing: {sorted(missing)}", file=sys.stderr)
         if extra:
             print(f"  Unexpected: {sorted(extra)}", file=sys.stderr)
         return 1
 
-    print("OK: corpus_manifest.json matches Phase 0 rules.")
+    print(f"OK: corpus_manifest.json matches {EXPECTED_COUNT}-scheme allowlist.")
     return 0
 
 

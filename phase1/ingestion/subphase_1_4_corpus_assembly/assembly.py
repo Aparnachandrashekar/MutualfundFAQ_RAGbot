@@ -185,7 +185,7 @@ def assemble_corpus(
     """
     Assemble a complete corpus run for Phase 2 handoff.
 
-    - Validates all five allowlisted sources and required artifacts
+    - Validates all allowlisted sources and required artifacts
     - Enriches ``ingest_manifest.json`` with ``fetched_at_utc`` and scheme names
     - Writes ``corpus.json`` as the single build output for Phase 2
     - Optionally updates ``config/corpus_manifest.json`` ``last_fetch_at`` / scheme names
@@ -202,8 +202,11 @@ def assemble_corpus(
 
     ingest_manifest = json.loads(ingest_path.read_text(encoding="utf-8"))
     ingest_sources = ingest_manifest.get("sources", [])
-    if len(ingest_sources) != 5:
-        errors.append(f"expected 5 sources in ingest manifest, got {len(ingest_sources)}")
+    expected_count = len(expected_ids)
+    if len(ingest_sources) != expected_count:
+        errors.append(
+            f"expected {expected_count} sources in ingest manifest, got {len(ingest_sources)}"
+        )
 
     errors.extend(_detect_off_allowlist_dirs(run_dir, expected_ids))
 

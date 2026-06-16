@@ -51,7 +51,7 @@ def is_valid_scheme_name(name: str) -> bool:
     words = set(re.findall(r"[a-z]+", name.lower()))
     if words & _INVALID_SCHEME_WORDS:
         return False
-    return bool(re.search(r"\bfund\b", name, re.IGNORECASE))
+    return bool(re.search(r"\b(?:fund|fof|etf)\b", name, re.IGNORECASE))
 
 
 def fund_name_matches(query_fund: str, record_fund: str) -> bool:
@@ -143,6 +143,58 @@ def format_table_record(record: dict[str, str], amc_name: str) -> str:
         parts.append(f"Rating: {record['rating']}")
     parts.append(f"Exit Load: {record['exit_load']}")
     return ". ".join(parts) + "."
+
+
+def parse_scheme_detail_page(text: str) -> dict[str, str]:
+    """Parse a single Groww scheme detail page into one fund record."""
+    lines = [ln.strip() for ln in text.splitlines() if ln.strip()]
+    fund_name = ""
+    if lines:
+        title_match = re.match(r"^(.+?)\s+-\s+NAV,", lines[0], re.IGNORECASE)
+        if title_match:
+            fund_name = _normalize_fund_name(title_match.group(1))
+
+    nav_m = re.search(r"NAV:\s*[^\n]+\n\s*(₹[\d,.]+)", text)
+    expense_m = re.search(r"Expense ratio\s*\n\s*([\d.]+%)", text, re.IGNORECASE)
+    aum_m = re.search(r"Fund size \(AUM\)\s*\n\s*(₹[^\n]+)", text, re.IGNORECASE)
+    sip_m = re.search(r"Min\.\s*for SIP\s*\n\s*(₹[^\n]+)", text, re.IGNORECASE)
+    rating_m = re.search(r"Rating\s*\n\s*(\d+)", text, re.IGNORECASE)
+    exit_m = re.search(r"Exit load of ([^.]+\.)", text, re.IGNORECASE)
+    about_m = re.search(r"is a\s+([^.]+?)\s+Mutual Fund Scheme", text, re.IGNORECASE)
+    risk_m = re.search(r"is rated\s+([^.\n]+?)\s+risk", text, re.IGNORECASE)
+    lump_m = re.search(r"Minimum Lumpsum Investment is\s+(₹[^\n.]+)", text, re.IGNORECASE)
+    total_aum_m = re.search(r"Total AUM\s*\n\s*(₹[^\n]+)", text, re.IGNORECASE)
+
+    returns_1y = returns_3y = returns_5y = ""
+    fund_returns_m = re.search(
+        r"Fund returns\s*\n\s*\+?([\d.]+%?)\s*\n\s*\+?([\d.]+%?)\s*\n\s*\+?([\d.]+%?)",
+        text,
+    )
+    if fund_returns_m:
+        returns_1y, returns_3y, returns_5y = fund_returns_m.groups()
+
+    return {
+        "fund_name": fund_name,
+        "category": about_m.group(1).strip() if about_m else "",
+        "risk": risk_m.group(1).strip() if risk_m else "",
+        "nav": nav_m.group(1).strip() if nav_m else "",
+        "expense_ratio": expense_m.group(1).strip() if expense_m else "",
+        "fund_size_cr": aum_m.group(1).strip() if aum_m else "",
+        "returns_1y": returns_1y,
+        "returns_3y": returns_3y,
+        "returns_5y": returns_5y,
+        "returns_7y": "",
+        "returns_10y": "",
+        "rating": rating_m.group(1).strip() if rating_m else "",
+        "exit_load": exit_m.group(1).strip() if exit_m else "",
+        "detail_aum": total_aum_m.group(1).strip() if total_aum_m else "",
+        "min_lump_sum": lump_m.group(1).strip() if lump_m else "",
+        "min_sip": sip_m.group(1).strip() if sip_m else "",
+        "min_investment_amt": "",
+        "returns_3y_ann": "",
+        "returns_5y_ann": "",
+        "fund_manager": "",
+    }
 
 
 def parse_detail_blocks(text: str) -> list[dict[str, str]]:
@@ -357,6 +409,27 @@ def format_unified_fund_record(record: dict[str, str]) -> str:
     return ". ".join(parts) + "."
 
 
+def build_scheme_page_registry(
+    text: str,
+    *,
+    amc_name: str,
+    source_id: str,
+    source_url: str,
+    ingested_at: str,
+) -> list[dict[str, str]]:
+    """Build a single-scheme registry entry from a Groww scheme detail page."""
+    record = parse_scheme_detail_page(text)
+    if not record.get("fund_name"):
+        return []
+    record.update(
+        amc_name=amc_name,
+        source_id=source_id,
+        source_url=source_url,
+        ingested_at=ingested_at,
+    )
+    return [record]
+
+
 def build_amc_fund_registry(
     text: str,
     *,
@@ -394,8 +467,13 @@ def build_corpus_fund_registry(corpus_run_dir: Path) -> list[dict[str, str]]:
             continue
         text = clean_path.read_text(encoding="utf-8")
         ingested_at = source.get("fetched_at_utc") or manifest.get("created_at_utc", "")
+        registry_builder = (
+            build_scheme_page_registry
+            if source_id.startswith("groww_scheme_")
+            else build_amc_fund_registry
+        )
         all_records.extend(
-            build_amc_fund_registry(
+            registry_builder(
                 text,
                 amc_name=source["amc_name"],
                 source_id=source_id,
@@ -506,16 +584,17 @@ def is_out_of_domain_query(query: str) -> bool:
     return any(topic in q for topic in off_topic)
 
 
-# Corpus scope — only these five AMCs are in the allowlist (Phase 0)
+# Corpus scope — six indexed Groww scheme pages
 CORPUS_AMC_ALIASES: frozenset[str] = frozenset({
-    "choice", "unifi", "union", "icici", "icici prudential", "lic",
+    "hdfc", "sbi", "bandhan", "quant", "parag parikh", "ppfas",
 })
 
 OUT_OF_CORPUS_AMC_ALIASES: frozenset[str] = frozenset({
-    "hdfc", "sbi", "axis", "kotak", "nippon", "mirae", "dsp", "franklin",
-    "tata mutual", "tata", "aditya birla", "birla sun life", "pgim", "bandhan",
-    "motilal", "quant", "ppfas", "hsbc", "baroda", "boi", "invesco",
-    "edelweiss", "samco", "parag parikh", "nj mutual", "whiteoak",
+    "choice", "unifi", "union", "icici", "icici prudential", "lic",
+    "axis", "kotak", "nippon", "mirae", "dsp", "franklin",
+    "tata mutual", "tata", "aditya birla", "birla sun life", "pgim",
+    "motilal", "hsbc", "baroda", "boi", "invesco",
+    "edelweiss", "samco", "nj mutual", "whiteoak",
     "capitalmind", "jio", "uti", "mahindra", "canara", "sundaram",
     "quantum", "bank of india", "taurus", "trust mf", "groww mf",
 })
@@ -568,7 +647,7 @@ def _load_corpus_scheme_names() -> frozenset[str]:
 
 
 def is_known_corpus_scheme(name: str) -> bool:
-    """Return True when the scheme name exists in the indexed five-AMC corpus."""
+    """Return True when the scheme name exists in the indexed corpus."""
     known = _load_corpus_scheme_names()
     if not known:
         return bool(mentions_corpus_amc(name))
@@ -582,7 +661,7 @@ def _query_contains_alias(query_lower: str, alias: str) -> bool:
 
 
 def mentions_out_of_corpus_amc(query: str) -> bool:
-    """True when the query names an AMC outside the five-page corpus."""
+    """True when the query names an AMC outside the indexed scheme corpus."""
     q = query.lower()
     return any(_query_contains_alias(q, alias) for alias in OUT_OF_CORPUS_AMC_ALIASES)
 
@@ -606,11 +685,10 @@ def is_query_in_corpus_scope(
     fund_names: list[str] | None = None,
 ) -> bool:
     """
-    Return False when the query cannot be grounded in the five-AMC corpus.
+    Return False when the query cannot be grounded in the indexed scheme corpus.
 
-    In scope only when:
-    - A named scheme from the corpus is referenced, or
-    - A corpus AMC is referenced together with a supported factual metric / AUM-NAV overview
+    In scope when a named indexed scheme is referenced, or when a corpus AMC
+    is referenced together with a supported factual metric.
     """
     if mentions_out_of_corpus_amc(query):
         return False

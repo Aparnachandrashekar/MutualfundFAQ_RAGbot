@@ -142,8 +142,11 @@ jobs:
             sys.exit(1)
 
         source_count = len(list(run_dir.glob("*/clean.txt")))
-        if source_count != 5:
-            print(f"❌ Only {source_count} sources found (expected 5)", file=sys.stderr)
+        expected_count = len(
+            json.loads(Path("config/corpus_manifest.json").read_text(encoding="utf-8")).get("sources", [])
+        )
+        if source_count != expected_count:
+            print(f"❌ Only {source_count} sources found (expected {expected_count})", file=sys.stderr)
             sys.exit(1)
 
         manifest = json.loads((run_dir / "ingest_manifest.json").read_text(encoding="utf-8"))
@@ -158,7 +161,7 @@ jobs:
             "model_used": report["summary"]["model_used"],
         }
         (run_dir / "run_summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
-        print("✅ Validation passed — 5/5 sources")
+        print(f"✅ Validation passed — {expected_count}/{expected_count} sources")
         print(json.dumps(summary, indent=2))
         PY
 

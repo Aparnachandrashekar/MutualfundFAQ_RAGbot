@@ -1,16 +1,15 @@
 {
-  "total_chunks": 53,
-  "average_chunk_size": 349.9433962264151,
+  "total_chunks": 6,
+  "average_chunk_size": 371.8333333333333,
   "content_types": {
-    "fund_info": 44,
-    "mixed": 9
+    "fund_info": 6
   },
   "amc_distribution": {
-    "Choice Mutual Fund": 3,
-    "Unifi Mutual Fund": 4,
-    "Union Mutual Fund": 16,
-    "ICICI Prudential Mutual Fund": 14,
-    "LIC Mutual Fund": 16
+    "HDFC Mutual Fund": 2,
+    "Parag Parikh Mutual Fund": 1,
+    "Bandhan Mutual Fund": 1,
+    "Quant Mutual Fund": 1,
+    "SBI Mutual Fund": 1
   },
-  "average_financial_density": 0.12428974814146798
+  "average_financial_density": 0.16097455952528417
 }

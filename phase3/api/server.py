@@ -43,7 +43,7 @@ def create_app(
 
     app = FastAPI(
         title="Mutual Fund FAQ Assistant",
-        description="Facts-only Q&A with citations from five AMC corpus pages.",
+        description="Facts-only Q&A with citations from six indexed Groww scheme pages.",
         version="1.0.0",
         lifespan=lifespan,
     )

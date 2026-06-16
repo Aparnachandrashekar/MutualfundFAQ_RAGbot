@@ -67,15 +67,17 @@ if not report_path.is_file():
 report = json.loads(report_path.read_text(encoding="utf-8"))
 validation_ok = bool(report.get("validation_ok"))
 source_count = len(list(run_dir.glob("*/clean.txt")))
+manifest_path = Path("config/corpus_manifest.json")
+expected_count = len(json.loads(manifest_path.read_text(encoding="utf-8")).get("sources", []))
 
 print(f"validation_ok: {validation_ok}")
-print(f"clean.txt files: {source_count}/5")
+print(f"clean.txt files: {source_count}/{expected_count}")
 
 if not validation_ok:
     print("❌ Validation failed", file=sys.stderr)
     sys.exit(1)
-if source_count != 5:
-    print(f"❌ Expected 5 sources, found {source_count}", file=sys.stderr)
+if source_count != expected_count:
+    print(f"❌ Expected {expected_count} sources, found {source_count}", file=sys.stderr)
     sys.exit(1)
 
 manifest = json.loads((run_dir / "ingest_manifest.json").read_text(encoding="utf-8"))

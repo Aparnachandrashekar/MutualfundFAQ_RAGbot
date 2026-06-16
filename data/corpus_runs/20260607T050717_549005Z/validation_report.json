@@ -1,0 +1,112 @@
+{
+  "validation_ok": true,
+  "validated_at_utc": "2026-06-07T05:07:32.668068+00:00",
+  "error": null,
+  "structural_checks": {
+    "ingest_manifest_present": true,
+    "all_sources_present": true,
+    "corpus_json_present": true,
+    "assembly_ok": true,
+    "no_off_allowlist_dirs": true,
+    "all_artifacts_present": true,
+    "min_text_length_ok": true
+  },
+  "sources": {
+    "groww_scheme_hdfc_silver_etf_fof": {
+      "validation_ok": true,
+      "error": null,
+      "metrics": {
+        "financial_relevance": 0.6832,
+        "navigation_contamination": 0.6397,
+        "content_quality": 0.0532,
+        "semantic_coherence": 0.8093,
+        "embedding_quality": 0.0532,
+        "chunk_count": 19,
+        "text_length": 15894
+      }
+    },
+    "groww_scheme_hdfc_mid_cap": {
+      "validation_ok": true,
+      "error": null,
+      "metrics": {
+        "financial_relevance": 0.6902,
+        "navigation_contamination": 0.6377,
+        "content_quality": 0.06,
+        "semantic_coherence": 0.8067,
+        "embedding_quality": 0.06,
+        "chunk_count": 26,
+        "text_length": 18837
+      }
+    },
+    "groww_scheme_parag_parikh_ltv": {
+      "validation_ok": true,
+      "error": null,
+      "metrics": {
+        "financial_relevance": 0.6658,
+        "navigation_contamination": 0.6167,
+        "content_quality": 0.0564,
+        "semantic_coherence": 0.8028,
+        "embedding_quality": 0.0564,
+        "chunk_count": 42,
+        "text_length": 24658
+      }
+    },
+    "groww_scheme_bandhan_small_cap": {
+      "validation_ok": true,
+      "error": null,
+      "metrics": {
+        "financial_relevance": 0.6867,
+        "navigation_contamination": 0.6243,
+        "content_quality": 0.0678,
+        "semantic_coherence": 0.8145,
+        "embedding_quality": 0.0678,
+        "chunk_count": 49,
+        "text_length": 28849
+      }
+    },
+    "groww_scheme_quant_small_cap": {
+      "validation_ok": true,
+      "error": null,
+      "metrics": {
+        "financial_relevance": 0.6807,
+        "navigation_contamination": 0.6262,
+        "content_quality": 0.0603,
+        "semantic_coherence": 0.8019,
+        "embedding_quality": 0.0603,
+        "chunk_count": 39,
+        "text_length": 28178
+      }
+    },
+    "groww_scheme_sbi_gold": {
+      "validation_ok": true,
+      "error": null,
+      "metrics": {
+        "financial_relevance": 0.6696,
+        "navigation_contamination": 0.6382,
+        "content_quality": 0.0465,
+        "semantic_coherence": 0.7999,
+        "embedding_quality": 0.0465,
+        "chunk_count": 19,
+        "text_length": 15380
+      }
+    }
+  },
+  "summary": {
+    "total_sources": 6,
+    "passed_sources": 6,
+    "total_characters": 131796,
+    "avg_content_quality": 0.05736666666666667,
+    "avg_semantic_coherence": 0.80585,
+    "avg_embedding_quality": 0.05736666666666667,
+    "model_used": "BAAI/bge-small-en-v1.5",
+    "validation_chunk_size": 512,
+    "thresholds": {
+      "min_content_quality": 0.04,
+      "min_financial_relevance": 0.55,
+      "max_navigation_contamination": 0.72,
+      "min_semantic_coherence": 0.75,
+      "min_embedding_quality": 0.04,
+      "min_text_chars": 2048
+    }
+  }
+}

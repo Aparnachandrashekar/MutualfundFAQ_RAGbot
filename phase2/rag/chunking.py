@@ -26,6 +26,7 @@ from phase2.rag.config import (
     MIN_SOURCE_VALIDATION_QUALITY,
 )
 from phase2.rag.fund_records import (
+    build_scheme_page_registry,
     detect_query_metric,
     extract_amc_summary,
     format_amc_summary,
@@ -284,6 +285,50 @@ class SmartChunker:
             meta.total_chunks = len(chunks)
         return chunks
 
+    def create_scheme_page_chunks(
+        self,
+        text: str,
+        source_id: str,
+        source_url: str,
+        amc_name: str,
+        chunk_id_prefix: str,
+        ingested_at: str,
+    ) -> List[Tuple[str, ChunkMetadata]]:
+        """Create one chunk from a Groww scheme detail page."""
+        chunks: List[Tuple[str, ChunkMetadata]] = []
+        for chunk_index, record in enumerate(
+            build_scheme_page_registry(
+                text,
+                amc_name=amc_name,
+                source_id=source_id,
+                source_url=source_url,
+                ingested_at=ingested_at,
+            )
+        ):
+            chunk_text = format_unified_fund_record(record)
+            meta = self._build_chunk_metadata(
+                chunk_text,
+                chunk_id=f"{chunk_id_prefix}_chunk_{chunk_index:03d}",
+                source_id=source_id,
+                source_url=source_url,
+                amc_name=amc_name,
+                chunk_index=chunk_index,
+                ingested_at=ingested_at,
+                extra_entities=[
+                    record["fund_name"],
+                    "NAV",
+                    "AUM",
+                    "Expense Ratio",
+                    "SIP",
+                    "Returns",
+                ],
+            )
+            chunks.append((chunk_text, meta))
+
+        for _, meta in chunks:
+            meta.total_chunks = len(chunks)
+        return chunks
+
     def create_chunks_with_metadata(
         self,
         text: str,
@@ -294,6 +339,18 @@ class SmartChunker:
         ingested_at: str,
     ) -> List[Tuple[str, ChunkMetadata]]:
         """Create chunks with rich metadata (fund-centric when table data exists)."""
+        if source_id.startswith("groww_scheme_"):
+            scheme_chunks = self.create_scheme_page_chunks(
+                text=text,
+                source_id=source_id,
+                source_url=source_url,
+                amc_name=amc_name,
+                chunk_id_prefix=chunk_id_prefix,
+                ingested_at=ingested_at,
+            )
+            if scheme_chunks:
+                return scheme_chunks
+
         fund_chunks = self.create_fund_centric_chunks(
             text=text,
             source_id=source_id,

@@ -4,5 +4,5 @@
   "vector_weight": 0.25,
   "use_rrf": true,
   "rrf_k": 60,
-  "total_chunks": 53
+  "total_chunks": 6
 }

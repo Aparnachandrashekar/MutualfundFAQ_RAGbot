@@ -1,0 +1,1445 @@
+Quant Small Cap Fund Direct Plan Growth - NAV, Mutual Fund Performance & Portfolio
+Stocks
+Invest in Stocks
+Invest in stocks, ETFs, IPOs with fast orders. Track returns on your stock holdings and view real-time P&L on your positions.
+Intraday
+Monitor top intraday performers in real time
+ETF Screener
+Get the best of Mutual Funds and flexibility of Stocks
+IPO
+Track upcoming and ongoing IPOs
+MTFs
+Buy now, pay later
+Stock Screener
+Filter based on RSI, PE ratio and more
+Stock Events
+Dividends, bonus, buybacks and more
+Demat Account
+Begin your stock market journey
+Share Market Today
+Live news updates from stock market
+F&O
+Trade in Futures & Options
+Trade in F&O using the terminal. View charts, indicators, track your orders , P&L and watchlists in a single space
+Indices
+Track markets across the globe
+Terminal
+Track charts, orders, positions, watchlists in one place
+Option chain
+Analyse chains, view payoffs, create baskets
+Pledge
+Get extra balance for trading
+Commodities
+Trade in Crude Oil, Gold, Silver and more
+API trading
+Set up and execute trades through our API
+Mutual Funds
+Invest in Mutual Funds
+Invest in direct mutual funds at zero charges via lump sump investments or SIPs
+Mutual Fund Houses
+Know about AMCs, funds, fund managers
+NFO’s
+Track all active NFOs in one place
+Mutual Funds by Groww
+Mutual funds by Groww designed for your investment goals
+Start SIP
+Build long-term wealth through disciplined monthly investing.
+Mutual Funds screener
+Filter funds based on risk, fund size and more
+Track Funds
+Import funds and track all investments in a single place
+Compare Funds
+More
+SIP calculator
+Estimate returns on a SIP
+Brokerage calculator
+Estimate charges for your trade/investment
+Margin calculator
+Estimate balance needed to buy/sell a stock
+SWP calculator
+Returns on your systematic withdrawal plan
+Pricing
+Brokerage and charges on Groww
+Blog
++21.32
+%
+3Y annualised
++0.14
+%
+1D
+1M
+6M
+1Y
+3Y
+5Y
+All
+NAV: 05 Jun '26
+₹294.48
+Min. for SIP
+₹1,000
+Fund size (AUM)
+₹30,373.69 Cr
+Expense ratio
+0.69%
+Rating
+3
+Return calculator
+Monthly SIP
+One time
+Monthly investment
+₹5,000
+Over the past
+Total investment
+Would've become
+Historic returns
+Returns
+1 year
+₹60,000
+₹64,714
++
+7.86
+%
+3 years
+₹1,80,000
+₹2,09,567
++
+16.43
+%
+5 years
+₹3,00,000
+₹4,63,542
++
+54.51
+%
+10 years
+₹6,00,000
+₹22,23,645
++
+270.61
+%
+Holdings (
+115
+)
+Name
+Sector
+Instruments
+Assets
+Reliance Industries Ltd
+Energy & Utilities
+Equity
+9.47%
+Repo
+Unspecified
+Repo
+6.90%
+RBL Bank Ltd
+Financial
+Equity
+4.75%
+Adani Power Ltd
+Energy & Utilities
+Equity
+4.38%
+HFCL Ltd
+Technology
+Equity
+3.44%
+Sun TV Network Ltd
+Consumer Discretionary
+Equity
+2.92%
+DEWAN HOUSING FINANCE CORP. LTD. EQ
+Financial
+Equity
+2.85%
+Anand Rathi Wealth Ltd
+Financial
+Equity
+2.81%
+Aster DM Healthcare Ltd
+Healthcare
+Equity
+2.61%
+Adani Green Energy Ltd
+Energy & Utilities
+Equity
+2.20%
+Adani Enterprises Ltd
+Materials
+Equity
+2.19%
+Poly Medicure Ltd
+Healthcare
+Equity
+2.17%
+Arvind Ltd
+Consumer Discretionary
+Equity
+1.94%
+Bikaji Foods International Ltd
+Consumer Staples
+Equity
+1.93%
+Capri Global Capital Ltd
+Financial
+Equity
+1.93%
+Aurobindo Pharma Ltd. 26-MAY-26
+Healthcare
+Futures
+1.90%
+Aegis Logistics Ltd
+Energy & Utilities
+Equity
+1.84%
+Welspun Corp Ltd
+Materials
+Equity
+1.80%
+ICICI Bank Ltd
+Financial
+Equity
+1.77%
+Ventive Hospitality Ltd.
+Consumer Discretionary
+Equity
+1.72%
+Bayer CropScience Ltd
+Materials
+Equity
+1.63%
+Sequent Scientific Ltd
+Healthcare
+Equity
+1.61%
+Usha Martin Ltd
+Materials
+Equity
+1.59%
+Zydus Wellness Ltd
+Consumer Staples
+Equity
+1.51%
+NBCC India Ltd
+Industrials
+Equity
+1.48%
+Manappuram Finance Ltd
+Financial
+Equity
+1.44%
+Pfizer Ltd
+Healthcare
+Equity
+1.42%
+Aditya Birla Lifestyle Brands Ltd
+Consumer Discretionary
+Equity
+1.35%
+The Karnataka Bank Ltd
+Financial
+Equity
+1.30%
+Strides Pharma Science Ltd
+Healthcare
+Equity
+1.23%
+Welspun Enterprises Ltd
+Industrials
+Equity
+1.16%
+Samvardhana Motherson International Ltd
+Consumer Discretionary
+Equity
+1.06%
+Marathon Nextgen Realty Ltd
+Real Estate
+Equity
+1.04%
+RBL Bank Ltd. 26-MAY-26
+Financial
+Futures
+1.02%
+NCC Ltd
+Industrials
+Equity
+0.93%
+Anthem Biosciences Ltd.
+Healthcare
+Equity
+0.92%
+Jubilant Pharmova Ltd
+Healthcare
+Equity
+0.90%
+Keystone Realtors Ltd
+Real Estate
+Equity
+0.80%
+Gland Pharma Ltd
+Healthcare
+Equity
+0.79%
+JM Financial Ltd
+Financial
+Equity
+0.77%
+EID-Parry (India) Ltd
+Materials
+Equity
+0.76%
+AFCONS INFRASTRUCTURE LIMITED EQ
+Industrials
+Equity
+0.74%
+Orchid Pharma Ltd
+Healthcare
+Equity
+0.71%
+Just Dial Ltd
+Technology
+Equity
+0.65%
+Black Box Ltd
+Technology
+Equity
+0.62%
+Glenmark Life Sciences Ltd
+Healthcare
+Equity
+0.60%
+EPL Ltd
+Materials
+Equity
+0.59%
+IRB Infrastructure Developers Ltd
+Industrials
+Equity
+0.52%
+Welspun India Ltd
+Consumer Discretionary
+Equity
+0.51%
+TVS Srichakra Ltd
+Consumer Discretionary
+Equity
+0.48%
+Minda Corporation Ltd
+Consumer Discretionary
+Equity
+0.47%
+HDFC Life Insurance Co Ltd
+Financial
+Equity
+0.45%
+Gujarat State Fertilizers & Chemicals Ltd
+Materials
+Equity
+0.43%
+Apeejay Surrendra Park Hotels Ltd.
+Consumer Discretionary
+Equity
+0.43%
+Nitin Spinners Ltd
+Consumer Discretionary
+Equity
+0.42%
+Aurobindo Pharma Ltd
+Healthcare
+Equity
+0.41%
+GOVERNMENT OF INDIA 37077 091 DAYS TBILL 14MY26 FV RS 100
+Financial
+Treasury Bills
+0.41%
+Juniper Hotels Ltd.
+Consumer Discretionary
+Equity
+0.40%
+Aditya Birla Fashion and Retail Ltd
+Consumer Discretionary
+Equity
+0.38%
+Lloyds Metals and Energy Ltd
+Materials
+Equity
+0.34%
+Suven Life Sciences Ltd
+Healthcare
+Equity
+0.33%
+Balrampur Chini Mills Ltd
+Consumer Staples
+Equity
+0.33%
+Manappuram Finance Limited_26/05/2026
+Financial
+Futures
+0.30%
+Rishabh Instruments Ltd.
+Industrials
+Equity
+0.29%
+Indoco Remedies Ltd
+Healthcare
+Equity
+0.29%
+Maharashtra Seamless Ltd
+Industrials
+Equity
+0.27%
+NBCC (India) Ltd. 26-MAY-26
+Industrials
+Futures
+0.25%
+SMS Pharmaceuticals Ltd
+Healthcare
+Equity
+0.25%
+Sula Vineyards Ltd
+Consumer Staples
+Equity
+0.24%
+Man Infraconstruction Ltd
+Industrials
+Equity
+0.24%
+Himadri Speciality Chemical Ltd
+Materials
+Equity
+0.23%
+KPR Mills Ltd
+Consumer Discretionary
+Equity
+0.22%
+SP Apparels Ltd
+Consumer Discretionary
+Equity
+0.22%
+Bata India Ltd
+Consumer Discretionary
+Equity
+0.21%
+Oswal Pumps Ltd.
+Industrials
+Equity
+0.20%
+Castrol India Ltd
+Materials
+Equity
+0.19%
+GOVERNMENT OF INDIA 37086 091 DAYS TBILL 22MY26 FV RS 100
+Financial
+Treasury Bills
+0.18%
+Zinka Logistics Solutions Ltd.
+Industrials
+Equity
+0.18%
+Triveni Turbine Ltd
+Industrials
+Equity
+0.17%
+Capacite Infraprojects Ltd
+Industrials
+Equity
+0.17%
+Exicom Tele-Systems Ltd.
+Energy & Utilities
+Equity
+0.17%
+GOVERNMENT OF INDIA 37184 091 DAYS TBILL 11JU26 FV RS 100
+Financial
+Treasury Bills
+0.16%
+GOVERNMENT OF INDIA 37410 091 DAYS TBILL 30JL26 FV RS 100
+Financial
+Treasury Bills
+0.16%
+Prime Securities Ltd
+Financial
+Equity
+0.15%
+Orissa Minerals Development Company Ltd
+Materials
+Equity
+0.15%
+GOVERNMENT OF INDIA 37175 091 DAYS TBILL 04JU26 FV RS 100
+Financial
+Treasury Bills
+0.13%
+Intellect Design Arena Ltd
+Technology
+Equity
+0.12%
+Indiabulls Real Estate Ltd
+Real Estate
+Equity
+0.12%
+Ravindra Energy Ltd
+Energy & Utilities
+Equity
+0.11%
+GOVERNMENT OF INDIA 37017 091 DAYS TBILL 07MY26 FV RS 100
+Financial
+Treasury Bills
+0.10%
+Graphite India Ltd
+Industrials
+Equity
+0.10%
+Praj Industries Ltd
+Industrials
+Equity
+0.10%
+Digitide Solutions Ltd
+Industrials
+Equity
+0.09%
+Newgen Software Technologies Ltd
+Technology
+Equity
+0.08%
+Sai Parenteral’s Ltd.
+Healthcare
+Equity
+0.08%
+Mahindra Holidays & Resorts India Ltd
+Consumer Discretionary
+Equity
+0.08%
+PTC India Ltd
+Energy & Utilities
+Equity
+0.08%
+Emami Ltd
+Consumer Staples
+Equity
+0.08%
+Ethos Ltd
+Consumer Discretionary
+Equity
+0.08%
+GOVERNMENT OF INDIA 37221 091 DAYS TBILL 19JU26 FV RS 100
+Financial
+Treasury Bills
+0.08%
+Vishnu Prakash R Punglia Ltd.
+Industrials
+Equity
+0.07%
+Sanofi India Ltd
+Healthcare
+Equity
+0.07%
+Sai Silks (Kalamandir) Ltd.
+Consumer Discretionary
+Equity
+0.07%
+BASF India Ltd
+Materials
+Equity
+0.07%
+Oriental Hotels Ltd
+Consumer Discretionary
+Equity
+0.07%
+Best Agrolife Ltd
+Materials
+Equity
+0.04%
+Safari Industries (India) Ltd
+Consumer Discretionary
+Equity
+0.04%
+GOVERNMENT OF INDIA 37391 091 DAYS TBILL 23JL26 FV RS 100
+Financial
+Treasury Bills
+0.04%
+Gillette India Ltd
+Consumer Staples
+Equity
+0.04%
+Sudeep Pharma Ltd.
+Healthcare
+Equity
+0.03%
+Punjab Alkalies & Chemicals Ltd
+Materials
+Equity
+0.03%
+Kalyani Steels Ltd
+Materials
+Equity
+0.01%
+Om Infra Ltd
+Industrials
+Equity
+0.00%
+Quant Gilt Fund Direct - Growth
+Unspecified
+Mutual Fund
+0.00%
+Net Payables
+Unspecified
+Net Payables
+-3.37%
+See All
+Minimum investments
+Min. for 1st investment
+₹5,000
+Min. for 2nd investment
+₹1,000
+Min. for SIP
+₹1,000
+Understand terms
+Annualised returns
+Average of the yearly returns of a mutual fund over a given period.
+Absolute returns
+The total return of a mutual fund over a given period.
+Returns and rankings
+Annualised returns
+Absolute returns
+Name
+3Y
+5Y
+10Y
+All
+Fund returns
++21.3%
++21.6%
++20.4%
++17.4%
+Category average (
+Equity Small Cap
+)
++19.7%
++22.6%
++16.1%
+--
+Rank (
+Equity Small Cap
+)
+9
+2
+--
+--
+Understand terms
+Expense ratio
+A fee payable to a mutual fund house for managing your mutual fund investments. It is the total percentage of a company's fund assets used for administrative, management, advertising, and other expenses.
+Tax
+A percentage of your capital gains payable to the government upon exiting your mutual fund investments. Taxation is categorized as long-term capital gains (LTCG) and short-term capital gains (STCG) depending on your holding period and the type of fund.
+Exit load
+A fee payable to a mutual fund house for exiting a fund (fully or partially) before the completion of a specified period from the date of investment.
+Stamp duty
+A form of tax payable for the purchase or sale of an asset or security.
+Exit Load
+01 Jan 2013
+Exit load of 1% if redeemed within 1 year
+Exit load, stamp duty and tax
+Exit load
+Exit load of 1% if redeemed within 1 year
+Stamp duty on investment:
+0.005% (from July 1st, 2020)
+from July 1st 2020
+Tax implication
+If you redeem within one year, returns are taxed at 20%. If you redeem after one year, returns exceeding Rs 1.25 lakh in a financial year are taxed at 12.5%.
+Check past data
+Compare similar funds
+Name
+1Y
+3Y
+Fund Size(Cr)
+Bandhan Small Cap Fund Direct Growth
++5.22%
++29.52%
+25,345.79
+Invesco India Smallcap Fund Direct Growth
++7.35%
++24.21%
+11,038.23
+Sundaram Small Cap Fund Direct Growth
++8.97%
++19.97%
+3,562.91
+Nippon India Small Cap Fund Direct Growth
++3.71%
++19.33%
+72,672.99
+Axis Small Cap Fund Direct Growth
++2.34%
++16.78%
+27,363.97
+Compare
+Fund management
+VP
+Varun Pattani
+Feb 2025
+- Present
+View details
+Education
+Mr. Pattani is an ACA
+Experience
+Prior to joining Quant Mutual Fund, he has worked with boutique PMS firm.
+Also manages these schemes
+Quant Aggressive Hybrid Fund Direct Growth
+Quant Multi Asset Allocation Fund Direct Growth
+Quant Multi Cap Fund Direct Growth
+Quant Large and Mid Cap Fund Direct Growth
+Quant Small Cap Fund Direct Plan Growth
+Quant Infrastructure Fund Direct Growth
+Quant Focused Fund Direct Growth
+Quant Mid Cap Fund Direct Growth
+Quant Flexi Cap Fund Direct Growth
+Quant ELSS Tax Saver Fund Direct Growth
+Quant ESG Integration Strategy Fund Direct Growth
+Quant Quantamental Fund Direct Growth
+Quant Value Fund Direct Growth
+Quant Large Cap Fund Direct Growth
+Quant Dynamic Asset Allocation Fund Direct Growth
+Quant Business Cycle Fund Direct Growth
+Quant BFSI Fund Direct Growth
+Quant Healthcare Fund Direct Growth
+Quant Manufacturing Fund Direct Growth
+Quant Teck Fund Direct Growth
+Quant Momentum Fund Direct Growth
+Quant Commodities Fund Direct Growth
+Quant Consumption Fund Direct Growth
+Quant PSU Fund Direct Growth
+Quant Equity Savings Fund Direct Growth
+AK
+Ayusha Kumbhat
+Feb 2025
+- Present
+View details
+Education
+CFA Level III, BSc (Hons) in Economics, MSc in Behavioural & Experimental Economics
+Experience
+She is working with Quant Mutual fund as Research Analyst for the past 15 months, specializing in investment research.
+Also manages these schemes
+Quant Aggressive Hybrid Fund Direct Growth
+Quant Multi Asset Allocation Fund Direct Growth
+Quant Multi Cap Fund Direct Growth
+Quant Large and Mid Cap Fund Direct Growth
+Quant Small Cap Fund Direct Plan Growth
+Quant Infrastructure Fund Direct Growth
+Quant Focused Fund Direct Growth
+Quant Mid Cap Fund Direct Growth
+Quant Flexi Cap Fund Direct Growth
+Quant ELSS Tax Saver Fund Direct Growth
+Quant ESG Integration Strategy Fund Direct Growth
+Quant Quantamental Fund Direct Growth
+Quant Value Fund Direct Growth
+Quant Large Cap Fund Direct Growth
+Quant Dynamic Asset Allocation Fund Direct Growth
+Quant Business Cycle Fund Direct Growth
+Quant BFSI Fund Direct Growth
+Quant Healthcare Fund Direct Growth
+Quant Manufacturing Fund Direct Growth
+Quant Teck Fund Direct Growth
+Quant Momentum Fund Direct Growth
+Quant Commodities Fund Direct Growth
+Quant Consumption Fund Direct Growth
+Quant PSU Fund Direct Growth
+Quant Equity Savings Fund Direct Growth
+SK
+Sameer Kate
+Mar 2025
+- Present
+View details
+Education
+Bachelor of Computer Science, MBA from IME Pune.
+Experience
+Prior to joining Quant Mutual Fund, he was working with Investec Capital and Kotak Securities,
+Also manages these schemes
+Quant Aggressive Hybrid Fund Direct Growth
+Quant Multi Asset Allocation Fund Direct Growth
+Quant Multi Cap Fund Direct Growth
+Quant Large and Mid Cap Fund Direct Growth
+Quant Small Cap Fund Direct Plan Growth
+Quant Infrastructure Fund Direct Growth
+Quant Focused Fund Direct Growth
+Quant Mid Cap Fund Direct Growth
+Quant Flexi Cap Fund Direct Growth
+Quant ELSS Tax Saver Fund Direct Growth
+Quant ESG Integration Strategy Fund Direct Growth
+Quant Quantamental Fund Direct Growth
+Quant Value Fund Direct Growth
+Quant Large Cap Fund Direct Growth
+Quant Dynamic Asset Allocation Fund Direct Growth
+Quant Business Cycle Fund Direct Growth
+Quant BFSI Fund Direct Growth
+Quant Healthcare Fund Direct Growth
+Quant Manufacturing Fund Direct Growth
+Quant Teck Fund Direct Growth
+Quant Momentum Fund Direct Growth
+Quant Commodities Fund Direct Growth
+Quant Consumption Fund Direct Growth
+Quant PSU Fund Direct Growth
+Quant Arbitrage Fund Direct Growth
+Quant Equity Savings Fund Direct Growth
+qsif Equity Long Short Fund Direct Plan Growth
+qsif Hybrid Long Short Fund Direct Plan Growth
+qsif Equity Ex Top 100 Long Short Fund Direct Plan Growth
+qsif Active Asset Allocator Long Short Fund Direct Growth
+qsif Sector Rotation Long Short Fund Direct Growth
+SS
+Sanjeev Sharma
+Oct 2019
+- Present
+View details
+Education
+Mr. Sharma is a Commerce Graduate and PGDBA (Finance) from Symbiosis, Pune.
+Experience
+He has total work experience of 17 years including 13 years of experience in the financial market. He specializes in identifying crucial inflexion points in securities.
+Also manages these schemes
+Quant Aggressive Hybrid Fund Direct Growth
+Quant Multi Asset Allocation Fund Direct Growth
+Quant Multi Cap Fund Direct Growth
+Quant Large and Mid Cap Fund Direct Growth
+Quant Small Cap Fund Direct Plan Growth
+Quant Infrastructure Fund Direct Growth
+Quant Liquid Direct Fund Growth
+Quant Focused Fund Direct Growth
+Quant Mid Cap Fund Direct Growth
+Quant Flexi Cap Fund Direct Growth
+Quant ELSS Tax Saver Fund Direct Growth
+Quant ESG Integration Strategy Fund Direct Growth
+Quant Quantamental Fund Direct Growth
+Quant Value Fund Direct Growth
+Quant Large Cap Fund Direct Growth
+Quant Overnight Fund Direct Growth
+Quant Gilt Fund Direct Growth
+Quant Dynamic Asset Allocation Fund Direct Growth
+Quant Business Cycle Fund Direct Growth
+Quant BFSI Fund Direct Growth
+Quant Healthcare Fund Direct Growth
+Quant Manufacturing Fund Direct Growth
+Quant Teck Fund Direct Growth
+Quant Momentum Fund Direct Growth
+Quant Commodities Fund Direct Growth
+Quant Consumption Fund Direct Growth
+Quant PSU Fund Direct Growth
+Quant Arbitrage Fund Direct Growth
+Quant Equity Savings Fund Direct Growth
+qsif Equity Long Short Fund Direct Plan Growth
+qsif Hybrid Long Short Fund Direct Plan Growth
+qsif Equity Ex Top 100 Long Short Fund Direct Plan Growth
+qsif Active Asset Allocator Long Short Fund Direct Growth
+qsif Sector Rotation Long Short Fund Direct Growth
+ST
+Sandeep Tandon
+Feb 2025
+- Present
+View details
+Education
+Mr. Tandon has done MBA (Finance)
+Experience
+Prior to joining Quant Mutual Fund, he has worked with ICICI Securities as Vice President, The Economic Times and IDBI AMC.
+Also manages these schemes
+Quant Aggressive Hybrid Fund Direct Growth
+Quant Multi Asset Allocation Fund Direct Growth
+Quant Multi Cap Fund Direct Growth
+Quant Large and Mid Cap Fund Direct Growth
+Quant Small Cap Fund Direct Plan Growth
+Quant Infrastructure Fund Direct Growth
+Quant Focused Fund Direct Growth
+Quant Mid Cap Fund Direct Growth
+Quant Flexi Cap Fund Direct Growth
+Quant ELSS Tax Saver Fund Direct Growth
+Quant ESG Integration Strategy Fund Direct Growth
+Quant Quantamental Fund Direct Growth
+Quant Value Fund Direct Growth
+Quant Large Cap Fund Direct Growth
+Quant Dynamic Asset Allocation Fund Direct Growth
+Quant Business Cycle Fund Direct Growth
+Quant BFSI Fund Direct Growth
+Quant Healthcare Fund Direct Growth
+Quant Manufacturing Fund Direct Growth
+Quant Teck Fund Direct Growth
+Quant Momentum Fund Direct Growth
+Quant Commodities Fund Direct Growth
+Quant Consumption Fund Direct Growth
+Quant PSU Fund Direct Growth
+qsif Equity Long Short Fund Direct Plan Growth
+qsif Hybrid Long Short Fund Direct Plan Growth
+qsif Equity Ex Top 100 Long Short Fund Direct Plan Growth
+qsif Active Asset Allocator Long Short Fund Direct Growth
+qsif Sector Rotation Long Short Fund Direct Growth
+AAP
+Ankit A Pande
+May 2020
+- Present
+View details
+Education
+Mr. Pande has done CFA and MBA
+Experience
+Prior to joining Quant Mutual Fund he has worked with Infosys Finacle. Began his career in equity research in 2011.
+Also manages these schemes
+Quant Aggressive Hybrid Fund Direct Growth
+Quant Multi Asset Allocation Fund Direct Growth
+Quant Multi Cap Fund Direct Growth
+Quant Large and Mid Cap Fund Direct Growth
+Quant Small Cap Fund Direct Plan Growth
+Quant Infrastructure Fund Direct Growth
+Quant Focused Fund Direct Growth
+Quant Mid Cap Fund Direct Growth
+Quant Flexi Cap Fund Direct Growth
+Quant ELSS Tax Saver Fund Direct Growth
+Quant ESG Integration Strategy Fund Direct Growth
+Quant Quantamental Fund Direct Growth
+Quant Value Fund Direct Growth
+Quant Large Cap Fund Direct Growth
+Quant Dynamic Asset Allocation Fund Direct Growth
+Quant Business Cycle Fund Direct Growth
+Quant BFSI Fund Direct Growth
+Quant Healthcare Fund Direct Growth
+Quant Manufacturing Fund Direct Growth
+Quant Teck Fund Direct Growth
+Quant Momentum Fund Direct Growth
+Quant Commodities Fund Direct Growth
+Quant Consumption Fund Direct Growth
+Quant PSU Fund Direct Growth
+Quant Equity Savings Fund Direct Growth
+qsif Equity Long Short Fund Direct Plan Growth
+qsif Hybrid Long Short Fund Direct Plan Growth
+qsif Equity Ex Top 100 Long Short Fund Direct Plan Growth
+qsif Active Asset Allocator Long Short Fund Direct Growth
+qsif Sector Rotation Long Short Fund Direct Growth
+YT
+Yug Tibrewal
+Mar 2025
+- Present
+View details
+Education
+B.M.S, CFA L1
+Experience
+Yug is an investment professional with over 2 years of experience in dealing related activities
+Also manages these schemes
+Quant Aggressive Hybrid Fund Direct Growth
+Quant Multi Asset Allocation Fund Direct Growth
+Quant Multi Cap Fund Direct Growth
+Quant Large and Mid Cap Fund Direct Growth
+Quant Small Cap Fund Direct Plan Growth
+Quant Infrastructure Fund Direct Growth
+Quant Focused Fund Direct Growth
+Quant Mid Cap Fund Direct Growth
+Quant Flexi Cap Fund Direct Growth
+Quant ELSS Tax Saver Fund Direct Growth
+Quant ESG Integration Strategy Fund Direct Growth
+Quant Quantamental Fund Direct Growth
+Quant Value Fund Direct Growth
+Quant Large Cap Fund Direct Growth
+Quant Dynamic Asset Allocation Fund Direct Growth
+Quant Business Cycle Fund Direct Growth
+Quant BFSI Fund Direct Growth
+Quant Healthcare Fund Direct Growth
+Quant Manufacturing Fund Direct Growth
+Quant Teck Fund Direct Growth
+Quant Momentum Fund Direct Growth
+Quant Commodities Fund Direct Growth
+Quant Consumption Fund Direct Growth
+Quant PSU Fund Direct Growth
+Quant Arbitrage Fund Direct Growth
+About
+Quant Small Cap Fund Direct Plan Growth
+Quant Small Cap Fund Direct Plan Growth is a Equity Mutual Fund Scheme launched by Quant Mutual Fund. This scheme was made available to investors on 15 Apr 1996. Varun Pattani is the Current Fund Manager of Quant Small Cap Fund Direct Plan Growth fund. The fund currently has an Asset Under Management(AUM) of ₹94,000 Cr and the Latest NAV as of 05 Jun 2026 is ₹294.48.
+The Quant Small Cap Fund Direct Plan Growth is rated Very High risk. Minimum SIP Investment is set to ₹1,000. Minimum Lumpsum Investment is ₹5,000. Exit load of 1% if redeemed within 1 year
+;
+Investment Objective
+The scheme seeks to generate capital appreciation by investing in a well-diversified portfolio of small cap companies.
+Fund benchmark
+NIFTY Smallcap 250 Total Return Index
+Scheme Information Document(SID)
+Fund house
+Quant Mutual Fund
+Rank (total assets)
+#34 in India
+Total AUM
+₹94,000.46 Cr
+Date of Incorporation
+15 Apr 1996
+Phone
+022-62955000
+E-mail
+--
+Website
+http://www.quantmutual.com
+Launch Date
+15 Apr 1996
+Address
+6th Floor, Sea Breeze Building,Appa Saheb Marathe Marg,Prabhadevi, Mumbai 400025
+Custodian
+HDFC Bank
+Registrar & Transfer Agent
+KFin Tech
+Email
+[email protected]
+Website
+www.karvymfs.com
+Address
+Karvy House, No. 46, 8-2-609/K, Avenue 4, Street No.1 Banjara Hills,
+Home
+>
+Mutual Funds
+>
+Quant Mutual Fund
+>
+Quant Small Cap Fund Direct Plan Growth
+Vaishnavi Tech Park, South Tower, 3rd Floor
+Sarjapur Main Road, Bellandur, Bengaluru – 560103
+Karnataka
+Contact Us
+Download the App
+GROWW
+About Us
+Pricing
+Blog
+Media & Press
+Careers
+Help & Support
+Trust & Safety
+Investor Relations
+PRODUCTS
+Stocks
+F&O
+MTF
+ETF
+IPO
+Mutual Funds
+Commodities
+Groww Terminal
+915 Terminal
+Stock Screens
+Algo Trading
+Groww Charts
+Groww Digest
+Demat Account
+Groww AMC
+PMS
+© 2016-
+2026
+Groww. All rights reserved.
+Version:
+7.7.1
+Share Market
+Indices
+F&O
+Mutual Funds
+ETFs
+Funds By Groww
+Calculators
+IPO
+Miscellaneous
+Top Gainers Stocks
+52 Weeks High Stocks
+Tata Motors
+NHPC
+ITC
+Wipro
+BSE
+NTPC
+Top Losers Stocks
+52 Weeks Low Stocks
+IREDA
+State Bank of India
+Adani Power
+CDSL
+Cochin Shipyard
+SJVN
+Most Traded Stocks
+Stocks Market Calender
+Tata Steel
+Tata Power
+Bharat Heavy Electricals
+Indian Oil Corporation
+HUDCO
+SAIL
+Stocks Feed
+Suzlon Energy
+Zomato (Eternal)
+Yes Bank
+Infosys
+NBCC
+IRCTC
+Share Market Live Update
+FII DII Activity
+IRFC
+Bharat Electronics
+HDFC Bank
+Vedanta
+Reliance Power
+Jaiprakash Power Ventures
+Stocks Sectors
+NIFTY 50
+NIFTY Midcap 100
+NIFTY 100
+US Tech 100
+NIFTY Realty
+Nikkei index
+SENSEX
+NIFTY Smallcap 100
+NIFTY Auto
+Dow Jones Futures
+NIFTY PSU Bank
+NIFTY FMCG
+NIFTY BANK
+NIFTY MIDCAP 150
+KOSPI Index
+Dow Jones Index
+Gift Nifty
+BSE BANKEX
+India VIX
+NIFTY Pharma
+HANG SENG Index
+BSE 100
+FTSE 100 Index
+S&P 500
+NIFTY NEXT 50
+NIFTY Metal
+DAX Index
+NIFTY Fin Service
+CAC Index
+Nifty Pvt Bank
+NIFTY Bank Options
+SBI Options
+Bajaj Finance Options
+Axis Bank Options
+Hindustan Unilever Options
+NIFTY Bank Futures
+Finnifty Futures
+ITC Futures
+ICICI Bank Futures
+Biocon Futures
+Indusind Bank Futures
+Crude Oil Mini Future Price
+Gold Petal Future Price
+Silver Micro Future Price
+Nickel Future Price
+Natural Gas Mini MCX Option Chain
+Copper MCX Option Chain
+NIFTY 50 Options
+HDFC Bank Options
+Wipro Options
+DLF Options
+REC Options
+Yes Bank Futures
+Zomato Futures
+Ashok Leyland Futures
+HDFC Bank Futures
+UPL Futures
+Adani Enterprises Futures
+Gold Future Price
+Natural Gas Future Price
+Zinc Future Price
+Gold MCX Option Chain
+Gold Mini MCX Option Chain
+Commodities Expiry Calendar
+Bse Sensex Options
+Tata Steel Options
+NTPC Options
+Bajaj Auto Options
+Indusind Bank Options
+Tata Motors Futures
+Infosys Futures
+Asian Paints Futures
+Lupin Futures
+Cipla Futures
+IDFC First Bank Futures
+Gold Mini Future Price
+Natural Gas Mini Future Price
+Copper Future Price
+Crude Oil MCX Option Chain
+Silver MCX Option Chain
+Finnifty Options
+Infosys Options
+Asian Paints Options
+Coal India Options
+Ashok Leyland Options
+Tata Steel Futures
+BSE Sensex Futures
+Wipro Futures
+DLF Futures
+Bajaj Finance Futures
+Piramal Enterprises Futures
+Gold Ten Future Price
+Silver Future Price
+Aluminium Future Price
+Crude Oil Mini MCX Option Chain
+Silver Mini MCX Option Chain
+Tata Motors Options
+ITC Options
+ICICI Bank Options
+Adani Enterprises Options
+NIFTY 50 Futures
+Coal India Futures
+Axis Bank Futures
+Vedanta Futures
+Reliance Industries Futures
+Hindustan Copper Futures
+Crude Oil Future Price
+Gold Guinea Future Price
+Silver Mini Future Price
+Electricity Future Price
+Natural Gas MCX Option Chain
+Zinc MCX Option Chain
+MF Screener
+Debt Mutual Funds
+Best Multicap Mutual funds
+Best Contra Mutual funds
+Best Conservative Hybrid Mutual funds
+SBI Contra Fund
+Nippon India Nifty 500 Momentum 50 Index Fund
+HDFC Balanced Advantage Fund
+Quant Mid Cap Fund
+Bank of India Small Cap Fund
+Quant Multi Asset Fund
+Nippon India
+TATA
+Bandhan
+Edelweiss
+HSBC
+Union
+Quantum
+Shriram
+Compare Mutual Funds
+Best Debt Mutual funds
+Best Large Cap Mutual funds
+Best Value Oriented Mutual funds
+Parag Parikh Flexi Cap Fund
+HDFC Mid Cap Opportunities Fund
+Motilal Oswal Nifty India Defence Index Fund
+ICICI Prudential India Opportunities Fund
+Kotak Small Cap Fund
+Canara Robeco Bluechip Equity Fund
+GrowwMF
+Motilal Oswal
+Aditya Birla
+Axis
+Bank of India
+Bajaj Finserv
+Helios
+ITI
+Trust
+MF Knowledge Centre
+Best Equity Mutual funds
+Best Small Cap Mutual funds
+Best Arbitrage Mutual funds
+Motilal Oswal Midcap Fund
+SBI Small Cap Fund
+HDFC Small Cap Fund
+Kotak Multicap Fund
+ICICI Prudential Infrastructure Fund
+Bandhan Nifty Alpha 50 Index Fund
+SBI
+Quant
+Mirae Asset
+DSP
+Baroda BNP Paribas
+Mahindra Manulife
+Sundaram
+Samco
+Taurus
+Mutual Fund Houses
+Best Hybrid Mutual funds
+Best ELSS Mutual funds
+Best Dividend Yield Mutual funds
+Nippon India Small Cap Fund
+HDFC Flexi Cap Fund
+Tata Small Cap Fund
+Tata Ethical Fund
+Mirae Asset ELSS Tax Saver Fund
+Quant Infrastructure Fund
+HDFC
+PPFAS
+UTI
+Kotak Mahindra
+Zerodha
+Invesco
+Navi
+PGIM
+Mutual Funds Categories
+Best MidCap Mutual funds
+Best Sectoral Mutual funds
+Best Aggressive Hybrid Mutual funds
+Quant Small Cap Fund
+SBI Magnum Children's Benefit Fund
+UTI Nifty 50 Index Fund
+JM Flexicap Fund
+HSBC Small Cap Fund
+Franklin India Multi Cap Fund
+ICICI Prudential
+LIC
+Canara Robeco
+Whiteoak
+Franklin Templeton
+NJ
+JM
+360 One
+International
+Silver
+Midcap
+Liquid
+Debt
+Index
+Bank Nifty
+Nifty IT
+Equity
+Nifty 50
+Nifty Metal
+Nifty Auto
+Commodity
+Nifty Next 50
+Healthcare
+Groww
+Gold
+Sensex
+Defence
+Groww Arbitrage Fund
+Groww ELSS Tax Saver Fund
+Groww Banking & Financial Services Fund
+Groww Gold ETF FOF
+Groww Gold ETF
+Groww Short Duration Fund
+Groww Aggressive Hybrid Fund
+Groww Nifty Smallcap 250 Index Fund
+Groww Multicap Fund
+Groww Nifty India Defence ETF
+Groww Liquid Fund
+Groww Dynamic Bond Fund
+Groww Nifty Non Cyclical Consumer Index Fund
+Groww Nifty India Railways PSU Index Fund
+Groww Nifty India Railways ETF
+Groww Large Cap Fund
+Groww Overnight Fund
+Groww Nifty EV & New Age Automotive ETF FoF
+Groww Nifty 200 ETF FoF
+Groww Value Fund
+Groww Nifty Total Market Index Fund
+Groww Nifty India Defence ETF FoF
+Groww Silver ETF
+SIP Calculator
+Brokerage Calculator
+RD Calculator
+HRA Calculator
+Home Loan EMI Calculator
+Lumpsum Calculator
+Margin Calculator
+FD Calculator
+Salary Calculator
+ROI Calculator
+SWP Calculator
+Stock Average Calculator
+EPF Calculator
+TDS Calculator
+MF Calculator
+SSY Calculator
+Income Tax Calculator
+EMI Calculator
+Step-Up SIP Calculator
+PPF Calculator
+GST Calculator
+Car Loan EMI Calculator
+What is IPO?
+IPO Subscription Status
+IPO Allotment Status
+Open IPOs
+How to Apply for an IPO
+Upcoming IPOs
+What is Grey Market Premium?
+Closed IPOs
+Mainboard IPOs
+IPO GMP
+SME IPOs
+NFO
+Pricing
+Trust & Safety
+Groww Digest
+Intraday
+Blog
+Investor Relations
+Invest in Gold
+Corporate Bonds
+Media & Press
+Gold Rates
+Invest in Silver
+HUF Demat Account
+Careers
+Silver Rates
+Sitemap
+About Us
+Help & Support
+Glossary
+Show More
+Others:
+NSE
+BSE
+MCX
+Terms and Conditions
+Policies and Procedures
+Regulatory & Other Info
+Privacy Policy
+Disclosure
+SMART ODR
+Download Forms
+Information Security Practices
+Investor Charter and Grievance
+Bug Bounty
+Mutual Funds
+:
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z
+Others
+Stocks
+:
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z
+Others

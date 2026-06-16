@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import os
 from pathlib import Path
 
@@ -21,6 +22,50 @@ def _load_dotenv() -> None:
 
 _load_dotenv()
 
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+CORPUS_MANIFEST_PATH = PROJECT_ROOT / "config" / "corpus_manifest.json"
+
+
+def _load_allowed_citation_urls() -> tuple[str, ...]:
+    if CORPUS_MANIFEST_PATH.is_file():
+        data = json.loads(CORPUS_MANIFEST_PATH.read_text(encoding="utf-8"))
+        urls = tuple(str(s["url"]) for s in data.get("sources", []) if s.get("url"))
+        if urls:
+            return urls
+    return (
+        "https://groww.in/mutual-funds/hdfc-silver-etf-fof-direct-growth",
+        "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+        "https://groww.in/mutual-funds/parag-parikh-long-term-value-fund-direct-growth",
+        "https://groww.in/mutual-funds/bandhan-small-cap-fund-direct-growth",
+        "https://groww.in/mutual-funds/quant-small-cap-fund-direct-plan-growth",
+        "https://groww.in/mutual-funds/sbi-gold-fund-direct-growth",
+    )
+
+
+def _load_out_of_scope_message() -> str:
+    if CORPUS_MANIFEST_PATH.is_file():
+        data = json.loads(CORPUS_MANIFEST_PATH.read_text(encoding="utf-8"))
+        schemes: list[str] = []
+        for src in data.get("sources", []):
+            observed = src.get("scheme_names_observed") or []
+            if observed:
+                schemes.append(str(observed[0]))
+            elif src.get("amc_name"):
+                schemes.append(str(src["amc_name"]))
+        if schemes:
+            if len(schemes) == 1:
+                listed = schemes[0]
+            else:
+                listed = ", ".join(schemes[:-1]) + f", and {schemes[-1]}"
+            return (
+                "I am a mutual fund FAQ assistant covering only these schemes in my sources: "
+                f"{listed}. Your question is outside the scope of my current data."
+            )
+    return (
+        "I am a mutual fund FAQ assistant with a limited indexed corpus. "
+        "Your question is outside the scope of my current data."
+    )
+
 # Groq LLM (Phase 3 answer generation)
 GROQ_API_KEY_ENV = "GROQ_API_KEY"
 GROQ_MODEL = os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile")
@@ -38,14 +83,9 @@ MAX_SENTENCES = 3
 MAX_CHARS_PER_SENTENCE = 200
 NO_ANSWER_MESSAGE = "I don't have information about that in my current data."
 
-OUT_OF_SCOPE_MESSAGE = (
-    "I am a mutual fund FAQ assistant covering only five AMCs in my sources: "
-    "Choice, Unifi, Union, ICICI Prudential, and LIC Mutual Fund. "
-    "Your question is outside the scope of my current data."
-)
+OUT_OF_SCOPE_MESSAGE = _load_out_of_scope_message()
 
 # Paths and API defaults
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
 PHASE2_DIR = Path(os.environ.get("PHASE2_DIR", str(PROJECT_ROOT / "data/phase2_results")))
 REFUSAL_TAXONOMY_PATH = PROJECT_ROOT / "phase0" / "refusal_taxonomy.json"
 
@@ -53,14 +93,8 @@ REFUSAL_TAXONOMY_PATH = PROJECT_ROOT / "phase0" / "refusal_taxonomy.json"
 API_HOST = os.environ.get("API_HOST", "0.0.0.0")
 API_PORT = int(os.environ.get("API_PORT", "8000"))
 
-# Allowed corpus citation URLs (Phase 0 allowlist)
-ALLOWED_CITATION_URLS: tuple[str, ...] = (
-    "https://groww.in/mutual-funds/amc/choice-mutual-funds",
-    "https://groww.in/mutual-funds/amc/unifi-mutual-funds",
-    "https://groww.in/mutual-funds/amc/union-mutual-funds",
-    "https://groww.in/mutual-funds/amc/icici-prudential-mutual-funds",
-    "https://groww.in/mutual-funds/amc/lic-mutual-funds",
-)
+# Allowed corpus citation URLs (from corpus manifest)
+ALLOWED_CITATION_URLS: tuple[str, ...] = _load_allowed_citation_urls()
 
 # Educational links for advisory/comparison refusals only (not corpus)
 EDUCATIONAL_LINKS: dict[str, str] = {

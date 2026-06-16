@@ -12,7 +12,6 @@ from phase1.ingestion.subphase_1_3_html_text.extract import DEFAULT_MIN_CLEAN_TE
 from phase1.ingestion.subphase_1_4_corpus_assembly.assembly import CORPUS_FILENAME, INGEST_MANIFEST_FILENAME
 
 REQUIRED_ARTIFACTS = ("raw.html", "snapshot_meta.json", "clean.txt")
-EXPECTED_SOURCE_COUNT = 5
 
 
 @dataclass
@@ -42,7 +41,7 @@ def run_structural_checks(
 ) -> StructuralCheckResult:
     """
     Automated checks per PhaseWiseArchitecture.md §1.5:
-    - five sources present
+    - expected sources present (from corpus manifest)
     - Phase 1.4 assembly complete (``corpus.json``)
     - no off-allowlist directories
     - required artifacts and minimum text length per source
@@ -53,6 +52,7 @@ def run_structural_checks(
     root_manifest = load_corpus_manifest(mp)
     allowlist = load_allowlist(mp)
     expected_ids = frozenset(str(s["id"]) for s in root_manifest.get("sources", []))
+    expected_source_count = len(expected_ids)
 
     ingest_path = run_dir / INGEST_MANIFEST_FILENAME
     corpus_path = run_dir / CORPUS_FILENAME
@@ -65,9 +65,9 @@ def run_structural_checks(
     ingest_manifest = json.loads(ingest_path.read_text(encoding="utf-8"))
     sources = ingest_manifest.get("sources", [])
 
-    checks["five_sources_present"] = len(sources) == EXPECTED_SOURCE_COUNT
+    checks["five_sources_present"] = len(sources) == expected_source_count
     if not checks["five_sources_present"]:
-        errors.append(f"expected {EXPECTED_SOURCE_COUNT} sources, got {len(sources)}")
+        errors.append(f"expected {expected_source_count} sources, got {len(sources)}")
 
     checks["corpus_json_present"] = corpus_path.is_file()
     corpus: dict[str, Any] = {}

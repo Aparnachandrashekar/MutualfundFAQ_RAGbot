@@ -1,9 +1,9 @@
 {
   "index_type": "flat",
-  "n_vectors": 53,
+  "n_vectors": 6,
   "dimension": 384,
   "nlist": null,
   "nprobe": null,
-  "add_time_seconds": 5.2928924560546875e-05,
-  "memory_usage_mb": 0.07763671875
+  "add_time_seconds": 0.0008909702301025391,
+  "memory_usage_mb": 0.0087890625
 }

@@ -1,124 +1,55 @@
 {
   "$schema": "./corpus_manifest.schema.json",
-  "version": 1,
-  "description": "Complete corpus allowlist for this project. Ingestion and RAG citations MUST use only these five URLs unless the allowlist is formally revised.",
+  "version": 2,
+  "description": "Six indexed Groww scheme detail pages. Ingestion and RAG citations MUST use only these URLs.",
   "sources": [
     {
-      "id": "groww_amc_choice",
-      "amc_name": "Choice Mutual Fund",
-      "url": "https://groww.in/mutual-funds/amc/choice-mutual-funds",
-      "scheme_names_observed": [
-        "Choice Nifty 50 Index Fund",
-        "Choice Nifty 50 Index Fund Direct Growth",
-        "Choice Nifty Next 50 Index Fund",
-        "Choice Nifty Next 50 Index Fund Direct Growth"
-      ],
-      "last_fetch_at": "2026-06-15T10:45:40.471149+00:00",
-      "notes": "Populate scheme_names_observed after manual review or post-ingestion (Phase 1)."
+      "id": "groww_scheme_hdfc_silver_etf_fof",
+      "amc_name": "HDFC Mutual Fund",
+      "url": "https://groww.in/mutual-funds/hdfc-silver-etf-fof-direct-growth",
+      "scheme_names_observed": ["HDFC Silver ETF FoF Direct Growth"],
+      "last_fetch_at": null,
+      "notes": "Groww scheme detail page"
     },
     {
-      "id": "groww_amc_unifi",
-      "amc_name": "Unifi Mutual Fund",
-      "url": "https://groww.in/mutual-funds/amc/unifi-mutual-funds",
-      "scheme_names_observed": [
-        "Unifi Dynamic Asset Allocation Fund",
-        "Unifi Dynamic Asset Allocation Fund Direct Growth",
-        "Unifi Flexi Cap Fund",
-        "Unifi Flexi Cap Fund Direct Growth",
-        "Unifi Liquid Fund",
-        "Unifi Liquid Fund Direct Growth"
-      ],
-      "last_fetch_at": "2026-06-15T10:45:40.471149+00:00",
-      "notes": ""
+      "id": "groww_scheme_hdfc_mid_cap",
+      "amc_name": "HDFC Mutual Fund",
+      "url": "https://groww.in/mutual-funds/hdfc-mid-cap-fund-direct-growth",
+      "scheme_names_observed": ["HDFC Mid Cap Fund Direct Growth"],
+      "last_fetch_at": null,
+      "notes": "Groww scheme detail page"
     },
     {
-      "id": "groww_amc_union",
-      "amc_name": "Union Mutual Fund",
-      "url": "https://groww.in/mutual-funds/amc/union-mutual-funds",
-      "scheme_names_observed": [
-        "Union Active Momentum Fund",
-        "Union Active Momentum Fund Direct Growth",
-        "Union Flexi Cap Fund",
-        "Union Flexi Cap Fund Direct Growth",
-        "Union Innovation & Opportunities Fund",
-        "Union Innovation & Opportunities Fund Direct Growth",
-        "Union Large & Midcap Fund",
-        "Union Large & Midcap Fund Direct Growth",
-        "Union Liquid Fund",
-        "Union Liquid Fund Direct Growth",
-        "Union Midcap Fund",
-        "Union Midcap Fund Direct Growth",
-        "Union Money Market Fund",
-        "Union Money Market Fund Direct Growth",
-        "Union Multi Asset Allocation Fund",
-        "Union Multi Asset Allocation Fund Direct Growth",
-        "Union Multicap Fund",
-        "Union Multicap Fund Direct Growth",
-        "Union Retirement Fund",
-        "Union Retirement Fund Direct Growth",
-        "Union Small Cap Fund",
-        "Union Small Cap Fund Direct Growth"
-      ],
-      "last_fetch_at": "2026-06-15T10:45:40.471149+00:00",
-      "notes": ""
+      "id": "groww_scheme_parag_parikh_ltv",
+      "amc_name": "PPFAS Mutual Fund",
+      "url": "https://groww.in/mutual-funds/parag-parikh-long-term-value-fund-direct-growth",
+      "scheme_names_observed": ["Parag Parikh Long Term Value Fund Direct Growth"],
+      "last_fetch_at": null,
+      "notes": "Groww page title; indexed content may show Flexi Cap naming"
     },
     {
-      "id": "groww_amc_icici_prudential",
-      "amc_name": "ICICI Prudential Mutual Fund",
-      "url": "https://groww.in/mutual-funds/amc/icici-prudential-mutual-funds",
-      "scheme_names_observed": [
-        "ICICI Prudential Commodities Fund",
-        "ICICI Prudential Commodities Fund Direct Growth",
-        "ICICI Prudential Equity & Debt Fund",
-        "ICICI Prudential Equity & Debt Fund Direct Growth",
-        "ICICI Prudential Flexicap Fund",
-        "ICICI Prudential Flexicap Fund Direct Growth",
-        "ICICI Prudential Large & Mid Cap Fund",
-        "ICICI Prudential Large Cap Fund",
-        "ICICI Prudential Large Cap Fund Direct Growth",
-        "ICICI Prudential Liquid Fund",
-        "ICICI Prudential Multi Asset Fund",
-        "ICICI Prudential Multi Asset Fund Direct Growth",
-        "ICICI Prudential Short Term Fund"
-      ],
-      "last_fetch_at": "2026-06-15T10:45:40.471149+00:00",
-      "notes": ""
+      "id": "groww_scheme_bandhan_small_cap",
+      "amc_name": "Bandhan Mutual Fund",
+      "url": "https://groww.in/mutual-funds/bandhan-small-cap-fund-direct-growth",
+      "scheme_names_observed": ["Bandhan Small Cap Fund Direct Growth"],
+      "last_fetch_at": null,
+      "notes": "Groww scheme detail page"
     },
     {
-      "id": "groww_amc_lic",
-      "amc_name": "LIC Mutual Fund",
-      "url": "https://groww.in/mutual-funds/amc/lic-mutual-funds",
-      "scheme_names_observed": [
-        "LIC MF BSE Sensex Index Fund",
-        "LIC MF BSE Sensex Index Fund Direct Growth",
-        "LIC MF Consumption Fund",
-        "LIC MF Consumption Fund Direct Growth",
-        "LIC MF Dividend Yield Fund",
-        "LIC MF Dividend Yield Fund Direct Growth",
-        "LIC MF Infrastructure Fund",
-        "LIC MF Infrastructure Fund Direct Growth",
-        "LIC MF Large & Mid Cap Fund",
-        "LIC MF Large & Mid Cap Fund Direct Growth",
-        "LIC MF Liquid Fund",
-        "LIC MF Liquid Fund Direct Growth",
-        "LIC MF Manufacturing Fund",
-        "LIC MF Manufacturing Fund Direct Growth",
-        "LIC MF Multi Asset Allocation Fund",
-        "LIC MF Multi Asset Allocation Fund Direct Growth",
-        "LIC MF Multi Cap Fund",
-        "LIC MF Multi Cap Fund Direct Growth",
-        "LIC MF Nifty 50 Index Fund",
-        "LIC MF Nifty 50 Index Fund Direct Growth",
-        "LIC MF Nifty Next 50 Index Fund",
-        "LIC MF Nifty Next 50 Index Fund Direct Growth",
-        "LIC MF Small Cap Fund",
-        "LIC MF Small Cap Fund Direct Growth",
-        "LIC MF Technology Fund",
-        "LIC MF Technology Fund Direct Growth",
-        "LIC of India Mutual Fund"
-      ],
-      "last_fetch_at": "2026-06-15T10:45:40.471149+00:00",
-      "notes": ""
+      "id": "groww_scheme_quant_small_cap",
+      "amc_name": "Quant Mutual Fund",
+      "url": "https://groww.in/mutual-funds/quant-small-cap-fund-direct-plan-growth",
+      "scheme_names_observed": ["Quant Small Cap Fund Direct Plan Growth"],
+      "last_fetch_at": null,
+      "notes": "Groww scheme detail page"
+    },
+    {
+      "id": "groww_scheme_sbi_gold",
+      "amc_name": "SBI Mutual Fund",
+      "url": "https://groww.in/mutual-funds/sbi-gold-fund-direct-growth",
+      "scheme_names_observed": ["SBI Gold Direct Plan Growth"],
+      "last_fetch_at": null,
+      "notes": "Groww scheme detail page"
     }
   ]
 }

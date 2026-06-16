@@ -1,0 +1,777 @@
+SBI Gold Direct Plan Growth - NAV, Mutual Fund Performance & Portfolio
+Stocks
+Invest in Stocks
+Invest in stocks, ETFs, IPOs with fast orders. Track returns on your stock holdings and view real-time P&L on your positions.
+Intraday
+Monitor top intraday performers in real time
+ETF Screener
+Get the best of Mutual Funds and flexibility of Stocks
+IPO
+Track upcoming and ongoing IPOs
+MTFs
+Buy now, pay later
+Stock Screener
+Filter based on RSI, PE ratio and more
+Stock Events
+Dividends, bonus, buybacks and more
+Demat Account
+Begin your stock market journey
+Share Market Today
+Live news updates from stock market
+F&O
+Trade in Futures & Options
+Trade in F&O using the terminal. View charts, indicators, track your orders , P&L and watchlists in a single space
+Indices
+Track markets across the globe
+Terminal
+Track charts, orders, positions, watchlists in one place
+Option chain
+Analyse chains, view payoffs, create baskets
+Pledge
+Get extra balance for trading
+Commodities
+Trade in Crude Oil, Gold, Silver and more
+API trading
+Set up and execute trades through our API
+Mutual Funds
+Invest in Mutual Funds
+Invest in direct mutual funds at zero charges via lump sump investments or SIPs
+Mutual Fund Houses
+Know about AMCs, funds, fund managers
+NFO’s
+Track all active NFOs in one place
+Mutual Funds by Groww
+Mutual funds by Groww designed for your investment goals
+Start SIP
+Build long-term wealth through disciplined monthly investing.
+Mutual Funds screener
+Filter funds based on risk, fund size and more
+Track Funds
+Import funds and track all investments in a single place
+Compare Funds
+More
+SIP calculator
+Estimate returns on a SIP
+Brokerage calculator
+Estimate charges for your trade/investment
+Margin calculator
+Estimate balance needed to buy/sell a stock
+SWP calculator
+Returns on your systematic withdrawal plan
+Pricing
+Brokerage and charges on Groww
+Blog
++35.72
+%
+3Y annualised
+-0.57
+%
+1D
+1M
+6M
+1Y
+3Y
+5Y
+All
+NAV: 05 Jun '26
+₹47.22
+Min. for SIP
+₹500
+Fund size (AUM)
+₹15,691.06 Cr
+Expense ratio
+0.26%
+Rating
+4
+Return calculator
+Monthly SIP
+One time
+Monthly investment
+₹5,000
+Over the past
+Total investment
+Would've become
+Historic returns
+Returns
+1 year
+₹60,000
+₹72,811
++
+21.35
+%
+3 years
+₹1,80,000
+₹3,29,994
++
+83.33
+%
+5 years
+₹3,00,000
+₹6,77,202
++
+125.73
+%
+10 years
+₹6,00,000
+₹19,34,580
++
+222.43
+%
+Holdings (
+1
+)
+Name
+Sector
+Instruments
+Assets
+SBI Gold ETF
+--
+Mutual Fund
+100.12%
+Minimum investments
+Min. for 1st investment
+₹5,000
+Min. for 2nd investment
+₹1,000
+Min. for SIP
+₹500
+Understand terms
+Annualised returns
+Average of the yearly returns of a mutual fund over a given period.
+Absolute returns
+The total return of a mutual fund over a given period.
+Returns and rankings
+Annualised returns
+Absolute returns
+Name
+3Y
+5Y
+10Y
+All
+Fund returns
++35.7%
++25.0%
++17.3%
++11.7%
+Category average (
+Commodities Gold
+)
++34.1%
++21.0%
++17.0%
+--
+Rank (
+Commodities Gold
+)
+10
+1
+2
+--
+Understand terms
+Expense ratio
+A fee payable to a mutual fund house for managing your mutual fund investments. It is the total percentage of a company's fund assets used for administrative, management, advertising, and other expenses.
+Tax
+A percentage of your capital gains payable to the government upon exiting your mutual fund investments. Taxation is categorized as long-term capital gains (LTCG) and short-term capital gains (STCG) depending on your holding period and the type of fund.
+Exit load
+A fee payable to a mutual fund house for exiting a fund (fully or partially) before the completion of a specified period from the date of investment.
+Stamp duty
+A form of tax payable for the purchase or sale of an asset or security.
+Exit Load
+08 Sep 2020
+Exit load of 1% if redeemed within 15 days.
+01 Jan 2013
+Exit load of 1% if redeemed within 1 year.
+Exit load, stamp duty and tax
+Exit load
+Exit load of 1% if redeemed within 15 days.
+Stamp duty on investment:
+0.005% (from July 1st, 2020)
+from July 1st 2020
+Tax implication
+If you redeem within two years, returns are taxed as per your Income Tax slab. If you redeem after two years, returns are taxed at 12.5%.
+Check past data
+Fund management
+VC
+Viral Chhadva
+Mar 2026
+- Present
+View details
+Education
+Mr. Chhadva has done MFM (Finance) and CFA
+Experience
+Prior to joining SBI Mutual Fund, he has worked with India Infoline Ltd. and ICICI Securities
+Also manages these schemes
+SBI Gold Direct Plan Growth
+SBI Nifty Index Direct Plan Growth
+SBI Nifty Midcap 150 Index Fund Direct Growth
+SBI Nifty Smallcap 250 Index Fund Direct Growth
+SBI BSE Sensex Index Fund Direct Growth
+SBI Nifty Next 50 Index Fund Direct Growth
+SBI Nifty50 Equal Weight Index Fund Direct Growth
+SBI Silver ETF FoF Direct Growth
+SBI Nifty 500 Index Fund Direct Growth
+SBI Nifty India Consumption Index Fund Direct Growth
+SBI Nifty Bank Index Fund Direct Growth
+SBI Nifty IT Index Fund Direct Growth
+SBI BSE PSU Bank Index Fund Direct Growth
+SBI Nifty200 Quality 30 Index Fund Direct Growth
+SBI Nifty200 Momentum 30 Index Fund Direct Growth
+SBI Nifty100 Low Volatility 30 Index Fund Direct Growth
+PK
+Pradeep Kesavan
+Dec 2023
+- Present
+View details
+Education
+Mr. Kesavan has done B.Com, MBA (Finance) and CFA
+Experience
+Prior to joining SBI MF, he has worked with Elara Capital, Accenture Strategy, Morgan Stanley and 3i Infotech
+Also manages these schemes
+SBI Children's Fund Savings Plan Direct Growth
+SBI Arbitrage Opportunities Fund Direct Growth
+SBI Large Cap Direct Plan Growth
+SBI Contra Direct Plan Growth
+SBI Dynamic Bond Direct Plan Growth
+SBI Focused Fund Direct Plan Growth
+SBI Consumption Opportunities Fund Direct Growth
+SBI Gold Direct Plan Growth
+SBI Infrastructure Fund Direct Growth
+SBI Technology Opportunities Fund Direct Growth
+SBI Equity Hybrid Fund Direct Plan Growth
+SBI Comma Fund Direct Growth
+SBI ESG Exclusionary Strategy Fund Direct Plan Growth
+SBI MNC Direct Plan Growth
+SBI Medium to Long Duration Fund Direct Growth
+SBI Credit Risk Fund Direct Growth
+SBI Savings Fund Direct Growth
+SBI Small Cap Fund Direct Growth
+SBI Nifty Index Direct Plan Growth
+SBI Ultra Short Duration Fund Direct Growth
+SBI Mid Cap Direct Plan Growth
+SBI Multi Asset Allocation Fund Direct Growth
+SBI Flexicap Fund Direct Growth
+SBI Large & Midcap Fund Direct Plan Growth
+SBI Healthcare Opportunities Fund Direct Plan Growth
+SBI Banking and PSU Fund Direct Growth
+SBI Medium Duration Fund Direct Growth
+SBI Short Term Debt Fund Direct Growth
+SBI Low Duration Fund Direct Growth
+SBI Dividend Yield Fund Direct Growth
+SBI Banking & Financial Services Fund Direct Growth
+SBI Long Duration Fund Direct Growth
+SBI Multicap Fund Direct Growth
+SBI Equity Minimum Variance Fund Direct Growth
+SBI Equity Savings Fund Direct Growth
+SBI Children's Fund Investment Plan Direct Growth
+SBI Floating Rate Debt Fund Direct Growth
+SBI Retirement Benefit Fund Aggressive Plan Direct Growth
+SBI Retirement Benefit Fund Aggressive Hybrid Plan Direct Growth
+SBI Retirement Benefit Fund Conservative Plan Direct Growth
+SBI Retirement Benefit Fund Conservative Hybrid Plan Direct Growth
+SBI Balanced Advantage Fund Direct Growth
+SBI Corporate Bond Fund Direct Growth
+SBI Energy Opportunities Fund Direct Growth
+SBI Automotive Opportunities Fund Direct Growth
+SBI Quant Fund Direct Growth
+About
+SBI Gold Direct Plan Growth
+SBI Gold Direct Plan Growth is a Commodities Mutual Fund Scheme launched by SBI Mutual Fund. This scheme was made available to investors on 29 Jun 1987. Viral Chhadva is the Current Fund Manager of SBI Gold Direct Plan Growth fund. The fund currently has an Asset Under Management(AUM) of ₹12,55,465 Cr and the Latest NAV as of 05 Jun 2026 is ₹47.22.
+The SBI Gold Direct Plan Growth is rated High risk. Minimum SIP Investment is set to ₹500. Minimum Lumpsum Investment is ₹5,000. Exit load of 1% if redeemed within 15 days.
+;
+Investment Objective
+The Scheme seeks to provide returns that closely correspond to returns provided by SBI Gold Exchange Traded Scheme (SBI GETS).
+Fund benchmark
+Domestic Price of Gold
+Scheme Information Document(SID)
+Fund house
+SBI Mutual Fund
+Rank (total assets)
+#1 in India
+Total AUM
+₹12,55,465.12 Cr
+Date of Incorporation
+29 Jun 1987
+Phone
+022-61793000 / 1800-425-5425
+E-mail
+[email protected]
+Website
+http://www.sbimf.com
+Launch Date
+29 Jun 1987
+Address
+9th Floor & Unit no. 1002, 1003 and 1004 of 10th floor,Crescenzo, C-38 & 39, G Block, Bandra Kurla Complex,Bandra (East) Mumbai 400051
+Custodian
+SBI SG Global Securities Services Pvt.Ltd.
+Registrar & Transfer Agent
+Cams
+Email
+[email protected]
+Website
+www.camsonline.com
+Address
+7th Floor, Tower II, Rayala Towers, 158, Anna Salai,
+Home
+>
+Mutual Funds
+>
+SBI Mutual Fund
+>
+SBI Gold Direct Plan Growth
+Vaishnavi Tech Park, South Tower, 3rd Floor
+Sarjapur Main Road, Bellandur, Bengaluru – 560103
+Karnataka
+Contact Us
+Download the App
+GROWW
+About Us
+Pricing
+Blog
+Media & Press
+Careers
+Help & Support
+Trust & Safety
+Investor Relations
+PRODUCTS
+Stocks
+F&O
+MTF
+ETF
+IPO
+Mutual Funds
+Commodities
+Groww Terminal
+915 Terminal
+Stock Screens
+Algo Trading
+Groww Charts
+Groww Digest
+Demat Account
+Groww AMC
+PMS
+© 2016-
+2026
+Groww. All rights reserved.
+Version:
+7.7.1
+Share Market
+Indices
+F&O
+Mutual Funds
+ETFs
+Funds By Groww
+Calculators
+IPO
+Miscellaneous
+Top Gainers Stocks
+52 Weeks High Stocks
+Tata Motors
+NHPC
+ITC
+Wipro
+BSE
+NTPC
+Top Losers Stocks
+52 Weeks Low Stocks
+IREDA
+State Bank of India
+Adani Power
+CDSL
+Cochin Shipyard
+SJVN
+Most Traded Stocks
+Stocks Market Calender
+Tata Steel
+Tata Power
+Bharat Heavy Electricals
+Indian Oil Corporation
+HUDCO
+SAIL
+Stocks Feed
+Suzlon Energy
+Zomato (Eternal)
+Yes Bank
+Infosys
+NBCC
+IRCTC
+Share Market Live Update
+FII DII Activity
+IRFC
+Bharat Electronics
+HDFC Bank
+Vedanta
+Reliance Power
+Jaiprakash Power Ventures
+Stocks Sectors
+NIFTY 50
+NIFTY Midcap 100
+NIFTY 100
+US Tech 100
+NIFTY Realty
+Nikkei index
+SENSEX
+NIFTY Smallcap 100
+NIFTY Auto
+Dow Jones Futures
+NIFTY PSU Bank
+NIFTY FMCG
+NIFTY BANK
+NIFTY MIDCAP 150
+KOSPI Index
+Dow Jones Index
+Gift Nifty
+BSE BANKEX
+India VIX
+NIFTY Pharma
+HANG SENG Index
+BSE 100
+FTSE 100 Index
+S&P 500
+NIFTY NEXT 50
+NIFTY Metal
+DAX Index
+NIFTY Fin Service
+CAC Index
+Nifty Pvt Bank
+NIFTY Bank Options
+SBI Options
+Bajaj Finance Options
+Axis Bank Options
+Hindustan Unilever Options
+NIFTY Bank Futures
+Finnifty Futures
+ITC Futures
+ICICI Bank Futures
+Biocon Futures
+Indusind Bank Futures
+Crude Oil Mini Future Price
+Gold Petal Future Price
+Silver Micro Future Price
+Nickel Future Price
+Natural Gas Mini MCX Option Chain
+Copper MCX Option Chain
+NIFTY 50 Options
+HDFC Bank Options
+Wipro Options
+DLF Options
+REC Options
+Yes Bank Futures
+Zomato Futures
+Ashok Leyland Futures
+HDFC Bank Futures
+UPL Futures
+Adani Enterprises Futures
+Gold Future Price
+Natural Gas Future Price
+Zinc Future Price
+Gold MCX Option Chain
+Gold Mini MCX Option Chain
+Commodities Expiry Calendar
+Bse Sensex Options
+Tata Steel Options
+NTPC Options
+Bajaj Auto Options
+Indusind Bank Options
+Tata Motors Futures
+Infosys Futures
+Asian Paints Futures
+Lupin Futures
+Cipla Futures
+IDFC First Bank Futures
+Gold Mini Future Price
+Natural Gas Mini Future Price
+Copper Future Price
+Crude Oil MCX Option Chain
+Silver MCX Option Chain
+Finnifty Options
+Infosys Options
+Asian Paints Options
+Coal India Options
+Ashok Leyland Options
+Tata Steel Futures
+BSE Sensex Futures
+Wipro Futures
+DLF Futures
+Bajaj Finance Futures
+Piramal Enterprises Futures
+Gold Ten Future Price
+Silver Future Price
+Aluminium Future Price
+Crude Oil Mini MCX Option Chain
+Silver Mini MCX Option Chain
+Tata Motors Options
+ITC Options
+ICICI Bank Options
+Adani Enterprises Options
+NIFTY 50 Futures
+Coal India Futures
+Axis Bank Futures
+Vedanta Futures
+Reliance Industries Futures
+Hindustan Copper Futures
+Crude Oil Future Price
+Gold Guinea Future Price
+Silver Mini Future Price
+Electricity Future Price
+Natural Gas MCX Option Chain
+Zinc MCX Option Chain
+MF Screener
+Debt Mutual Funds
+Best Multicap Mutual funds
+Best Contra Mutual funds
+Best Conservative Hybrid Mutual funds
+SBI Contra Fund
+Nippon India Nifty 500 Momentum 50 Index Fund
+HDFC Balanced Advantage Fund
+Quant Mid Cap Fund
+Bank of India Small Cap Fund
+Quant Multi Asset Fund
+Nippon India
+TATA
+Bandhan
+Edelweiss
+HSBC
+Union
+Quantum
+Shriram
+Compare Mutual Funds
+Best Debt Mutual funds
+Best Large Cap Mutual funds
+Best Value Oriented Mutual funds
+Parag Parikh Flexi Cap Fund
+HDFC Mid Cap Opportunities Fund
+Motilal Oswal Nifty India Defence Index Fund
+ICICI Prudential India Opportunities Fund
+Kotak Small Cap Fund
+Canara Robeco Bluechip Equity Fund
+GrowwMF
+Motilal Oswal
+Aditya Birla
+Axis
+Bank of India
+Bajaj Finserv
+Helios
+ITI
+Trust
+MF Knowledge Centre
+Best Equity Mutual funds
+Best Small Cap Mutual funds
+Best Arbitrage Mutual funds
+Motilal Oswal Midcap Fund
+SBI Small Cap Fund
+HDFC Small Cap Fund
+Kotak Multicap Fund
+ICICI Prudential Infrastructure Fund
+Bandhan Nifty Alpha 50 Index Fund
+SBI
+Quant
+Mirae Asset
+DSP
+Baroda BNP Paribas
+Mahindra Manulife
+Sundaram
+Samco
+Taurus
+Mutual Fund Houses
+Best Hybrid Mutual funds
+Best ELSS Mutual funds
+Best Dividend Yield Mutual funds
+Nippon India Small Cap Fund
+HDFC Flexi Cap Fund
+Tata Small Cap Fund
+Tata Ethical Fund
+Mirae Asset ELSS Tax Saver Fund
+Quant Infrastructure Fund
+HDFC
+PPFAS
+UTI
+Kotak Mahindra
+Zerodha
+Invesco
+Navi
+PGIM
+Mutual Funds Categories
+Best MidCap Mutual funds
+Best Sectoral Mutual funds
+Best Aggressive Hybrid Mutual funds
+Quant Small Cap Fund
+SBI Magnum Children's Benefit Fund
+UTI Nifty 50 Index Fund
+JM Flexicap Fund
+HSBC Small Cap Fund
+Franklin India Multi Cap Fund
+ICICI Prudential
+LIC
+Canara Robeco
+Whiteoak
+Franklin Templeton
+NJ
+JM
+360 One
+International
+Silver
+Midcap
+Liquid
+Debt
+Index
+Bank Nifty
+Nifty IT
+Equity
+Nifty 50
+Nifty Metal
+Nifty Auto
+Commodity
+Nifty Next 50
+Healthcare
+Groww
+Gold
+Sensex
+Defence
+Groww Arbitrage Fund
+Groww ELSS Tax Saver Fund
+Groww Banking & Financial Services Fund
+Groww Gold ETF FOF
+Groww Gold ETF
+Groww Short Duration Fund
+Groww Aggressive Hybrid Fund
+Groww Nifty Smallcap 250 Index Fund
+Groww Multicap Fund
+Groww Nifty India Defence ETF
+Groww Liquid Fund
+Groww Dynamic Bond Fund
+Groww Nifty Non Cyclical Consumer Index Fund
+Groww Nifty India Railways PSU Index Fund
+Groww Nifty India Railways ETF
+Groww Large Cap Fund
+Groww Overnight Fund
+Groww Nifty EV & New Age Automotive ETF FoF
+Groww Nifty 200 ETF FoF
+Groww Value Fund
+Groww Nifty Total Market Index Fund
+Groww Nifty India Defence ETF FoF
+Groww Silver ETF
+SIP Calculator
+Brokerage Calculator
+RD Calculator
+HRA Calculator
+Home Loan EMI Calculator
+Lumpsum Calculator
+Margin Calculator
+FD Calculator
+Salary Calculator
+ROI Calculator
+SWP Calculator
+Stock Average Calculator
+EPF Calculator
+TDS Calculator
+MF Calculator
+SSY Calculator
+Income Tax Calculator
+EMI Calculator
+Step-Up SIP Calculator
+PPF Calculator
+GST Calculator
+Car Loan EMI Calculator
+What is IPO?
+IPO Subscription Status
+IPO Allotment Status
+Open IPOs
+How to Apply for an IPO
+Upcoming IPOs
+What is Grey Market Premium?
+Closed IPOs
+Mainboard IPOs
+IPO GMP
+SME IPOs
+NFO
+Pricing
+Trust & Safety
+Groww Digest
+Intraday
+Blog
+Investor Relations
+Invest in Gold
+Corporate Bonds
+Media & Press
+Gold Rates
+Invest in Silver
+HUF Demat Account
+Careers
+Silver Rates
+Sitemap
+About Us
+Help & Support
+Glossary
+Show More
+Others:
+NSE
+BSE
+MCX
+Terms and Conditions
+Policies and Procedures
+Regulatory & Other Info
+Privacy Policy
+Disclosure
+SMART ODR
+Download Forms
+Information Security Practices
+Investor Charter and Grievance
+Bug Bounty
+Mutual Funds
+:
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z
+Others
+Stocks
+:
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z
+Others

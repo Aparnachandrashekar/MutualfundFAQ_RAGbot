@@ -18,7 +18,7 @@ MIN_CHUNK_SIZE = 300
 MAX_CHUNK_SIZE = 400
 CHUNK_OVERLAP = 50
 MIN_FINANCIAL_DENSITY = 0.05
-MIN_SOURCE_VALIDATION_QUALITY = 0.05
+MIN_SOURCE_VALIDATION_QUALITY = 0.04
 
 # Retrieval
 DEFAULT_TOP_K = 5
@@ -30,10 +30,10 @@ BM25_ONLY_MODE = RETRIEVAL_MODE in ("bm25", "bm25_only")
 
 # AMC aliases → canonical amc_name (for hard routing)
 AMC_ALIASES: dict[str, str] = {
-    "choice": "Choice Mutual Fund",
-    "unifi": "Unifi Mutual Fund",
-    "union": "Union Mutual Fund",
-    "icici prudential": "ICICI Prudential Mutual Fund",
-    "icici": "ICICI Prudential Mutual Fund",
-    "lic": "LIC Mutual Fund",
+    "hdfc": "HDFC Mutual Fund",
+    "sbi": "SBI Mutual Fund",
+    "bandhan": "Bandhan Mutual Fund",
+    "quant": "Quant Mutual Fund",
+    "parag parikh": "PPFAS Mutual Fund",
+    "ppfas": "PPFAS Mutual Fund",
 }

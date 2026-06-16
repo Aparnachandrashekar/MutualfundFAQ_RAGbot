@@ -1,7 +1,7 @@
 {
   "pipeline_version": "2.1",
-  "timestamp": "2026-06-15 10:46:34 UTC",
-  "input_corpus": "/home/runner/work/MutualfundFAQ_RAGbot/MutualfundFAQ_RAGbot/data/corpus_runs/20260615T104540_470988Z",
+  "timestamp": "2026-06-16 12:38:36 UTC",
+  "input_corpus": "data/corpus_runs/20260607T050717_549005Z",
   "output_directory": "data/phase2_results",
   "strategy": {
     "bm25_weight": 0.75,
@@ -11,90 +11,89 @@
     "index_type": "Flat"
   },
   "chunking": {
-    "total_before_filtering": 53,
-    "total_after_filtering": 53,
+    "total_before_filtering": 6,
+    "total_after_filtering": 6,
     "filter_ratio": 1.0,
-    "processing_time_seconds": 0.6338417530059814,
+    "processing_time_seconds": 0.007148027420043945,
     "summary": {
-      "total_chunks": 53,
-      "average_chunk_size": 349.9433962264151,
+      "total_chunks": 6,
+      "average_chunk_size": 371.8333333333333,
       "content_types": {
-        "fund_info": 44,
-        "mixed": 9
+        "fund_info": 6
       },
       "amc_distribution": {
-        "Choice Mutual Fund": 3,
-        "Unifi Mutual Fund": 4,
-        "Union Mutual Fund": 16,
-        "ICICI Prudential Mutual Fund": 14,
-        "LIC Mutual Fund": 16
+        "HDFC Mutual Fund": 2,
+        "Parag Parikh Mutual Fund": 1,
+        "Bandhan Mutual Fund": 1,
+        "Quant Mutual Fund": 1,
+        "SBI Mutual Fund": 1
       },
-      "average_financial_density": 0.12428974814146798
+      "average_financial_density": 0.16097455952528417
     }
   },
   "indexing": {
-    "processing_time_seconds": 5.433346748352051,
+    "processing_time_seconds": 7.380690097808838,
     "stats": {
       "status": "Index loaded",
-      "ntotal": 53,
+      "ntotal": 6,
       "dimension": 384,
       "is_trained": true,
       "type": "Flat",
       "index_type": "flat",
-      "n_vectors": 53,
+      "n_vectors": 6,
       "nlist": null,
       "nprobe": null,
-      "add_time_seconds": 5.2928924560546875e-05,
-      "memory_usage_mb": 0.07763671875
+      "add_time_seconds": 0.0008909702301025391,
+      "memory_usage_mb": 0.0087890625
     }
   },
   "validation": {
-    "amc_routing_rate": 1.0,
+    "amc_routing_rate": 0.0,
     "queries": [
       {
         "query": "What is the NAV of Choice Mutual Fund?",
         "expected_amc": "Choice Mutual Fund",
-        "top_amc": "Choice Mutual Fund",
-        "amc_routing_ok": true,
-        "results_count": 3,
-        "top_score": 0.06499351887152116,
-        "search_time_ms": 19.29616928100586
+        "top_amc": null,
+        "amc_routing_ok": false,
+        "results_count": 0,
+        "top_score": 0.0,
+        "search_time_ms": 0.8928775787353516
       },
       {
         "query": "What are the expense ratios for Union Mutual Fund schemes?",
         "expected_amc": "Union Mutual Fund",
-        "top_amc": "Union Mutual Fund",
-        "amc_routing_ok": true,
-        "results_count": 5,
-        "top_score": 0.06488233738762561,
-        "search_time_ms": 19.14381980895996
+        "top_amc": null,
+        "amc_routing_ok": false,
+        "results_count": 0,
+        "top_score": 0.0,
+        "search_time_ms": 0.03886222839355469
       },
       {
         "query": "Tell me about SIP minimum for Unifi Liquid Fund",
         "expected_amc": "Unifi Mutual Fund",
-        "top_amc": "Unifi Mutual Fund",
-        "amc_routing_ok": true,
-        "results_count": 1,
-        "top_score": 0.09737704918032787,
-        "search_time_ms": 19.02604103088379
+        "top_amc": null,
+        "amc_routing_ok": false,
+        "results_count": 0,
+        "top_score": 0.0,
+        "search_time_ms": 0.09894371032714844
       },
       {
         "query": "ICICI Prudential mutual fund schemes",
         "expected_amc": "ICICI Prudential Mutual Fund",
-        "top_amc": "ICICI Prudential Mutual Fund",
-        "amc_routing_ok": true,
-        "results_count": 5,
-        "top_score": 0.04598360655737706,
-        "search_time_ms": 18.602609634399414
+        "top_amc": null,
+        "amc_routing_ok": false,
+        "results_count": 0,
+        "top_score": 0.0,
+        "search_time_ms": 0.009059906005859375
       },
       {
         "query": "LIC Mutual Fund exit load",
         "expected_amc": "LIC Mutual Fund",
-        "top_amc": "LIC Mutual Fund",
-        "amc_routing_ok": true,
-        "results_count": 5,
-        "top_score": 0.06344050766790059,
-        "search_time_ms": 17.133235931396484
+        "top_amc": null,
+        "amc_routing_ok": false,
+        "results_count": 0,
+        "top_score": 0.0,
+        "search_time_ms": 0.010013580322265625
       }
     ]
   },

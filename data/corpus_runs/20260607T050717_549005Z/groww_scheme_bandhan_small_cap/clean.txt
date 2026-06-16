@@ -1,0 +1,1835 @@
+Bandhan Small Cap Fund Direct Growth - NAV, Mutual Fund Performance & Portfolio
+Stocks
+Invest in Stocks
+Invest in stocks, ETFs, IPOs with fast orders. Track returns on your stock holdings and view real-time P&L on your positions.
+Intraday
+Monitor top intraday performers in real time
+ETF Screener
+Get the best of Mutual Funds and flexibility of Stocks
+IPO
+Track upcoming and ongoing IPOs
+MTFs
+Buy now, pay later
+Stock Screener
+Filter based on RSI, PE ratio and more
+Stock Events
+Dividends, bonus, buybacks and more
+Demat Account
+Begin your stock market journey
+Share Market Today
+Live news updates from stock market
+F&O
+Trade in Futures & Options
+Trade in F&O using the terminal. View charts, indicators, track your orders , P&L and watchlists in a single space
+Indices
+Track markets across the globe
+Terminal
+Track charts, orders, positions, watchlists in one place
+Option chain
+Analyse chains, view payoffs, create baskets
+Pledge
+Get extra balance for trading
+Commodities
+Trade in Crude Oil, Gold, Silver and more
+API trading
+Set up and execute trades through our API
+Mutual Funds
+Invest in Mutual Funds
+Invest in direct mutual funds at zero charges via lump sump investments or SIPs
+Mutual Fund Houses
+Know about AMCs, funds, fund managers
+NFO’s
+Track all active NFOs in one place
+Mutual Funds by Groww
+Mutual funds by Groww designed for your investment goals
+Start SIP
+Build long-term wealth through disciplined monthly investing.
+Mutual Funds screener
+Filter funds based on risk, fund size and more
+Track Funds
+Import funds and track all investments in a single place
+Compare Funds
+More
+SIP calculator
+Estimate returns on a SIP
+Brokerage calculator
+Estimate charges for your trade/investment
+Margin calculator
+Estimate balance needed to buy/sell a stock
+SWP calculator
+Returns on your systematic withdrawal plan
+Pricing
+Brokerage and charges on Groww
+Blog
++29.52
+%
+3Y annualised
+-0.09
+%
+1D
+1M
+6M
+1Y
+3Y
+5Y
+All
+NAV: 05 Jun '26
+₹52.80
+Min. for SIP
+₹100
+Fund size (AUM)
+₹25,345.79 Cr
+Expense ratio
+0.60%
+Rating
+5
+Return calculator
+Monthly SIP
+One time
+Monthly investment
+₹5,000
+Over the past
+Total investment
+Would've become
+Historic returns
+Returns
+6 months
+₹30,000
+₹31,796
++
+5.99
+%
+1 year
+₹60,000
+₹62,758
++
+4.60
+%
+3 years
+₹1,80,000
+₹2,25,152
++
+25.08
+%
+5 years
+₹3,00,000
+₹5,09,480
++
+69.83
+%
+Holdings (
+256
+)
+Name
+Sector
+Instruments
+Assets
+Reverse Repo
+Unspecified
+Reverse Repo
+13.98%
+REC Ltd
+Financial
+Equity
+3.49%
+Sobha Ltd
+Real Estate
+Equity
+3.28%
+LT Foods Ltd
+Consumer Staples
+Equity
+2.14%
+PNB Housing Finance Ltd
+Financial
+Equity
+1.66%
+The South Indian Bank Ltd
+Financial
+Equity
+1.66%
+Arvind Ltd
+Consumer Discretionary
+Equity
+1.55%
+The Great Eastern Shipping Company Ltd
+Energy & Utilities
+Equity
+1.32%
+The Karnataka Bank Ltd
+Financial
+Equity
+1.29%
+Cholamandalam Financial Holdings Ltd
+Financial
+Equity
+1.27%
+Yatharth Hospital & Trauma Care Services Ltd.
+Healthcare
+Equity
+1.27%
+Jubilant Pharmova Ltd
+Healthcare
+Equity
+1.20%
+Shaily Engineering Plastics Ltd
+Materials
+Equity
+1.13%
+Cyient Ltd
+Technology
+Equity
+1.05%
+Paradeep Phosphates Ltd
+Materials
+Equity
+1.05%
+Apar Industries Ltd
+Diversified
+Equity
+1.02%
+ICICI Lombard General Insurance Company Ltd
+Financial
+Equity
+1.02%
+DCB Bank Ltd
+Financial
+Equity
+0.97%
+One 97 Communications Ltd
+Industrials
+Equity
+0.97%
+Glenmark Pharmaceuticals Ltd
+Healthcare
+Equity
+0.88%
+Rashi Peripherals Ltd.
+Consumer Discretionary
+Equity
+0.86%
+Info Edge (India) Ltd
+Technology
+Equity
+0.85%
+Century Textiles & Industries Ltd
+Materials
+Equity
+0.84%
+Angel One Ltd
+Financial
+Equity
+0.84%
+Repco Home Finance Ltd
+Financial
+Equity
+0.84%
+Godrej Industries Ltd
+Diversified
+Equity
+0.83%
+Senco Gold Ltd.
+Consumer Discretionary
+Equity
+0.79%
+General Insurance Corporation of India Ltd
+Financial
+Equity
+0.78%
+TARC Ltd
+Real Estate
+Equity
+0.77%
+Sundaram-Clayton Ltd
+Consumer Discretionary
+Equity
+0.76%
+PCBL Ltd
+Materials
+Equity
+0.74%
+Saatvik Green Energy Ltd.
+Energy & Utilities
+Equity
+0.74%
+Power Finance Corporation Ltd
+Financial
+Equity
+0.73%
+Sky Gold Ltd
+Consumer Discretionary
+Equity
+0.73%
+LIC Housing Finance Ltd
+Financial
+Equity
+0.71%
+State Bank of India
+Financial
+Equity
+0.67%
+Arvind Smartspaces Ltd
+Real Estate
+Equity
+0.67%
+Godawari Power & Ispat Ltd
+Materials
+Equity
+0.63%
+Prestige Estates Projects Ltd
+Real Estate
+Equity
+0.63%
+Crompton Greaves Consumer Electricals Ltd
+Consumer Discretionary
+Equity
+0.63%
+Piramal Pharma Ltd
+Healthcare
+Equity
+0.63%
+Strides Pharma Science Ltd
+Healthcare
+Equity
+0.60%
+SIS Ltd
+Industrials
+Equity
+0.56%
+P N Gadgil Jewellers Ltd.
+Consumer Discretionary
+Equity
+0.56%
+eClerx Services Ltd
+Technology
+Equity
+0.54%
+Nitin Spinners Ltd
+Consumer Discretionary
+Equity
+0.54%
+Inox Wind Ltd
+Industrials
+Equity
+0.54%
+Meghmani Finechem Ltd
+Materials
+Equity
+0.53%
+Sanathan Textiles Ltd.
+Consumer Discretionary
+Equity
+0.53%
+Steel Authority Of India Ltd
+Materials
+Equity
+0.52%
+Kirloskar Oil Engines Ltd
+Industrials
+Equity
+0.52%
+Aptus Value Housing Finance India Ltd
+Financial
+Equity
+0.52%
+Vikram Solar Ltd.
+Energy & Utilities
+Equity
+0.52%
+EPL Ltd
+Materials
+Equity
+0.51%
+Pace Digitek Ltd.
+Technology
+Equity
+0.50%
+Mastek Ltd
+Technology
+Equity
+0.49%
+Manappuram Finance Ltd
+Financial
+Equity
+0.48%
+Fedbank Financial Services Ltd.
+Financial
+Equity
+0.48%
+Deepak Fertilisers & Petrochemicals Corporation Ltd
+Materials
+Equity
+0.46%
+Indusind Bank Ltd
+Financial
+Equity
+0.46%
+Pennar Industries Ltd
+Materials
+Equity
+0.46%
+TruAlt Bioenergy Ltd.
+Energy & Utilities
+Equity
+0.46%
+Hindustan Zinc Ltd
+Materials
+Equity
+0.44%
+Suven Pharmaceuticals Ltd
+Healthcare
+Equity
+0.44%
+Vintage Coffee & Beverages Ltd
+Consumer Staples
+Equity
+0.43%
+Jubilant Ingrevia Ltd
+Materials
+Equity
+0.42%
+Shilpa Medicare Ltd
+Healthcare
+Equity
+0.41%
+Aurobindo Pharma Ltd
+Healthcare
+Equity
+0.40%
+Hi-Tech Pipes Ltd
+Industrials
+Equity
+0.40%
+Awfis Space Solutions Ltd.
+Industrials
+Equity
+0.40%
+Grasim Industries Ltd
+Materials
+Equity
+0.39%
+Kilburn Engineering Ltd
+Industrials
+Equity
+0.39%
+Akums Drugs And Pharmaceuticals Ltd.
+Healthcare
+Equity
+0.38%
+Axis Bank Ltd
+Financial
+Equity
+0.37%
+INEOS Styrolution India Ltd
+Materials
+Equity
+0.37%
+Kotak Mahindra Bank Ltd
+Financial
+Equity
+0.37%
+Tata Communications Ltd
+Technology
+Equity
+0.37%
+E2E Networks Ltd
+Technology
+Equity
+0.37%
+Amara Raja Batteries Ltd
+Consumer Discretionary
+Equity
+0.36%
+SH Kelkar & Co Ltd
+Materials
+Equity
+0.36%
+Bharat Coking Coal Ltd.
+Materials
+Equity
+0.36%
+Can Fin Homes Ltd
+Financial
+Equity
+0.35%
+NCC Ltd
+Industrials
+Equity
+0.35%
+Neuland Laboratories Ltd
+Healthcare
+Equity
+0.34%
+Signatureglobal (India) Ltd.
+Industrials
+Equity
+0.34%
+Wockhardt Ltd
+Healthcare
+Equity
+0.33%
+Inox Green Energy Services Ltd
+Industrials
+Equity
+0.33%
+Onesource Specialty Pharma Ltd
+Healthcare
+Equity
+0.33%
+Kolte Patil Developers Ltd
+Real Estate
+Equity
+0.32%
+Mahindra Lifespace Developers Ltd
+Real Estate
+Equity
+0.32%
+Nuvama Wealth Management Ltd
+Financial
+Equity
+0.31%
+Electronics Mart India Ltd
+Consumer Discretionary
+Equity
+0.31%
+EPACK Durable Ltd.
+Consumer Discretionary
+Equity
+0.31%
+Skipper Ltd
+Technology
+Equity
+0.30%
+Eris Lifesciences Ltd
+Healthcare
+Equity
+0.30%
+Baazar Style Retail Ltd.
+Consumer Discretionary
+Equity
+0.30%
+Kewal Kiran Clothing Ltd
+Consumer Discretionary
+Equity
+0.29%
+Pondy Oxides & Chemicals Ltd
+Materials
+Equity
+0.29%
+Zomato Ltd
+Technology
+Equity
+0.29%
+Tilaknagar Industries Ltd
+Consumer Staples
+Equity
+0.28%
+Juniper Hotels Ltd.
+Consumer Discretionary
+Equity
+0.28%
+Adani Wilmar Ltd
+Consumer Staples
+Equity
+0.27%
+Ethos Ltd
+Consumer Discretionary
+Equity
+0.27%
+KFin Technologies Ltd
+Financial
+Equity
+0.27%
+Birlasoft Ltd
+Technology
+Equity
+0.26%
+Marksans Pharma Ltd
+Healthcare
+Equity
+0.26%
+National Aluminium Company Ltd
+Materials
+Equity
+0.26%
+Jupiter Wagons Ltd
+Industrials
+Equity
+0.26%
+Max Estates Ltd
+Real Estate
+Equity
+0.26%
+JSW Cement Ltd.
+Materials
+Equity
+0.26%
+Birla Corporation Ltd
+Materials
+Equity
+0.25%
+Kirloskar Ferrous Industries Ltd
+Materials
+Equity
+0.25%
+Stove Kraft Ltd
+Consumer Discretionary
+Equity
+0.25%
+Aditya Birla Fashion and Retail Ltd
+Consumer Discretionary
+Equity
+0.24%
+Ujjivan Small Finance Bank Ltd
+Financial
+Equity
+0.24%
+Nazara Technologies Ltd
+Technology
+Equity
+0.24%
+Samvardhana Motherson International Ltd
+Consumer Discretionary
+Equity
+0.23%
+Redington Ltd
+Technology
+Equity
+0.23%
+Power Mech Projects Ltd
+Industrials
+Equity
+0.23%
+Star Health & Allied Insurance Co. Ltd
+Financial
+Equity
+0.23%
+Updater Services Ltd.
+Industrials
+Equity
+0.23%
+HDFC Bank Ltd
+Financial
+Equity
+0.22%
+Sunteck Realty Ltd
+Real Estate
+Equity
+0.22%
+Usha Martin Ltd
+Materials
+Equity
+0.22%
+Vishnu Chemicals Ltd
+Materials
+Equity
+0.22%
+Sansera Engineering Ltd
+Consumer Discretionary
+Equity
+0.22%
+Syrma SGS Technology Ltd
+Technology
+Equity
+0.22%
+Aarti Industries Ltd
+Materials
+Equity
+0.21%
+KEC International Ltd
+Diversified
+Equity
+0.21%
+Computer Age Management Services Ltd
+Financial
+Equity
+0.21%
+EFC (I) Ltd
+Industrials
+Equity
+0.20%
+CESC Ltd
+Energy & Utilities
+Equity
+0.20%
+Hindustan Petroleum Corporation Ltd
+Energy & Utilities
+Equity
+0.20%
+Apeejay Surrendra Park Hotels Ltd.
+Consumer Discretionary
+Equity
+0.20%
+Bank Of Baroda
+Financial
+Equity
+0.19%
+Aster DM Healthcare Ltd
+Healthcare
+Equity
+0.19%
+Sapphire Foods India Ltd
+Consumer Discretionary
+Equity
+0.19%
+ACME Solar Holdings Ltd.
+Energy & Utilities
+Equity
+0.19%
+V2 Retail Ltd
+Consumer Discretionary
+Equity
+0.18%
+GPT Healthcare Ltd.
+Healthcare
+Equity
+0.18%
+NTPC Green Energy Ltd.
+Energy & Utilities
+Equity
+0.18%
+Blue Star Ltd
+Industrials
+Equity
+0.17%
+Motilal Oswal Financial Services Ltd
+Financial
+Equity
+0.17%
+Oil India Ltd
+Energy & Utilities
+Equity
+0.17%
+Archean Chemical Industries Ltd
+Materials
+Equity
+0.17%
+Sagility India Ltd.
+Industrials
+Equity
+0.17%
+Vidya Wires Ltd.
+Industrials
+Equity
+0.17%
+Steel Strips Wheels Ltd
+Consumer Discretionary
+Equity
+0.16%
+Sterlite Technologies Ltd
+Technology
+Equity
+0.16%
+RHI Magnesita India Ltd
+Materials
+Equity
+0.16%
+Narayana Hrudayalaya Ltd
+Healthcare
+Equity
+0.16%
+Krsnaa Diagnostics Ltd
+Healthcare
+Equity
+0.15%
+Medplus Health Services Ltd
+Healthcare
+Equity
+0.15%
+Keystone Realtors Ltd
+Real Estate
+Equity
+0.15%
+Edelweiss Financial Services Ltd
+Financial
+Equity
+0.14%
+Jindal Saw Ltd
+Materials
+Equity
+0.14%
+Jyothy Labs Ltd
+Consumer Staples
+Equity
+0.14%
+Flair Writing Industries Ltd.
+Industrials
+Equity
+0.14%
+Emcure Pharmaceuticals Ltd.
+Healthcare
+Equity
+0.14%
+NLC India Ltd
+Energy & Utilities
+Equity
+0.13%
+Metropolis Healthcare Ltd
+Healthcare
+Equity
+0.13%
+Greenpanel Industries Ltd
+Materials
+Equity
+0.13%
+Aditya Birla Sun Life AMC Ltd
+Financial
+Equity
+0.13%
+PB Fintech Ltd
+Financial
+Equity
+0.13%
+Amir Chand Jagdish Kumar (Exports) Ltd.
+Consumer Staples
+Equity
+0.13%
+Bombay Burmah Trading Corporation Ltd
+Consumer Staples
+Equity
+0.12%
+GMM Pfaudler Ltd
+Industrials
+Equity
+0.12%
+Greenply Industries Ltd
+Materials
+Equity
+0.12%
+JB Chemicals & Pharmaceuticals Ltd
+Healthcare
+Equity
+0.12%
+Krishna Institute Of Medical Sciences Ltd
+Healthcare
+Equity
+0.12%
+Clean Science And Technology Ltd
+Materials
+Equity
+0.12%
+Eureka Forbes Ltd
+Consumer Discretionary
+Equity
+0.12%
+Aegis Vopak Terminals Ltd.
+Energy & Utilities
+Equity
+0.12%
+Orchid Pharma Ltd
+Healthcare
+Equity
+0.11%
+Time Technoplast Ltd
+Materials
+Equity
+0.11%
+Triveni Engineering & Industries Ltd
+Consumer Staples
+Equity
+0.11%
+Indus Towers Ltd
+Technology
+Equity
+0.11%
+Satin Creditcare Network Ltd
+Financial
+Equity
+0.11%
+Quess Corp Ltd
+Industrials
+Equity
+0.11%
+Amanta Healthcare Ltd.
+Healthcare
+Equity
+0.11%
+Landmark Cars Ltd
+Consumer Discretionary
+Equity
+0.11%
+Brigade Hotel Ventures Ltd.
+Consumer Discretionary
+Equity
+0.11%
+Emami Ltd
+Consumer Staples
+Equity
+0.10%
+Alicon Castalloy Ltd
+Consumer Discretionary
+Equity
+0.10%
+Filatex India Ltd
+Consumer Discretionary
+Equity
+0.10%
+Heritage Foods Ltd
+Consumer Staples
+Equity
+0.10%
+Kirloskar Pneumatic Company Ltd
+Industrials
+Equity
+0.10%
+Lumax Auto Technologies Ltd
+Consumer Discretionary
+Equity
+0.10%
+Zee Entertainment Enterprises Ltd
+Consumer Discretionary
+Equity
+0.10%
+Suryoday Small Finance Bank Ltd
+Financial
+Equity
+0.10%
+R R Kabel Ltd.
+Industrials
+Equity
+0.10%
+Ecos (India) Mobility & Hospitality Ltd.
+Industrials
+Equity
+0.10%
+JK Lakshmi Cement Ltd
+Materials
+Equity
+0.09%
+Vedanta Ltd
+Materials
+Equity
+0.09%
+Ventive Hospitality Ltd.
+Consumer Discretionary
+Equity
+0.09%
+Oswal Pumps Ltd.
+Industrials
+Equity
+0.09%
+Astrazeneca Pharma India Ltd
+Healthcare
+Equity
+0.08%
+Exide Industries Ltd
+Consumer Discretionary
+Equity
+0.08%
+Garware Hi-Tech Films Ltd
+Materials
+Equity
+0.08%
+The Ramco Cements Ltd
+Materials
+Equity
+0.08%
+Others Mrgn Money
+Unspecified
+Margin Money
+0.08%
+Indiamart Intermesh Ltd
+Industrials
+Equity
+0.08%
+Windlas Biotech Ltd
+Healthcare
+Equity
+0.08%
+Innova Captab Ltd.
+Healthcare
+Equity
+0.08%
+JK Paper Ltd
+Materials
+Equity
+0.07%
+Rane Holdings Ltd
+Consumer Discretionary
+Equity
+0.07%
+Moil Ltd
+Materials
+Equity
+0.07%
+Gulf Oil Lubricants India Ltd
+Materials
+Equity
+0.07%
+Powerica Ltd.
+Industrials
+Equity
+0.07%
+FDC Ltd
+Healthcare
+Equity
+0.06%
+Saregama India Ltd
+Consumer Discretionary
+Equity
+0.06%
+Artemis Medicare Services Ltd
+Healthcare
+Equity
+0.06%
+IRM Energy Ltd.
+Energy & Utilities
+Equity
+0.06%
+Bansal Wire Industries Ltd.
+Materials
+Equity
+0.06%
+All Time Plastics Ltd.
+Consumer Discretionary
+Equity
+0.06%
+Mayur Uniquoters Ltd
+Materials
+Equity
+0.05%
+Thirumalai Chemicals Ltd
+Materials
+Equity
+0.05%
+Cash Margin
+Unspecified
+Cash Margin
+0.05%
+Arvind Fashions Ltd
+Consumer Discretionary
+Equity
+0.05%
+Vedant Fashions Ltd
+Consumer Discretionary
+Equity
+0.05%
+TBO Tek Ltd.
+Consumer Discretionary
+Equity
+0.05%
+Zinka Logistics Solutions Ltd.
+Industrials
+Equity
+0.05%
+Concord Enviro Systems Ltd.
+Industrials
+Equity
+0.05%
+Fractal Analytics Ltd.
+Technology
+Equity
+0.05%
+Ellenbarrie Industrial Gases Ltd
+Materials
+Equity
+0.04%
+VEDANTA ALUMINIUM LIMITED EQ NEW F.V. RS.2/-
+Energy & Utilities
+Equity
+0.04%
+Bajel Projects Ltd
+Industrials
+Equity
+0.04%
+Jyoti CNC Automation Ltd.
+Industrials
+Equity
+0.04%
+Sudeep Pharma Ltd.
+Healthcare
+Equity
+0.04%
+Wakefit Innovations Ltd.
+Consumer Discretionary
+Equity
+0.04%
+OnEMI Technology Solutions Ltd.
+Technology
+Equity
+0.04%
+Vedanta Aluminium Metal Ltd.
+Materials
+Equity
+0.04%
+Vedanta Iron And Steel Ltd.
+Materials
+Equity
+0.04%
+Vedanta Power Ltd.
+Industrials
+Equity
+0.04%
+Optiemus Infracom Ltd
+Technology
+Equity
+0.03%
+Gujarat State Petronet Ltd
+Energy & Utilities
+Equity
+0.03%
+Poly Medicure Ltd
+Healthcare
+Equity
+0.03%
+VRL Logistics Ltd
+Industrials
+Equity
+0.03%
+Digitide Solutions Ltd
+Industrials
+Equity
+0.03%
+Finbud Financial Services Ltd.
+Financial
+Equity
+0.03%
+CSB Bank Ltd
+Financial
+Equity
+0.02%
+Chemplast Sanmar Ltd
+Materials
+Equity
+0.02%
+Kalpataru Power Transmission Ltd
+Industrials
+Equity
+0.02%
+Safari Industries (India) Ltd
+Consumer Discretionary
+Equity
+0.02%
+Sudarshan Chemical Industries Ltd
+Materials
+Equity
+0.02%
+Orient Electric Ltd
+Consumer Discretionary
+Equity
+0.02%
+Bluspring Enterprises Ltd
+Industrials
+Equity
+0.02%
+STL Networks Ltd
+Technology
+Equity
+0.02%
+Pine Labs Ltd.
+Technology
+Equity
+0.02%
+Butterfly Gandhimathi Appliances Ltd
+Consumer Discretionary
+Equity
+0.01%
+Yatra Online Ltd.
+Consumer Discretionary
+Equity
+0.01%
+DAM Capital Advisors Ltd.
+Financial
+Equity
+0.01%
+GK Energy Ltd.
+Industrials
+Equity
+0.01%
+Citius TransNet Investment Trust
+Industrials
+Infrastructure Investment Trust
+0.01%
+Cash
+Unspecified
+Cash
+0.00%
+Net Payables
+Unspecified
+Net Payables
+-0.90%
+See All
+Minimum investments
+Min. for 1st investment
+₹1,000
+Min. for 2nd investment
+₹1,000
+Min. for SIP
+₹100
+Understand terms
+Annualised returns
+Average of the yearly returns of a mutual fund over a given period.
+Absolute returns
+The total return of a mutual fund over a given period.
+Returns and rankings
+Annualised returns
+Absolute returns
+Name
+1Y
+3Y
+5Y
+All
+Fund returns
++5.2%
++29.5%
++22.1%
++30.3%
+Category average (
+Equity Small Cap
+)
+-6.3%
++19.7%
++22.6%
+--
+Rank (
+Equity Small Cap
+)
+16
+1
+1
+--
+Understand terms
+Expense ratio
+A fee payable to a mutual fund house for managing your mutual fund investments. It is the total percentage of a company's fund assets used for administrative, management, advertising, and other expenses.
+Tax
+A percentage of your capital gains payable to the government upon exiting your mutual fund investments. Taxation is categorized as long-term capital gains (LTCG) and short-term capital gains (STCG) depending on your holding period and the type of fund.
+Exit load
+A fee payable to a mutual fund house for exiting a fund (fully or partially) before the completion of a specified period from the date of investment.
+Stamp duty
+A form of tax payable for the purchase or sale of an asset or security.
+Exit Load
+03 Feb 2020
+Exit load of 1%, if redeemed within 1 year.
+Exit load, stamp duty and tax
+Exit load
+Exit load of 1%, if redeemed within 1 year.
+Stamp duty on investment:
+0.005% (from July 1st, 2020)
+from July 1st 2020
+Tax implication
+If you redeem within one year, returns are taxed at 20%. If you redeem after one year, returns exceeding Rs 1.25 lakh in a financial year are taxed at 12.5%.
+Check past data
+Compare similar funds
+Name
+1Y
+3Y
+Fund Size(Cr)
+Bandhan Small Cap Fund Direct Growth
++5.22%
++29.52%
+25,345.79
+Invesco India Smallcap Fund Direct Growth
++7.35%
++24.21%
+11,038.23
+Sundaram Small Cap Fund Direct Growth
++8.97%
++19.97%
+3,562.91
+Nippon India Small Cap Fund Direct Growth
++3.71%
++19.33%
+72,672.99
+Axis Small Cap Fund Direct Growth
++2.34%
++16.78%
+27,363.97
+Compare
+Fund management
+MG
+Manish Gunwani
+Jan 2023
+- Present
+View details
+Education
+Mr. Gunwani is a B.Tech. and PGDM.
+Experience
+Prior to joining Bandhan Mutual Fund (formerly IDFC Mutual Fund), he has worked with Nippon India Mutual Fund, ICICI Prudential Mutual Fund as Fund Manager and as Analyst in various organisations: Vicisoft Technologies, Lehman Brothers, Brics Securities , Lucky Securities, SSKI Securities and Prime Securities.
+Also manages these schemes
+Bandhan Large & Mid Cap Fund Direct Growth
+Bandhan Focused Fund Direct Growth
+Bandhan Flexi Cap Fund Direct Growth
+Bandhan Large Cap Fund Direct Growth
+Bandhan Balanced Advantage Fund Direct Growth
+Bandhan Small Cap Fund Direct Growth
+Bandhan Innovation Fund Direct Growth
+RB
+Ritika Behera
+Oct 2023
+- Present
+View details
+Education
+Ms. Behera has done B.Com and MBA (Finance)
+Experience
+Prior to Bandhan AMC Limited, she was associated with Ocean Dial Asset Management, Elara Securities Pvt Ltd. and Batlivala & Karani Securities Pvt Ltd.
+Also manages these schemes
+Bandhan Conservative Hybrid Fund Direct Plan Growth
+Bandhan Large & Mid Cap Fund Direct Growth
+Bandhan Focused Fund Direct Growth
+Bandhan Flexi Cap Fund Direct Growth
+Bandhan Infrastructure Fund Direct Plan Growth
+Bandhan ELSS Tax Saver Fund Direct Plan Growth
+Bandhan Arbitrage Fund Direct Growth
+Bandhan Equity Savings Fund Direct Growth
+Bandhan Large Cap Fund Direct Growth
+Bandhan Value Fund Direct Growth
+Bandhan Aggressive Hybrid Fund Direct Growth
+Bandhan Balanced Advantage Fund Direct Growth
+Bandhan Small Cap Fund Direct Growth
+Bandhan US specific Equity Active FoF Direct Growth
+Bandhan Multi Cap Fund Direct Growth
+Bandhan Midcap Fund Direct Growth
+Bandhan Transportation and Logistics Fund Direct Growth
+Bandhan Financial Services Fund Direct Growth
+Bandhan Retirement Fund Direct Growth
+Bandhan Multi Asset Allocation Fund Direct Growth
+Bandhan Innovation Fund Direct Growth
+Bandhan Business Cycle Fund Direct Growth
+Bandhan Healthcare Fund Direct Growth
+GS
+Gaurav Satra
+Jun 2024
+- Present
+View details
+Education
+Mr. Satra has done B.Com and CA
+Experience
+Prior to joining Bandhan Mutual Fund, he has worked with various Consultancy Firms as a CA
+Also manages these schemes
+Bandhan Conservative Hybrid Fund Direct Plan Growth
+Bandhan Large & Mid Cap Fund Direct Growth
+Bandhan Focused Fund Direct Growth
+Bandhan Flexi Cap Fund Direct Growth
+Bandhan Infrastructure Fund Direct Plan Growth
+Bandhan ELSS Tax Saver Fund Direct Plan Growth
+Bandhan Arbitrage Fund Direct Growth
+Bandhan Equity Savings Fund Direct Growth
+Bandhan Large Cap Fund Direct Growth
+Bandhan Value Fund Direct Growth
+Bandhan Aggressive Hybrid Fund Direct Growth
+Bandhan Balanced Advantage Fund Direct Growth
+Bandhan Small Cap Fund Direct Growth
+Bandhan US specific Equity Active FoF Direct Growth
+Bandhan Multi Cap Fund Direct Growth
+Bandhan Midcap Fund Direct Growth
+Bandhan Transportation and Logistics Fund Direct Growth
+Bandhan Financial Services Fund Direct Growth
+Bandhan Retirement Fund Direct Growth
+Bandhan Multi Asset Allocation Fund Direct Growth
+Bandhan Innovation Fund Direct Growth
+Bandhan Business Cycle Fund Direct Growth
+Bandhan Healthcare Fund Direct Growth
+KJ
+Kirthi Jain
+Jun 2023
+- Present
+View details
+Education
+Mr. Jain has done CA
+Experience
+Prior to joining Bandhan Mutual Fund, he was associated with Canara HSBC Life Insurance, Sundaram Mutual Fund and B&K Securities
+Also manages these schemes
+Bandhan Focused Fund Direct Growth
+Bandhan Small Cap Fund Direct Growth
+About
+Bandhan Small Cap Fund Direct Growth
+Bandhan Small Cap Fund Direct Growth is a Equity Mutual Fund Scheme launched by Bandhan Mutual Fund. This scheme was made available to investors on 20 Dec 1999. Manish Gunwani is the Current Fund Manager of Bandhan Small Cap Fund Direct Growth fund. The fund currently has an Asset Under Management(AUM) of ₹2,01,808 Cr and the Latest NAV as of 05 Jun 2026 is ₹52.80.
+The Bandhan Small Cap Fund Direct Growth is rated Very High risk. Minimum SIP Investment is set to ₹100. Minimum Lumpsum Investment is ₹1,000. Exit load of 1%, if redeemed within 1 year.
+;
+Investment Objective
+The Scheme seeks to generate long term capital appreciation by investing predominantly in equities and equity linked securities of small cap segment.
+Fund benchmark
+BSE 250 SmallCap Total Return Index
+Scheme Information Document(SID)
+Fund house
+IDFC Mutual Fund
+Rank (total assets)
+#9 in India
+Total AUM
+₹2,01,807.58 Cr
+Date of Incorporation
+20 Dec 1999
+Phone
+--
+E-mail
+--
+Website
+https://bandhanmutual.com
+Launch Date
+20 Dec 1999
+Address
+One World Centre, 6th Floor, Tower 1C,Senapati Bapat Marg, Prabhadevi Mumbai 400013
+Custodian
+Deutsche Bank
+Registrar & Transfer Agent
+Cams
+Email
+[email protected]
+Website
+www.camsonline.com
+Address
+7th Floor, Tower II, Rayala Towers, 158, Anna Salai,
+Home
+>
+Mutual Funds
+>
+IDFC Mutual Fund
+>
+Bandhan Small Cap Fund Direct Growth
+Vaishnavi Tech Park, South Tower, 3rd Floor
+Sarjapur Main Road, Bellandur, Bengaluru – 560103
+Karnataka
+Contact Us
+Download the App
+GROWW
+About Us
+Pricing
+Blog
+Media & Press
+Careers
+Help & Support
+Trust & Safety
+Investor Relations
+PRODUCTS
+Stocks
+F&O
+MTF
+ETF
+IPO
+Mutual Funds
+Commodities
+Groww Terminal
+915 Terminal
+Stock Screens
+Algo Trading
+Groww Charts
+Groww Digest
+Demat Account
+Groww AMC
+PMS
+© 2016-
+2026
+Groww. All rights reserved.
+Version:
+7.7.1
+Share Market
+Indices
+F&O
+Mutual Funds
+ETFs
+Funds By Groww
+Calculators
+IPO
+Miscellaneous
+Top Gainers Stocks
+52 Weeks High Stocks
+Tata Motors
+NHPC
+ITC
+Wipro
+BSE
+NTPC
+Top Losers Stocks
+52 Weeks Low Stocks
+IREDA
+State Bank of India
+Adani Power
+CDSL
+Cochin Shipyard
+SJVN
+Most Traded Stocks
+Stocks Market Calender
+Tata Steel
+Tata Power
+Bharat Heavy Electricals
+Indian Oil Corporation
+HUDCO
+SAIL
+Stocks Feed
+Suzlon Energy
+Zomato (Eternal)
+Yes Bank
+Infosys
+NBCC
+IRCTC
+Share Market Live Update
+FII DII Activity
+IRFC
+Bharat Electronics
+HDFC Bank
+Vedanta
+Reliance Power
+Jaiprakash Power Ventures
+Stocks Sectors
+NIFTY 50
+NIFTY Midcap 100
+NIFTY 100
+US Tech 100
+NIFTY Realty
+Nikkei index
+SENSEX
+NIFTY Smallcap 100
+NIFTY Auto
+Dow Jones Futures
+NIFTY PSU Bank
+NIFTY FMCG
+NIFTY BANK
+NIFTY MIDCAP 150
+KOSPI Index
+Dow Jones Index
+Gift Nifty
+BSE BANKEX
+India VIX
+NIFTY Pharma
+HANG SENG Index
+BSE 100
+FTSE 100 Index
+S&P 500
+NIFTY NEXT 50
+NIFTY Metal
+DAX Index
+NIFTY Fin Service
+CAC Index
+Nifty Pvt Bank
+NIFTY Bank Options
+SBI Options
+Bajaj Finance Options
+Axis Bank Options
+Hindustan Unilever Options
+NIFTY Bank Futures
+Finnifty Futures
+ITC Futures
+ICICI Bank Futures
+Biocon Futures
+Indusind Bank Futures
+Crude Oil Mini Future Price
+Gold Petal Future Price
+Silver Micro Future Price
+Nickel Future Price
+Natural Gas Mini MCX Option Chain
+Copper MCX Option Chain
+NIFTY 50 Options
+HDFC Bank Options
+Wipro Options
+DLF Options
+REC Options
+Yes Bank Futures
+Zomato Futures
+Ashok Leyland Futures
+HDFC Bank Futures
+UPL Futures
+Adani Enterprises Futures
+Gold Future Price
+Natural Gas Future Price
+Zinc Future Price
+Gold MCX Option Chain
+Gold Mini MCX Option Chain
+Commodities Expiry Calendar
+Bse Sensex Options
+Tata Steel Options
+NTPC Options
+Bajaj Auto Options
+Indusind Bank Options
+Tata Motors Futures
+Infosys Futures
+Asian Paints Futures
+Lupin Futures
+Cipla Futures
+IDFC First Bank Futures
+Gold Mini Future Price
+Natural Gas Mini Future Price
+Copper Future Price
+Crude Oil MCX Option Chain
+Silver MCX Option Chain
+Finnifty Options
+Infosys Options
+Asian Paints Options
+Coal India Options
+Ashok Leyland Options
+Tata Steel Futures
+BSE Sensex Futures
+Wipro Futures
+DLF Futures
+Bajaj Finance Futures
+Piramal Enterprises Futures
+Gold Ten Future Price
+Silver Future Price
+Aluminium Future Price
+Crude Oil Mini MCX Option Chain
+Silver Mini MCX Option Chain
+Tata Motors Options
+ITC Options
+ICICI Bank Options
+Adani Enterprises Options
+NIFTY 50 Futures
+Coal India Futures
+Axis Bank Futures
+Vedanta Futures
+Reliance Industries Futures
+Hindustan Copper Futures
+Crude Oil Future Price
+Gold Guinea Future Price
+Silver Mini Future Price
+Electricity Future Price
+Natural Gas MCX Option Chain
+Zinc MCX Option Chain
+MF Screener
+Debt Mutual Funds
+Best Multicap Mutual funds
+Best Contra Mutual funds
+Best Conservative Hybrid Mutual funds
+SBI Contra Fund
+Nippon India Nifty 500 Momentum 50 Index Fund
+HDFC Balanced Advantage Fund
+Quant Mid Cap Fund
+Bank of India Small Cap Fund
+Quant Multi Asset Fund
+Nippon India
+TATA
+Bandhan
+Edelweiss
+HSBC
+Union
+Quantum
+Shriram
+Compare Mutual Funds
+Best Debt Mutual funds
+Best Large Cap Mutual funds
+Best Value Oriented Mutual funds
+Parag Parikh Flexi Cap Fund
+HDFC Mid Cap Opportunities Fund
+Motilal Oswal Nifty India Defence Index Fund
+ICICI Prudential India Opportunities Fund
+Kotak Small Cap Fund
+Canara Robeco Bluechip Equity Fund
+GrowwMF
+Motilal Oswal
+Aditya Birla
+Axis
+Bank of India
+Bajaj Finserv
+Helios
+ITI
+Trust
+MF Knowledge Centre
+Best Equity Mutual funds
+Best Small Cap Mutual funds
+Best Arbitrage Mutual funds
+Motilal Oswal Midcap Fund
+SBI Small Cap Fund
+HDFC Small Cap Fund
+Kotak Multicap Fund
+ICICI Prudential Infrastructure Fund
+Bandhan Nifty Alpha 50 Index Fund
+SBI
+Quant
+Mirae Asset
+DSP
+Baroda BNP Paribas
+Mahindra Manulife
+Sundaram
+Samco
+Taurus
+Mutual Fund Houses
+Best Hybrid Mutual funds
+Best ELSS Mutual funds
+Best Dividend Yield Mutual funds
+Nippon India Small Cap Fund
+HDFC Flexi Cap Fund
+Tata Small Cap Fund
+Tata Ethical Fund
+Mirae Asset ELSS Tax Saver Fund
+Quant Infrastructure Fund
+HDFC
+PPFAS
+UTI
+Kotak Mahindra
+Zerodha
+Invesco
+Navi
+PGIM
+Mutual Funds Categories
+Best MidCap Mutual funds
+Best Sectoral Mutual funds
+Best Aggressive Hybrid Mutual funds
+Quant Small Cap Fund
+SBI Magnum Children's Benefit Fund
+UTI Nifty 50 Index Fund
+JM Flexicap Fund
+HSBC Small Cap Fund
+Franklin India Multi Cap Fund
+ICICI Prudential
+LIC
+Canara Robeco
+Whiteoak
+Franklin Templeton
+NJ
+JM
+360 One
+International
+Silver
+Midcap
+Liquid
+Debt
+Index
+Bank Nifty
+Nifty IT
+Equity
+Nifty 50
+Nifty Metal
+Nifty Auto
+Commodity
+Nifty Next 50
+Healthcare
+Groww
+Gold
+Sensex
+Defence
+Groww Arbitrage Fund
+Groww ELSS Tax Saver Fund
+Groww Banking & Financial Services Fund
+Groww Gold ETF FOF
+Groww Gold ETF
+Groww Short Duration Fund
+Groww Aggressive Hybrid Fund
+Groww Nifty Smallcap 250 Index Fund
+Groww Multicap Fund
+Groww Nifty India Defence ETF
+Groww Liquid Fund
+Groww Dynamic Bond Fund
+Groww Nifty Non Cyclical Consumer Index Fund
+Groww Nifty India Railways PSU Index Fund
+Groww Nifty India Railways ETF
+Groww Large Cap Fund
+Groww Overnight Fund
+Groww Nifty EV & New Age Automotive ETF FoF
+Groww Nifty 200 ETF FoF
+Groww Value Fund
+Groww Nifty Total Market Index Fund
+Groww Nifty India Defence ETF FoF
+Groww Silver ETF
+SIP Calculator
+Brokerage Calculator
+RD Calculator
+HRA Calculator
+Home Loan EMI Calculator
+Lumpsum Calculator
+Margin Calculator
+FD Calculator
+Salary Calculator
+ROI Calculator
+SWP Calculator
+Stock Average Calculator
+EPF Calculator
+TDS Calculator
+MF Calculator
+SSY Calculator
+Income Tax Calculator
+EMI Calculator
+Step-Up SIP Calculator
+PPF Calculator
+GST Calculator
+Car Loan EMI Calculator
+What is IPO?
+IPO Subscription Status
+IPO Allotment Status
+Open IPOs
+How to Apply for an IPO
+Upcoming IPOs
+What is Grey Market Premium?
+Closed IPOs
+Mainboard IPOs
+IPO GMP
+SME IPOs
+NFO
+Pricing
+Trust & Safety
+Groww Digest
+Intraday
+Blog
+Investor Relations
+Invest in Gold
+Corporate Bonds
+Media & Press
+Gold Rates
+Invest in Silver
+HUF Demat Account
+Careers
+Silver Rates
+Sitemap
+About Us
+Help & Support
+Glossary
+Show More
+Others:
+NSE
+BSE
+MCX
+Terms and Conditions
+Policies and Procedures
+Regulatory & Other Info
+Privacy Policy
+Disclosure
+SMART ODR
+Download Forms
+Information Security Practices
+Investor Charter and Grievance
+Bug Bounty
+Mutual Funds
+:
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z
+Others
+Stocks
+:
+A
+B
+C
+D
+E
+F
+G
+H
+I
+J
+K
+L
+M
+N
+O
+P
+Q
+R
+S
+T
+U
+V
+W
+X
+Y
+Z
+Others

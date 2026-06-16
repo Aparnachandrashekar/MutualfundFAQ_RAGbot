@@ -8,8 +8,8 @@
     "description": { "type": "string" },
     "sources": {
       "type": "array",
-      "minItems": 5,
-      "maxItems": 5,
+      "minItems": 6,
+      "maxItems": 6,
       "items": {
         "type": "object",
         "required": ["id", "amc_name", "url"],
